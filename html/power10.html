@@ -1,296 +1,398 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <title>주식회사 앱이지- Why Power10</title>
 
-  <title>주식회사 앱이지- Why Power10 </title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- -- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
 
-  <!-- Bootstrap Core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-  <!-- -- fontawesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- Fonts -->
+    <link
+      href="font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="css/animate.css" rel="stylesheet" />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="/img/icons/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="/img/icons/favicon.ico" type="image/x-icon" />
+    <!-- Squad theme CSS -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="color/default.css" rel="stylesheet" />
+  </head>
 
-  <!-- Fonts -->
-  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <link href="css/animate.css" rel="stylesheet" />
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="/img/icons/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/img/icons/favicon.ico" type="image/x-icon">
-  <!-- Squad theme CSS -->
-  <link href="css/style.css" rel="stylesheet">
-  <link href="color/default.css" rel="stylesheet">
-
-</head>
-
-<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
-  <!-- Preloader -->
-  <div id="preloader">
-    <div id="load"></div>
-  </div>
-  
-  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-    <div class="container">
-      <div class="navbar-header page-scroll">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-        <a class="navbar-brand" href="index.html">
-          <h1><img src="img/top_appez_logo.png" width="150" height="43" alt="logo"></h1>
-        </a>
-      </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="index.html">Home</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="company_info.html">회사개요</a></li>
-			  <li><a href="history.html">연혁</a></li>
-              <li><a href="financial.html">재무현황</a></li>
-			  <li><a href="organization.html">조직도</a></li>
-              <li><a href="certification.html">인증현황</a></li>
-			  <li><a href="welfare.html">복리후생</a></li>
-			
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="server.html">Server</a></li>
-              <li><a href="storage.html">Storage</a></li>
-			  <li><a href="san.html">SAN Switch</a></li>
-			  <li><a href="lto.html">LTO(PTL)</a></li>
-			  <li><a href="worm.html">WORM Storage</a></li>	
-              <!--<li><a href="software.html">Software</a></li>-->
-			  <li><a href="veeam.html">Veeam백업</a></li>
-			 <!-- <li><a href="saphana.html">SAP</a></li>-->
-			  
-            </ul>
-          </li>
-
-           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Technical Support<b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="maintenance.html">통합유지보수</a></li>
-  			  <li><a href="consulting.html">기술지원서비스(TA)</a></li>                                                       
-			  <li><a href="support.html">기술지원서비스(H/W)</a></li>  
-			  <li><a href="system.html">Storage 복제서비스</a></li>
-			  <li><a href="gpfs.html">공유파일시스템(GPFS)</a></li>	
-			  <li><a href="gklm.html">암호화솔루션(GKLM)</a></li>	
-			  <li><a href="rental.html">장비임대 및 이관</a></li>                                                       
-              <li><a href="sapse.html">SAP SE</a></li>                                                       				
-			  
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Partners<b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="partners.html">협력사</a></li>                                                       
-              <li><a href="customer.html">고객사</a></li>                                                       				
-            </ul>
-          </li>   
-
-           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact Us <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="notice.html">공지사항</a></li>
-              <li><a href="qna.html">문의하기</a></li>
-			  <li><a href="gallery.html">갤러리</a></li>	
-              <li><a href="map.html">찾아오시는길</a></li>
-              <li><a href="recruit.html">채용공고</a></li>                                   
-            </ul>
-          </li>
-              
-        </ul>
-      </div>
-      <!-- /.navbar-collapse -->
+  <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+    <!-- Preloader -->
+    <div id="preloader">
+      <div id="load"></div>
     </div>
-    <!-- /.container -->
-  </nav>
 
-  <!-- Section: intro -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header page-scroll">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target=".navbar-main-collapse"
+          >
+            <i class="fa fa-bars"></i>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <h1>
+              <img
+                src="img/top_appez_logo.png"
+                width="150"
+                height="43"
+                alt="logo"
+              />
+            </h1>
+          </a>
+        </div>
 
-<!-- PAGE상단 배경으로 이미지 개별 적용 -->
- <main id="main">
- <div id="page-banner" style="background-image: url(img/top-2.jpg);">
-   <div class="content wow fdeInUp" style="visibility: visible; animation-name: fdeInUp;">
-   </div>
- </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                >About Us <b class="caret"></b
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="company_info.html">회사개요</a></li>
+                <li><a href="history.html">연혁</a></li>
+                <li><a href="financial.html">재무현황</a></li>
+                <li><a href="organization.html">조직도</a></li>
+                <li><a href="certification.html">인증현황</a></li>
+                <li><a href="welfare.html">복리후생</a></li>
+                <li><a href="partners.html">협력사 및 고객사</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                >Products <b class="caret"></b
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="server.html">Server</a></li>
+                <li><a href="storage.html">Storage</a></li>
+                <li><a href="san.html">SAN Switch</a></li>
+                <li><a href="lto.html">LTO(PTL)</a></li>
+                <li><a href="worm.html">WORM Storage</a></li>
+                <!--<li><a href="software.html">Software</a></li>-->
+                <li><a href="veeam.html">Veeam백업</a></li>
+                <!-- <li><a href="saphana.html">SAP</a></li>-->
+              </ul>
+            </li>
 
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                >Technical Support<b class="caret"></b
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="maintenance.html">통합유지보수</a></li>
+                <li><a href="consulting.html">기술지원서비스(TA)</a></li>
+                <li><a href="support.html">기술지원서비스(H/W)</a></li>
+                <li><a href="system.html">Storage 복제서비스</a></li>
+                <li><a href="gpfs.html">공유파일시스템(GPFS)</a></li>
+                <li><a href="gklm.html">암호화솔루션(GKLM)</a></li>
+                <li><a href="rental.html">장비임대 및 이관</a></li>
+                <li><a href="sapse.html">SAP SE</a></li>
+              </ul>
+            </li>
 
- <table width="100%" border="0">
-  <tbody>
-    <tr>
-      <th scope="col">&nbsp;</th>
-    </tr>
-  </tbody>
-</table>
-   
-    <section class="inner-page">
-    <div class="container"><br>
-      <table width="200" border="0">
-          <tbody>
-          </tbody>
-        </table>
-        
-        <p>&nbsp;</p>
-		<a href="#intro"></a><h2 id="intro" style="color:black"><big class="navy2">Why? POWER10</big></h2>
-        <p>&nbsp;</p>
-        <h3 style="color:#002266;">Making secure, resilient, agile, hybrid multi-cloud  and AI workloads possible<br>
-<big class="black">AIX IBM i Linux
-<hr></big></h3>
-        <div class="wow fadeInUp" data-wow-delay="0.4s">
-      <h3 style="color:black"><b>비즈니스 요구사항에 더 빠르게 대응하고 코어에서 클라우드까지 데이터를 보호하며, 인사이트와 자동화를 간소화하고, 원활한 하이브리드 클라우드 환경으로 인프라와 애플리케이션을 현대화합니다. IBM Power서버는 조직에 필요한 민첩성, 안정성, 지속 가능성을 제공합니다.</b></h3>
-      <right></right>
-
-       
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                >Contact Us <b class="caret"></b
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="notice.html">공지사항</a></li>
+                <li><a href="qna.html">문의하기</a></li>
+                <li><a href="gallery.html">갤러리</a></li>
+                <li><a href="map.html">찾아오시는길</a></li>
+                <li><a href="recruit.html">채용공고</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
       </div>
-        <p>&nbsp;</p>
-      <h3 style="color:#002266;">IBM Power를 선택하는 이유<big class="black">
-      <hr></big></h3>
-      <div class="wow fadeInUp" data-wow-delay="0.4s">
+      <!-- /.container -->
+    </nav>
+
+    <!-- Section: intro -->
+
+    <!-- PAGE상단 배경으로 이미지 개별 적용 -->
+    <main id="main">
+      <div id="page-banner" style="background-image: url(img/top-2.jpg)">
+        <div
+          class="content wow fdeInUp"
+          style="visibility: visible; animation-name: fdeInUp"
+        ></div>
+      </div>
+
+      <table width="100%" border="0">
+        <tbody>
+          <tr>
+            <th scope="col">&nbsp;</th>
+          </tr>
+        </tbody>
+      </table>
+
+      <section class="inner-page">
         <div class="container">
-          <div class="row">
-            <div class="col-sm-6">
-              <p class="info1">&#62;&nbsp;안정성 - 99.999%</p>
-              <p>28개 수직 시장의 1,500개 기업을 대상으로 실시한 ITIC설문조사에서 IBM Power는 99.999% 이상의 가용성 등급을 받았습니다.</p>
-              <p><br>
+          <br />
+          <table width="200" border="0">
+            <tbody></tbody>
+          </table>
+
+          <p>&nbsp;</p>
+          <a href="#intro"></a>
+          <h2 id="intro" style="color: black">
+            <big class="navy2">Why? POWER10</big>
+          </h2>
+          <p>&nbsp;</p>
+          <h3 style="color: #002266">
+            Making secure, resilient, agile, hybrid multi-cloud and AI workloads
+            possible<br />
+            <big class="black"
+              >AIX IBM i Linux
+              <hr
+            /></big>
+          </h3>
+          <div class="wow fadeInUp" data-wow-delay="0.4s">
+            <h3 style="color: black">
+              <b
+                >비즈니스 요구사항에 더 빠르게 대응하고 코어에서 클라우드까지
+                데이터를 보호하며, 인사이트와 자동화를 간소화하고, 원활한
+                하이브리드 클라우드 환경으로 인프라와 애플리케이션을
+                현대화합니다. IBM Power서버는 조직에 필요한 민첩성, 안정성, 지속
+                가능성을 제공합니다.</b
+              >
+            </h3>
+            <right></right>
+          </div>
+          <p>&nbsp;</p>
+          <h3 style="color: #002266">
+            IBM Power를 선택하는 이유<big class="black"> <hr /></big>
+          </h3>
+          <div class="wow fadeInUp" data-wow-delay="0.4s">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-6">
+                  <p class="info1">&#62;&nbsp;안정성 - 99.999%</p>
+                  <p>
+                    28개 수직 시장의 1,500개 기업을 대상으로 실시한
+                    ITIC설문조사에서 IBM Power는 99.999% 이상의 가용성 등급을
+                    받았습니다.
+                  </p>
+                  <p><br /></p>
+                </div>
+                <br />
+                <div class="col-sm-6">
+                  <p class="info1">&#62;&nbsp;안정성 - 3.3분</p>
+                  설문조사에 따르면 IBM Power에서 보안문제로 인해 발생한 돌발
+                  운영 중단 시간은 3.3분 미만이었습니다.
+                  <p><br /></p>
+                </div>
+                <div class="col-sm-6">
+                  <p class="info1">&#62;&nbsp;지속가능성 - 20%</p>
+                  Mondi는 SAP S/4HANA의 최종사용자 애플리케이션 성능을
+                  20%강화하여 기후<br />
+                  목표를 달성하는 데 운영 효율성을 높였습니다.
+                  <p><br /></p>
+                </div>
+                <div class="col-sm-6">
+                  <p class="info1">&#62;&nbsp;AI지원 - 속도 5배 증가</p>
+                  Power E980과 비교해 소켓당 5배 빠른 AI추론을 통해 인사이트와
+                  자동화작업을 간소화합니다.
+                  <p><br /></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+
+          <h3 style="color: #002266">
+            IBM Power 서버 살펴보기<big class="black"> <hr /></big>
+          </h3>
+          <div class="usecase">
+            <input id="tab1" type="radio" name="tabs" checked />
+            <!--디폴트 메뉴-->
+            <label for="tab1">IBM Power<br />S1014</label>
+
+            <input id="tab2" type="radio" name="tabs" />
+            <label for="tab2">IBM Power<br />S1022</label>
+
+            <input id="tab3" type="radio" name="tabs" />
+            <label for="tab3">IBM Power<br />S1024</label>
+
+            <input id="tab4" type="radio" name="tabs" />
+            <label for="tab4">IBM Power<br />E1050</label>
+
+            <input id="tab5" type="radio" name="tabs" />
+            <label for="tab5">IBM Power<br />E1080</label>
+
+            <section4 id="content1">
+              <p>&#8226;&nbsp;IBM Power S1014</p>
+              <p>
+                &#8226;&nbsp;IBM Power S1014는 AIX®, IBM i 또는 Linux®에서
+                비즈니스에 중요한 워크로드를 처리하도록 설계된 1소켓 4U Power10
+                기반 서버입니다.
               </p>
-            </div>
-            <br>
-            <div class="col-sm-6">
-              <p class="info1">&#62;&nbsp;안정성 - 3.3분</p>
-설문조사에 따르면 IBM Power에서 보안문제로 인해 발생한 돌발 운영 중단 시간은 3.3분 미만이었습니다.
-              <p><br>
-            </p>
-            </div>
-            <div class="col-sm-6">
-              <p class="info1">&#62;&nbsp;지속가능성 - 20%</p>
-Mondi는 SAP S/4HANA의 최종사용자 애플리케이션 성능을 20%강화하여 기후<br>
-목표를 달성하는 데 운영 효율성을 높였습니다.
-              <p><br>
-            </p>
-            </div>
-            <div class="col-sm-6">
-              <p class="info1">&#62;&nbsp;AI지원 - 속도 5배 증가</p>
-Power E980과 비교해 소켓당 5배 빠른 AI추론을 통해 인사이트와 자동화작업을 간소화합니다.
-              <p><br>
-            </p>
-            </div>
-          </div>
-          </div>
-          </div>
+              <a
+                href="https://www.ibm.com/kr-ko/products/power-s1014"
+                target="_blank"
+              >
+                더 알아보기 &raquo;
+              </a>
+              <img src="img/s1014.jpg" width="608" height="341" alt="" />
+            </section4>
 
-        <p>&nbsp;</p>
-   <p>&nbsp;</p>
- 
-      <h3 style="color:#002266;">IBM Power 서버 살펴보기<big class="black">
-      <hr></big></h3>
-      <div class="usecase">
-        <input id="tab1" type="radio" name="tabs" checked> <!--디폴트 메뉴-->
-        <label for="tab1">IBM Power<br>S1014</label>
-    
-        <input id="tab2" type="radio" name="tabs">
-        <label for="tab2">IBM Power<br>S1022</label>
-    
-        <input id="tab3" type="radio" name="tabs">
-        <label for="tab3">IBM Power<br>S1024</label>
-    
-        <input id="tab4" type="radio" name="tabs">
-        <label for="tab4">IBM Power<br>E1050</label>
-		  
-        <input id="tab5" type="radio" name="tabs">
-        <label for="tab5">IBM Power<br>E1080</label>		  
-    
-        <section4 id="content1">
-          <p>&#8226;&nbsp;IBM Power S1014</p>
-          <p>&#8226;&nbsp;IBM Power S1014는 AIX®, IBM i 또는 Linux®에서 비즈니스에 중요한 워크로드를 처리하도록 설계된 1소켓 4U Power10 기반 서버입니다.</p>
-			<a href="https://www.ibm.com/kr-ko/products/power-s1014" target="_blank"> 더 알아보기 &raquo; </a>
-		  <img src="img/s1014.jpg" width="608" height="341" alt=""/> </section4>
-		  
-        <section4 id="content2">
-          <p>&#8226;&nbsp;IBM Power S1022</p>
-          <p>&#8226;&nbsp;IBM Power S1022는 Power9 기반 서버에 비해 코어를 2배 이상 증강한 2소켓 2U 서버로, 더 적은 수의 서버로도 워크로드를 통합하여 소프트웨어 라이선스, 전기, 냉각 비용을 절감합니다.</p>
-			<a href="https://www.ibm.com/kr-ko/products/power-s1022" target="_blank"> 더 알아보기 &raquo; </a>
-		  <img src="img/s1022.jpg" width="608" height="341" alt=""/> </section4>
-    
-        <section4 id="content3">
-          <p>&#8226;&nbsp;IBM Power S1024 </p>
-          <p>&#8226;&nbsp;IBM Power S1024는 2소켓 4U Power10 기반 서버로, 필요한 부분에 대해서만 비용을 지불하고 여러 시스템 간에 리소스를 공유합니다. 프로세서의 메모리 암호화를 통해 데이터를 완벽하게 보호하고, 업계 최고의 안정성과 가용성으로 다운타임을 최소화합니다. </p>
-		   <a href="https://www.ibm.com/kr-ko/products/power-s1024" target="_blank"> 더 알아보기 &raquo; </a>
-	      <img src="img/s1024.jpg" width="608" height="341" alt=""/> </section4>
-    
-        <section4 id="content4">
-          <p>&#8226;&nbsp;IBM Power E1050 </p>
-		  <p>&#8226;&nbsp;데이터 집약적인 애플리케이션과 하이브리드 클라우드 구축에 최적화된 고성능 4소켓 랙 서버입니다. </p>
-		   <a href="https://www.ibm.com/kr-ko/products/power-e1050" target="_blank"> 더 알아보기 &raquo; </a>
-		  <img src="img/e1050.jpg" width="608" height="341" alt=""/> </section4>
-        
-	    <section4 id="content5">
-          <p>&#8226;&nbsp;IBM Power E1080</p>
-          <p>&#8226;&nbsp;민첩성을 탑재한 IBM Power E1080은 하이브리드 클라우드 전반에 코어 운영 워크로드 및 AI 애플리케이션을 안전하고 효율적으로 확장하도록 설계되었습니다.</p>
-			<a href="https://www.ibm.com/kr-ko/products/power-e1080" target="_blank"> 더 알아보기 &raquo; </a>
-	    <img src="img/e1080.jpg" width="608" height="341" alt=""/> </section4>		  
-    
-    </div>
-      <div class="row">
-        <div class="wow fadeInUp" data-wow-delay="0.4s"></div>
-      <div class="wow fadeInUp" data-wow-delay="0.4s"></div>
-        <div class="wow fadeInUp" data-wow-delay="0.4s"></div>
-      <div class="wow fadeInUp" data-wow-delay="0.4s"></div>
-      </div>
-         <p>&nbsp;</p>
-         <div class="wow fadeInUp" data-wow-delay="0.4s"></div>
-        
+            <section4 id="content2">
+              <p>&#8226;&nbsp;IBM Power S1022</p>
+              <p>
+                &#8226;&nbsp;IBM Power S1022는 Power9 기반 서버에 비해 코어를
+                2배 이상 증강한 2소켓 2U 서버로, 더 적은 수의 서버로도
+                워크로드를 통합하여 소프트웨어 라이선스, 전기, 냉각 비용을
+                절감합니다.
+              </p>
+              <a
+                href="https://www.ibm.com/kr-ko/products/power-s1022"
+                target="_blank"
+              >
+                더 알아보기 &raquo;
+              </a>
+              <img src="img/s1022.jpg" width="608" height="341" alt="" />
+            </section4>
+
+            <section4 id="content3">
+              <p>&#8226;&nbsp;IBM Power S1024</p>
+              <p>
+                &#8226;&nbsp;IBM Power S1024는 2소켓 4U Power10 기반 서버로,
+                필요한 부분에 대해서만 비용을 지불하고 여러 시스템 간에 리소스를
+                공유합니다. 프로세서의 메모리 암호화를 통해 데이터를 완벽하게
+                보호하고, 업계 최고의 안정성과 가용성으로 다운타임을
+                최소화합니다.
+              </p>
+              <a
+                href="https://www.ibm.com/kr-ko/products/power-s1024"
+                target="_blank"
+              >
+                더 알아보기 &raquo;
+              </a>
+              <img src="img/s1024.jpg" width="608" height="341" alt="" />
+            </section4>
+
+            <section4 id="content4">
+              <p>&#8226;&nbsp;IBM Power E1050</p>
+              <p>
+                &#8226;&nbsp;데이터 집약적인 애플리케이션과 하이브리드 클라우드
+                구축에 최적화된 고성능 4소켓 랙 서버입니다.
+              </p>
+              <a
+                href="https://www.ibm.com/kr-ko/products/power-e1050"
+                target="_blank"
+              >
+                더 알아보기 &raquo;
+              </a>
+              <img src="img/e1050.jpg" width="608" height="341" alt="" />
+            </section4>
+
+            <section4 id="content5">
+              <p>&#8226;&nbsp;IBM Power E1080</p>
+              <p>
+                &#8226;&nbsp;민첩성을 탑재한 IBM Power E1080은 하이브리드
+                클라우드 전반에 코어 운영 워크로드 및 AI 애플리케이션을 안전하고
+                효율적으로 확장하도록 설계되었습니다.
+              </p>
+              <a
+                href="https://www.ibm.com/kr-ko/products/power-e1080"
+                target="_blank"
+              >
+                더 알아보기 &raquo;
+              </a>
+              <img src="img/e1080.jpg" width="608" height="341" alt="" />
+            </section4>
+          </div>
+          <div class="row">
+            <div class="wow fadeInUp" data-wow-delay="0.4s"></div>
+            <div class="wow fadeInUp" data-wow-delay="0.4s"></div>
+            <div class="wow fadeInUp" data-wow-delay="0.4s"></div>
+            <div class="wow fadeInUp" data-wow-delay="0.4s"></div>
+          </div>
+          <p>&nbsp;</p>
+          <div class="wow fadeInUp" data-wow-delay="0.4s"></div>
+
           <map name="Map">
-            <area shape="rect" coords="641,82,722,113" href="qna.html">
-      </map>
-        <br>
-    </div>
+            <area shape="rect" coords="641,82,722,113" href="qna.html" />
+          </map>
+          <br />
+        </div>
+      </section>
+    </main>
+    <!-- End #main -->
 
-</section>
-  </main>
-  <!-- End #main -->
-
-
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 col-lg-12">
-          <div class="wow shake" data-wow-delay="0.4s">
-            <div class="page-scroll marginbot-30">
-              <a href="#intro" id="totop" class="btn btn-circle">
-							<i class="fa fa-angle-double-up fa-sm animated"></i>
-						</a>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-12">
+            <div class="wow shake" data-wow-delay="0.4s">
+              <div class="page-scroll marginbot-30">
+                <a href="#intro" id="totop" class="btn btn-circle">
+                  <i class="fa fa-angle-double-up fa-sm animated"></i>
+                </a>
+              </div>
             </div>
-          </div>
-          <p><img src="img/bt_logo_appez.png" width="150" height="50" alt="logo"></p>
-            <p><span class="credits">2023 &copy; AppEZ. All rights reserved.</span>          </p>
+            <p>
+              <img
+                src="img/bt_logo_appez.png"
+                width="150"
+                height="50"
+                alt="logo"
+              />
+            </p>
+            <p>
+              <span class="credits"
+                >2023 &copy; AppEZ. All rights reserved.</span
+              >
+            </p>
           </div>
           <div class="credits">
-            <p>주   소 : 서울특별시 강서구 양천로 583, B동 907호(염창동, 우림블루나인) Tel:02-2135-5030, Fax:02-2135-5040<br>
+            <p>
+              주 소 : 서울특별시 강서구 양천로 583, B동 907호(염창동,
+              우림블루나인) Tel:02-2135-5030, Fax:02-2135-5040<br />
             </p>
           </div>
         </div>
       </div>
-  </footer>
+    </footer>
 
-  <!-- Core JavaScript Files -->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.min.js"></script>
-  <script src="js/jquery.scrollTo.js"></script>
-  <script src="js/wow.min.js"></script>
-  <!-- Custom Theme JavaScript -->
-  <script src="js/custom.js"></script>
-  <script src="contactform/contactform.js"></script>
-
-</body>
-
+    <!-- Core JavaScript Files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.scrollTo.js"></script>
+    <script src="js/wow.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/custom.js"></script>
+    <script src="contactform/contactform.js"></script>
+  </body>
 </html>
