@@ -7,9 +7,24 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta name="description" content="" />
     <meta name="author" content="" />
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
     <title>주식회사 앱이지- 컨설팅 및 서비스</title>
+    <title>주식회사 앱이지- 컨설팅 및 서비스</title>
 
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- -- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <!-- -- fontawesome -->
@@ -38,7 +53,53 @@
     <link href="css/style.css" rel="stylesheet" />
     <link href="color/default.css" rel="stylesheet" />
   </head>
+    <!-- Fonts -->
+    <link
+      href="font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="css/animate.css" rel="stylesheet" />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="/img/icons/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="/img/icons/favicon.ico" type="image/x-icon" />
+    <!-- Squad theme CSS -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="color/default.css" rel="stylesheet" />
+  </head>
 
+  <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+    <!-- Preloader -->
+    <div id="preloader">
+      <div id="load"></div>
+    </div>
+
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header page-scroll">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target=".navbar-main-collapse"
+          >
+            <i class="fa fa-bars"></i>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <h1>
+              <img
+                src="img/top_appez_logo.png"
+                width="150"
+                height="43"
+                alt="logo"
+              />
+            </h1>
+          </a>
+        </div>
   <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
     <!-- Preloader -->
     <div id="preloader">
@@ -117,7 +178,37 @@
                 <li><a href="sapse.html">SAP SE</a></li>
               </ul>
             </li>
+            <<<<<<< HEAD =======
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                >Partners<b class="caret"></b
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="partners.html">협력사</a></li>
+                <li><a href="customer.html">고객사</a></li>
+              </ul>
+            </li>
+            >>>>>>> 7733ac99f3bb5f8e00df5729ed8a9bce6f42187d
 
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                >Contact Us <b class="caret"></b
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="notice.html">공지사항</a></li>
+                <li><a href="qna.html">문의하기</a></li>
+                <li><a href="gallery.html">갤러리</a></li>
+                <li><a href="map.html">찾아오시는길</a></li>
+                <li><a href="recruit.html">채용공고</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+    </nav>
+    <!-- Section: intro -->
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"
                 >Contact Us <b class="caret"></b
@@ -146,7 +237,47 @@
           style="visibility: visible; animation-name: fdeInUp"
         ></div>
       </div>
+    <!-- PAGE상단 배경으로 이미지 개별 적용 -->
+    <main id="main">
+      <div id="page-banner" style="background-image: url(img/top-3.jpg)">
+        <div
+          class="content wow fdeInUp"
+          style="visibility: visible; animation-name: fdeInUp"
+        ></div>
+      </div>
 
+      <section class="inner-page">
+        <div class="container">
+          <table width="200" border="0">
+            <tbody></tbody>
+          </table>
+          <p>&nbsp;</p>
+          <a href="#intro"></a>
+          <h2 id="intro" style="color: black">
+            <big class="navy2">IT Consulting</big>
+          </h2>
+          <p>
+            다양한 산업군의 고객사 정보시스템 컨설팅 및 시스템 구축/관리
+            Know-how를 바탕으로, 시스템 통합 정보시스템 운영 및 유지보수
+            IT컨설팅 서비스 등을 포함하는 IT아웃소싱 사업과 솔루션 공급 등 종합
+            서비스를 제공하고 있습니다.
+          </p>
+          <p>&nbsp;</p>
+          <div class="usecase">
+            <input id="tab1" type="radio" name="tabs" checked />
+            <!--디폴트 메뉴-->
+            <label for="tab1">IT컬설팅</label>
+            <section4 id="content1">
+              <p>
+                &#8226;&nbsp;공공, 금융, 제조, 서비스 등 산업 영역별 비즈니스
+                프로세스에 기반한 고객 밀착형 IT 서비스 제공
+              </p>
+            </section4>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- End #main -->
       <section class="inner-page">
         <div class="container">
           <table width="200" border="0">
@@ -204,17 +335,51 @@
                 >2023 &copy; AppEZ. All rights reserved.</span
               >
             </p>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-12">
+            <div class="wow shake" data-wow-delay="0.4s">
+              <div class="page-scroll marginbot-30">
+                <a href="#intro" id="totop" class="btn btn-circle">
+                  <i class="fa fa-angle-double-up fa-sm animated"></i>
+                </a>
+              </div>
+            </div>
+            <p>
+              <img
+                src="img/bt_logo_appez.png"
+                width="150"
+                height="50"
+                alt="logo"
+              />
+            </p>
+            <p>
+              <span class="credits"
+                >2023 &copy; AppEZ. All rights reserved.</span
+              >
+            </p>
           </div>
           <div class="credits">
-            <p>
-              주 소 : 서울특별시 강서구 양천로 583, B동 907호(염창동,
-              우림블루나인) Tel:02-2135-5030, Fax:02-2135-5040<br />
+            <p>주   소 : 서울특별시 강서구 양천로 583, B동 907호(염창동, 우림블루나인) Tel:02-2135-5030, Fax:02-2135-5040<br>
             </p>
+            <p>Tel : 02-2135-5030</p>
+            <p>Fax : 02-2135-5040</p>
           </div>
         </div>
       </div>
-    </footer>
+      </footer>
 
+    <!-- Core JavaScript Files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.scrollTo.js"></script>
+    <script src="js/wow.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/custom.js"></script>
+    <script src="contactform/contactform.js"></script>
+  </body>
     <!-- Core JavaScript Files -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
