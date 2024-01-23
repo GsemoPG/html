@@ -1,286 +1,360 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <title>주식회사 앱이지- veeam백업</title>
 
-  <title>주식회사 앱이지- veeam백업 </title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- -- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
 
-  <!-- Bootstrap Core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-  <!-- -- fontawesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- Fonts -->
+    <link
+      href="font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="css/animate.css" rel="stylesheet" />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="/img/icons/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="/img/icons/favicon.ico" type="image/x-icon" />
+    <!-- Squad theme CSS -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="color/default.css" rel="stylesheet" />
+  </head>
 
-  <!-- Fonts -->
-  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <link href="css/animate.css" rel="stylesheet" />
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="/img/icons/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/img/icons/favicon.ico" type="image/x-icon">
-  <!-- Squad theme CSS -->
-  <link href="css/style.css" rel="stylesheet">
-  <link href="color/default.css" rel="stylesheet">
-
-</head>
-
-<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
-  <!-- Preloader -->
-  <div id="preloader">
-    <div id="load"></div>
-  </div>
-  
-  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-    <div class="container">
-      <div class="navbar-header page-scroll">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-        <a class="navbar-brand" href="index.html">
-          <h1><img src="img/top_appez_logo.png" width="150" height="43" alt="logo"></h1>
-        </a>
-      </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="index.html">Home</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="company_info.html">회사개요</a></li>
-			  <li><a href="history.html">연혁</a></li>
-              <li><a href="financial.html">재무현황</a></li>
-			  <li><a href="organization.html">조직도</a></li>
-              <li><a href="certification.html">인증현황</a></li>
-			  <li><a href="welfare.html">복리후생</a></li>
-			
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="server.html">Server</a></li>
-              <li><a href="storage.html">Storage</a></li>
-			  <li><a href="san.html">SAN Switch</a></li>
-			  <li><a href="lto.html">LTO(PTL)</a></li>
-			  <li><a href="worm.html">WORM Storage</a></li>	
-              <!--<li><a href="software.html">Software</a></li>-->
-			  <li><a href="veeam.html">Veeam백업</a></li>
-			 <!-- <li><a href="saphana.html">SAP</a></li>-->
-			  
-            </ul>
-          </li>
-
-           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Technical Support<b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="maintenance.html">통합유지보수</a></li>
-  			  <li><a href="consulting.html">기술지원서비스(TA)</a></li>                                                       
-			  <li><a href="support.html">기술지원서비스(H/W)</a></li>  
-			  <li><a href="system.html">Storage 복제서비스</a></li>
-			  <li><a href="gpfs.html">공유파일시스템(GPFS)</a></li>	
-			  <li><a href="gklm.html">암호화솔루션(GKLM)</a></li>	
-			  <li><a href="rental.html">장비임대 및 이관</a></li>                                                       
-              <li><a href="sapse.html">SAP SE</a></li>                                                       				
-			  
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Partners<b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="partners.html">협력사</a></li>                                                       
-              <li><a href="customer.html">고객사</a></li>                                                       				
-            </ul>
-          </li>   
-
-           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact Us <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="notice.html">공지사항</a></li>
-              <li><a href="qna.html">문의하기</a></li>
-			  <li><a href="gallery.html">갤러리</a></li>	
-              <li><a href="map.html">찾아오시는길</a></li>
-              <li><a href="recruit.html">채용공고</a></li>                                   
-            </ul>
-          </li>
-              
-        </ul>
-      </div>
-      <!-- /.navbar-collapse -->
+  <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+    <!-- Preloader -->
+    <div id="preloader">
+      <div id="load"></div>
     </div>
-    <!-- /.container -->
-  </nav>
 
-  <!-- Section: intro -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header page-scroll">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target=".navbar-main-collapse"
+          >
+            <i class="fa fa-bars"></i>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <h1>
+              <img
+                src="img/top_appez_logo.png"
+                width="150"
+                height="43"
+                alt="logo"
+              />
+            </h1>
+          </a>
+        </div>
 
-<!-- PAGE상단 배경으로 이미지 개별 적용 -->
- <main id="main">
- <div id="page-banner" style="background-image: url(img/top-2.jpg);">
-   <div class="content wow fdeInUp" style="visibility: visible; animation-name: fdeInUp;">
-   </div>
- </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                >About Us <b class="caret"></b
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="company_info.html">회사개요</a></li>
+                <li><a href="history.html">연혁</a></li>
+                <li><a href="financial.html">재무현황</a></li>
+                <li><a href="organization.html">조직도</a></li>
+                <li><a href="certification.html">인증현황</a></li>
+                <li><a href="welfare.html">복리후생</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                >Products <b class="caret"></b
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="server.html">Server</a></li>
+                <li><a href="storage.html">Storage</a></li>
+                <li><a href="san.html">SAN Switch</a></li>
+                <li><a href="lto.html">LTO(PTL)</a></li>
+                <li><a href="worm.html">WORM Storage</a></li>
+                <!--<li><a href="software.html">Software</a></li>-->
+                <li><a href="veeam.html">Veeam백업</a></li>
+                <!-- <li><a href="saphana.html">SAP</a></li>-->
+              </ul>
+            </li>
 
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                >Technical Support<b class="caret"></b
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="maintenance.html">통합유지보수</a></li>
+                <li><a href="consulting.html">기술지원서비스(TA)</a></li>
+                <li><a href="support.html">기술지원서비스(H/W)</a></li>
+                <li><a href="system.html">Storage 복제서비스</a></li>
+                <li><a href="gpfs.html">공유파일시스템(GPFS)</a></li>
+                <li><a href="gklm.html">암호화솔루션(GKLM)</a></li>
+                <li><a href="rental.html">장비임대 및 이관</a></li>
+                <li><a href="sapse.html">SAP SE</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                >Partners<b class="caret"></b
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="partners.html">협력사</a></li>
+                <li><a href="customer.html">고객사</a></li>
+              </ul>
+            </li>
 
- <table width="100%" border="0">
-  <tbody>
-    <tr>
-      <th scope="col">&nbsp;</th>
-    </tr>
-  </tbody>
-</table>
-   
-    <section class="inner-page">
-    <div class="container"><br>
-      <table width="200" border="0">
-          <tbody>
-          </tbody>
-        </table>
-        
-        <p>&nbsp;</p>
-		<a href="#intro"></a><h2 id="intro" style="color:black"><big class="navy2">Veeam백업</big></h2>
-        <p>&nbsp;</p>
-        <h3 style="color:#002266;">단일 통합 데이터 관리 플랫폼<big class="black">
-      <hr></big></h3>
-        <div class="wow fadeInUp" data-wow-delay="0.1s">
-      <h3 style="color:black">글로벌 시장 점유율 1위</h3>
-      <b>2022년 하반기 Veeam은 백업 시장 점유율 1위 달성 기업</b>
-      <p>&nbsp;</p>
-        <p>전세게 시장 점유율 No.1 쿠버네티스 백업</p>
-        <p>&nbsp;</p>
-		<p><b>1. 하이브리드 클라우드 데이터 보호 및 재해복구</b></p>
-		<p><b>2. 물리서버 OS 이미지 백업 및 마이그레이션</b></p>
-		<p><b>3. 초고속 NAS백업 </b></p>
-		<p><b>4. 변경 불가한 데이터 장기보관</b></p>
-		<p><b>5.쿠버네티스 백업 </b></p>
-		<p><b>6. Microsoft 365 백업</b></p>
-		<right></right>
-
-       
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                >Contact Us <b class="caret"></b
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="notice.html">공지사항</a></li>
+                <li><a href="qna.html">문의하기</a></li>
+                <li><a href="gallery.html">갤러리</a></li>
+                <li><a href="map.html">찾아오시는길</a></li>
+                <li><a href="recruit.html">채용공고</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
       </div>
-        <p>&nbsp;</p>
-      <h3 style="color:#002266;">Why? Veeam<big class="black">&nbsp;
-<hr></big></h3>
-      <div class="wow fadeInUp" data-wow-delay="0.3s">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6">
-              <p class="info1">1.&nbsp;하이브리드 클라우드 데이터 보호 및 재해복구</p><br>
-              <p class="info1">- 다양한 하이퍼바이저 Agengless백업              </p>
-              <p class="info1">- 즉시복구(Instance Recovery)</p>
-              <p class="info1">- 손쉬운 DB복구</p>
-              <p class="info1">- 이기종 플랫폼 마이그레이션</p>
-              <br>
-            </div>
-            <div class="col-sm-6">
-              <p class="info1">2. 물리 서버 OS이미지 백업 및 마이그레이션</p><br>
-              <p class="info1">-&nbsp;OS + DB백업</p>
-              <p class="info1">-&nbsp;Instance Recovery</p>
-              <p class="info1">- P2P, P2V, P2C, V2P, C2P</p>
-              <br>
-            </div>
-          </div>
-          </div>
-          </div>
-      <div class="wow fadeInUp" data-wow-delay="0.6s">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6">
-              <p class="info1">3.&nbsp;초고속 NAS백업</p>
-              <br>
-              <p class="info1">- 스캔 타임을 없앤 초고속 백업(2백2십만 파일 17분 전체 백업)</p>
-              <p class="info1">- Forever 증분백업</p>
-            </div>
-            <div class="col-sm-6">
-              <p class="info1">4. 변경 불가한(Immutable)데이터 장기 보관</p>
-              <br>
-              <p class="info1">-&nbsp;랜섬웨어로부터 완벽 데이터 보호</p>
-              <p class="info1">-&nbsp;Retention Lock</p>
-              <p class="info1">&nbsp;</p>
-            </div>
-          </div>
-          </div>
-          </div>
-      <div class="wow fadeInUp" data-wow-delay="0.9s">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6">
-              <p class="info1">5.&nbsp;쿠버네티스 백업 (전세게 시장점유율 1위)</p>
-              <br>
-              <p class="info1">- 컨테이너 환경의 백업과 재해복구 관리</p>
-              <p class="info1">- Veeam Kasten, 최고의 쿠버네티스 전용백업 솔루션</p>
-              <p class="info1">- 최다 레퍼런스 보유(레드햇 오픈시프트, 매텍 아코디언, VMware탄주, 디아만티, 나무기술 칵테일, 티맥스 하이퍼클라우드,수세랜처, 뉴타닉스 카본, HPE 에즈메탈,,,)</p>
-              <p class="info1">- Agentless, Pods탑재 불필요</p>
-              <br>
-            </div>
-            <div class="col-sm-6">
-              <p class="info1">6. Microsoft 365백업</p>
-              <br>
-              <p class="info1">-&nbsp;M365 최적 백업 솔루션</p>
-              <p class="info1">-&nbsp;M365 자체 기능만으로 계획된 악의적 데이터 삭제와 파손에 <br>
-              충분할수 없음.</p>
-              <p class="info1">- 최적 M365 백업 솔루션은 Veeam Backup for M365</p>
-              <br>
-            </div>
-          </div>
-          </div>
-          </div>
-        <p>&nbsp;</p>
-      <div class="row">
-        <div class="wow fadeInUp" data-wow-delay="0.4s"></div>
-      <div class="wow fadeInUp" data-wow-delay="0.4s"></div>
-        <div class="wow fadeInUp" data-wow-delay="0.4s"></div>
-      <div class="wow fadeInUp" data-wow-delay="0.4s"></div>
+      <!-- /.container -->
+    </nav>
+
+    <!-- Section: intro -->
+
+    <!-- PAGE상단 배경으로 이미지 개별 적용 -->
+    <main id="main">
+      <div id="page-banner" style="background-image: url(img/top-2.jpg)">
+        <div
+          class="content wow fdeInUp"
+          style="visibility: visible; animation-name: fdeInUp"
+        ></div>
       </div>
-      <div class="wow fadeInUp" data-wow-delay="0.4s">
-         <img src="img/intro_1.jpg" alt="" width="90%" height="89" style="width: 100%; height: auto;"/>
-         </div>
-        
+
+      <table width="100%" border="0">
+        <tbody>
+          <tr>
+            <th scope="col">&nbsp;</th>
+          </tr>
+        </tbody>
+      </table>
+
+      <section class="inner-page">
+        <div class="container">
+          <br />
+          <table width="200" border="0">
+            <tbody></tbody>
+          </table>
+
+          <p>&nbsp;</p>
+          <a href="#intro"></a>
+          <h2 id="intro" style="color: black">
+            <big class="navy2">Veeam백업</big>
+          </h2>
+          <p>&nbsp;</p>
+          <h3 style="color: #002266">
+            단일 통합 데이터 관리 플랫폼<big class="black"> <hr /></big>
+          </h3>
+          <div class="wow fadeInUp" data-wow-delay="0.1s">
+            <h3 style="color: black">글로벌 시장 점유율 1위</h3>
+            <b>2022년 하반기 Veeam은 백업 시장 점유율 1위 달성 기업</b>
+            <p>&nbsp;</p>
+            <p>전세게 시장 점유율 No.1 쿠버네티스 백업</p>
+            <p>&nbsp;</p>
+            <p><b>1. 하이브리드 클라우드 데이터 보호 및 재해복구</b></p>
+            <p><b>2. 물리서버 OS 이미지 백업 및 마이그레이션</b></p>
+            <p><b>3. 초고속 NAS백업 </b></p>
+            <p><b>4. 변경 불가한 데이터 장기보관</b></p>
+            <p><b>5.쿠버네티스 백업 </b></p>
+            <p><b>6. Microsoft 365 백업</b></p>
+            <right></right>
+          </div>
+          <p>&nbsp;</p>
+          <h3 style="color: #002266">
+            Why? Veeam<big class="black"
+              >&nbsp;
+              <hr
+            /></big>
+          </h3>
+          <div class="wow fadeInUp" data-wow-delay="0.3s">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-6">
+                  <p class="info1">
+                    1.&nbsp;하이브리드 클라우드 데이터 보호 및 재해복구
+                  </p>
+                  <br />
+                  <p class="info1">- 다양한 하이퍼바이저 Agengless백업</p>
+                  <p class="info1">- 즉시복구(Instance Recovery)</p>
+                  <p class="info1">- 손쉬운 DB복구</p>
+                  <p class="info1">- 이기종 플랫폼 마이그레이션</p>
+                  <br />
+                </div>
+                <div class="col-sm-6">
+                  <p class="info1">
+                    2. 물리 서버 OS이미지 백업 및 마이그레이션
+                  </p>
+                  <br />
+                  <p class="info1">-&nbsp;OS + DB백업</p>
+                  <p class="info1">-&nbsp;Instance Recovery</p>
+                  <p class="info1">- P2P, P2V, P2C, V2P, C2P</p>
+                  <br />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wow fadeInUp" data-wow-delay="0.6s">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-6">
+                  <p class="info1">3.&nbsp;초고속 NAS백업</p>
+                  <br />
+                  <p class="info1">
+                    - 스캔 타임을 없앤 초고속 백업(2백2십만 파일 17분 전체 백업)
+                  </p>
+                  <p class="info1">- Forever 증분백업</p>
+                </div>
+                <div class="col-sm-6">
+                  <p class="info1">4. 변경 불가한(Immutable)데이터 장기 보관</p>
+                  <br />
+                  <p class="info1">-&nbsp;랜섬웨어로부터 완벽 데이터 보호</p>
+                  <p class="info1">-&nbsp;Retention Lock</p>
+                  <p class="info1">&nbsp;</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wow fadeInUp" data-wow-delay="0.9s">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-6">
+                  <p class="info1">
+                    5.&nbsp;쿠버네티스 백업 (전세게 시장점유율 1위)
+                  </p>
+                  <br />
+                  <p class="info1">- 컨테이너 환경의 백업과 재해복구 관리</p>
+                  <p class="info1">
+                    - Veeam Kasten, 최고의 쿠버네티스 전용백업 솔루션
+                  </p>
+                  <p class="info1">
+                    - 최다 레퍼런스 보유(레드햇 오픈시프트, 매텍 아코디언,
+                    VMware탄주, 디아만티, 나무기술 칵테일, 티맥스
+                    하이퍼클라우드,수세랜처, 뉴타닉스 카본, HPE 에즈메탈,,,)
+                  </p>
+                  <p class="info1">- Agentless, Pods탑재 불필요</p>
+                  <br />
+                </div>
+                <div class="col-sm-6">
+                  <p class="info1">6. Microsoft 365백업</p>
+                  <br />
+                  <p class="info1">-&nbsp;M365 최적 백업 솔루션</p>
+                  <p class="info1">
+                    -&nbsp;M365 자체 기능만으로 계획된 악의적 데이터 삭제와
+                    파손에 <br />
+                    충분할수 없음.
+                  </p>
+                  <p class="info1">
+                    - 최적 M365 백업 솔루션은 Veeam Backup for M365
+                  </p>
+                  <br />
+                </div>
+              </div>
+            </div>
+          </div>
+          <p>&nbsp;</p>
+          <div class="row">
+            <div class="wow fadeInUp" data-wow-delay="0.4s"></div>
+            <div class="wow fadeInUp" data-wow-delay="0.4s"></div>
+            <div class="wow fadeInUp" data-wow-delay="0.4s"></div>
+            <div class="wow fadeInUp" data-wow-delay="0.4s"></div>
+          </div>
+          <div class="wow fadeInUp" data-wow-delay="0.4s">
+            <img
+              src="img/intro_1.jpg"
+              alt=""
+              width="90%"
+              height="89"
+              style="width: 100%; height: auto"
+            />
+          </div>
+
           <map name="Map">
-            <area shape="rect" coords="641,82,722,113" href="qna.html">
-      </map>
-        <br>
-    </div>
+            <area shape="rect" coords="641,82,722,113" href="qna.html" />
+          </map>
+          <br />
+        </div>
+      </section>
+    </main>
+    <!-- End #main -->
 
-</section>
-  </main>
-  <!-- End #main -->
-
-
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 col-lg-12">
-          <div class="wow shake" data-wow-delay="0.4s">
-            <div class="page-scroll marginbot-30">
-              <a href="#intro" id="totop" class="btn btn-circle">
-							<i class="fa fa-angle-double-up fa-sm animated"></i>
-						</a>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-12">
+            <div class="wow shake" data-wow-delay="0.4s">
+              <div class="page-scroll marginbot-30">
+                <a href="#intro" id="totop" class="btn btn-circle">
+                  <i class="fa fa-angle-double-up fa-sm animated"></i>
+                </a>
+              </div>
             </div>
-          </div>
-          <p><img src="img/bt_logo_appez.png" width="150" height="50" alt="logo"></p>
-            <p><span class="credits">2023 &copy; AppEZ. All rights reserved.</span>          </p>
+            <p>
+              <img
+                src="img/bt_logo_appez.png"
+                width="150"
+                height="50"
+                alt="logo"
+              />
+            </p>
+            <p>
+              <span class="credits"
+                >2023 &copy; AppEZ. All rights reserved.</span
+              >
+            </p>
           </div>
           <div class="credits">
-            <p>주   소 : 서울특별시 강서구 양천로 583, B동 907호(염창동, 우림블루나인) Tel:02-2135-5030, Fax:02-2135-5040<br>
+            <p>
+              주 소 : 서울특별시 강서구 양천로 583, B동 907호(염창동,
+              우림블루나인)
             </p>
+            <p>Tel : 02-2135-5030</p>
+            <p>Fax : 02-2135-5040</p>
           </div>
         </div>
       </div>
-  </footer>
+    </footer>
 
-  <!-- Core JavaScript Files -->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.min.js"></script>
-  <script src="js/jquery.scrollTo.js"></script>
-  <script src="js/wow.min.js"></script>
-  <!-- Custom Theme JavaScript -->
-  <script src="js/custom.js"></script>
-  <script src="contactform/contactform.js"></script>
-
-</body>
-
+    <!-- Core JavaScript Files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.scrollTo.js"></script>
+    <script src="js/wow.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/custom.js"></script>
+    <script src="contactform/contactform.js"></script>
+  </body>
 </html>
