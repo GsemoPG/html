@@ -57,9 +57,7 @@ a:focus {
 
 .navbar {a
     margin-bottom: 0;
-    border-bottom: 1px solid rgba(255,255,255,.3);
-
-}
+    border-bottom: 1px solid rgba(255,255,255,.3);}
 
 .navbar-brand {
     font-weight: 700;
@@ -1853,7 +1851,7 @@ table.type02 .even {
         padding-left: 20px;
     }
 }
-  .history h2 {position: relative; font-size: 33px color: #000; line-height: 1;}
+  .history h2 {position: relative; font-size: 33px color: #000000; line-height: 1 ;}
   .history h2:before {
     content:""; position: absolute;
     left:-48px; top:50%; transform: translateY(-50%);
