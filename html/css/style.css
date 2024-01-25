@@ -929,28 +929,28 @@ Parallax
 }
 
 .page-scroll .btn-circle i.animated {
-    -webkit-transition-property: -webkit-transform;
-    -webkit-transition-duration: 1s;
-    -moz-transition-property: -moz-transform;
-    -moz-transition-duration: 1s;
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: 1s;
+  -moz-transition-property: -moz-transform;
+  -moz-transition-duration: 1s;
 }
 
 .page-scroll .btn-circle:hover i.animated {
-    -webkit-animation-name: pulse;
-    -moz-animation-name: pulse;
-    -webkit-animation-duration: 1.5s;
-    -moz-animation-duration: 1.5s;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-timing-function: linear;
+  -webkit-animation-name: pulse;
+  -moz-animation-name: pulse;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
 }
 
 @-webkit-keyframes pulse {
-    0 {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 
   50% {
     -webkit-transform: scale(1.2);
@@ -1448,62 +1448,62 @@ table.type02 .even {
   }
 }
 
-  .intro .slideshow,
-  .intro .slideshow:after {
-      z-index: 0;
-  }
-  .intro .slideshow:after {
-      content: '';
-      background: transparent url(../images/pattern.png) repeat top left;
-  }
-  .intro .slideshow li span {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0px;
-      left: 0px;
-      color: transparent;
-      background-size: cover;
-      background-position: 50% 50%;
-      background-repeat: none;
-      opacity: 0;
-      z-index: 0;
-      -webkit-backface-visibility: hidden;
-      -webkit-animation: imageAnimation 36s linear infinite 0s;
-      -moz-animation: imageAnimation 36s linear infinite 0s;
-      -o-animation: imageAnimation 36s linear infinite 0s;
-      -ms-animation: imageAnimation 36s linear infinite 0s;
-      animation: imageAnimation 36s linear infinite 0s;
-  }
-  .intro .slideshow li div {
-      z-index: 1000;
-      position: absolute;
-      bottom: 30px;
-      left: 0px;
-      width: 100%;
-      text-align: center;
-      opacity: 0;
-      -webkit-animation: titleAnimation 35s linear infinite 0s;
-      -moz-animation: titleAnimation 35s linear infinite 0s;
-      -o-animation: titleAnimation 35s linear infinite 0s;
-      -ms-animation: titleAnimation 35s linear infinite 0s;
-      animation: titleAnimation 35s linear infinite 0s;
-  }
-  .intro .slideshow li div h3 {
-    font-family: "helvetica neue", helvetica;
-    text-transform: uppercase;
-    font-size: 80px;
-    padding: 0;
-    line-height: 200px;
-      color: rgba(255,255,255, 0.8);
-  }
-  .intro .slideshow li:nth-child(1) span { 
-	  background-image: url(../img/bg7.jpg);
-	  -webkit-animation-delay: 0.2s;
-      -moz-animation-delay: 0.2s;
-      -o-animation-delay: 0.2s;
-      -ms-animation-delay: 0.2s;
-      animation-delay: 0.2s;
+.intro .slideshow,
+.intro .slideshow:after {
+  z-index: 0;
+}
+.intro .slideshow:after {
+  content: "";
+  background: transparent url(../images/pattern.png) repeat top left;
+}
+.intro .slideshow li span {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color: transparent;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: none;
+  opacity: 0;
+  z-index: 0;
+  -webkit-backface-visibility: hidden;
+  -webkit-animation: imageAnimation 36s linear infinite 0s;
+  -moz-animation: imageAnimation 36s linear infinite 0s;
+  -o-animation: imageAnimation 36s linear infinite 0s;
+  -ms-animation: imageAnimation 36s linear infinite 0s;
+  animation: imageAnimation 36s linear infinite 0s;
+}
+.intro .slideshow li div {
+  z-index: 1000;
+  position: absolute;
+  bottom: 30px;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  -webkit-animation: titleAnimation 35s linear infinite 0s;
+  -moz-animation: titleAnimation 35s linear infinite 0s;
+  -o-animation: titleAnimation 35s linear infinite 0s;
+  -ms-animation: titleAnimation 35s linear infinite 0s;
+  animation: titleAnimation 35s linear infinite 0s;
+}
+.intro .slideshow li div h3 {
+  font-family: "helvetica neue", helvetica;
+  text-transform: uppercase;
+  font-size: 80px;
+  padding: 0;
+  line-height: 200px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.intro .slideshow li:nth-child(1) span {
+  background-image: url(../img/bg7.jpg);
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  -o-animation-delay: 0.2s;
+  -ms-animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 .intro .slideshow li:nth-child(2) span {
   background-image: url(../img/bg8.jpg);
@@ -1930,13 +1930,25 @@ table.type02 .even {
     padding-left: 20px;
   }
 }
-  .history h2 {position: relative; font-size: 33px color: #000; line-height: 1;}
-  .history h2:before {
-    content:""; position: absolute;
-    left:-48px; top:50%; transform: translateY(-50%);
-    width: 17px; height: 17px; border-radius: 100%;
-    background:#fff; border: 5px solid #E29C00;
-    box-sizing: border-box;}
+.history h2 {
+  position: relative;
+  font-size: 33px;
+  color: #000000;
+  line-height: 1;
+}
+.history h2:before {
+  content: "";
+  position: absolute;
+  left: -48px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 17px;
+  height: 17px;
+  border-radius: 100%;
+  background: #fff;
+  border: 5px solid #e29c00;
+  box-sizing: border-box;
+}
 
 .history div {
   position: relative;
