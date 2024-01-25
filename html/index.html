@@ -2,123 +2,138 @@
 <html lang="ko">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <title>주식회사 앱이지- IBM 스토리지, 서버, SAP, VEEAM, 기업시스템 토탈서비스</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <title>주식회사 앱이지- IBM 스토리지, 서버, SAP, VEEAM, 기업시스템 토탈서비스 </title>
 
-  <!-- -- fontawesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- Core JavaScript Files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.scrollTo.js"></script>
+    <script src="js/wow.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/custom.js"></script>
+    <script src="contactform/contactform.js"></script>
+    <script src="./Responsive-Popup/rpopup.min.js"></script>
+    <link rel="stylesheet" href="./Responsive-Popup/rpopup.css">
 
-  <!-- Custom Styles -->
-  <link href="css/animate.css" rel="stylesheet" />
-  <link href="css/style.css" rel="stylesheet">
-  <link href="color/default.css" rel="stylesheet">
-  <link rel="stylesheet" href="./Responsive-Popup/rpopup.css">
 
-  <style type="text/css">
-      #page-top .navbar.navbar-custom.navbar-fixed-top .container .navbar-header.page-scroll .navbar-brand h2 {
-          font-family: 맑은고딕;
-      }
-  </style>
 
-  <script>
-    $(document).ready(function(){
-      // 네비게이션 바에 대한 드롭다운 호버 활성화
-      $('.navbar-nav li.dropdown').hover(function() {
-        $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
-      }, function() {
-        $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
-      });
-    });
-  </script>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!-- -- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
+    <!-- Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/img/icons/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/img/icons/favicon.ico" type="image/x-icon">
+    <!-- Squad theme CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="color/default.css" rel="stylesheet">
+    <style type="text/css">
+        #page-top .navbar.navbar-custom.navbar-fixed-top .container .navbar-header.page-scroll .navbar-brand h2 {
+            font-family: 나눔고딕;
+        }
+    </style>
+    
+    
 </head>
-<body style="overflow-x: hidden">
 
-<!-- Preloader -->
-<div id="preloader">
-  <div id="load"></div>
+
+ <body style="overflow-x: hidden">
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="load"></div>
 </div>
+  
+  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+        </button>
+        <a class="navbar-brand" href="index.html">
+        <h1><img src="img/top_appez_logo.png" width="150" height="43" alt="logo"></h1>
+        </a>
+      </div>
 
-<nav class="navbar navbar-custom navbar-fixed-top navbar-expand-lg">
-  <div class="container">
-    <a class="navbar-brand" href="index.html">
-      <h1><img src="img/top_appez_logo.png" width="150" height="43" alt="logo"></h1>
-    </a>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="company_info.html">회사개요</a></li>
+			  <li><a href="history.html">연혁</a></li>
+              <li><a href="financial.html">재무현황</a></li>
+			  <li><a href="organization.html">조직도</a></li>
+              <li><a href="certification.html">인증현황</a></li>
+			  <li><a href="welfare.html">복리후생</a></li>
+			
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="server.html">Server</a></li>
+              <li><a href="storage.html">Storage</a></li>
+			  <li><a href="san.html">SAN Switch</a></li>
+			  <li><a href="lto.html">LTO(PTL)</a></li>
+			  <li><a href="worm.html">WORM Storage</a></li>	
+              <!--<li><a href="software.html">Software</a></li>-->
+			  <li><a href="veeam.html">Veeam백업</a></li>
+			 <!-- <li><a href="saphana.html">SAP</a></li>-->
+			  
+            </ul>
+          </li>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-main-collapse">
-      <i class="fa fa-bars"></i>
-    </button>
+           <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Technical Support<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="maintenance.html">통합유지보수</a></li>
+  			  <li><a href="consulting.html">기술지원서비스(TA)</a></li>                                                       
+			  <li><a href="support.html">기술지원서비스(H/W)</a></li>  
+			  <li><a href="system.html">Storage 복제서비스</a></li>
+			  <li><a href="gpfs.html">공유파일시스템(GPFS)</a></li>	
+			  <li><a href="gklm.html">암호화솔루션(GKLM)</a></li>	
+			  <li><a href="rental.html">장비임대 및 이관</a></li>                                                       
+              <li><a href="sapse.html">SAP SE</a></li>                                                       				
+			  
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Partners<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="partners.html">협력사</a></li>                                                       
+              <li><a href="customer.html">고객사</a></li>                                                       				
+            </ul>
+          </li>   
 
-    <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAbout" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            ABOUT US
-          </a>
-          <ul class="dropdown-menu">
-            <li class="nav-item"><a class="nav-link" href="company_info.html">회사개요</a></li>
-            <li class="nav-item"><a class="nav-link" href="history.html">연혁</a></li>
-            <li class="nav-item"><a class="nav-link" href="financial.html">재무현황</a></li>
-            <li class="nav-item"><a class="nav-link" href="organization.html">조직도</a></li>
-            <li class="nav-item"><a class="nav-link" href="certification.html">인증현황</a></li>
-            <li class="nav-item"><a class="nav-link" href="welfare.html">복리후생</a></li>
-            <li class="nav-item"><a class="nav-link" href="partners.html">협력사 및 고객사</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProducts" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            PRODUCTS
-          </a>
-          <ul class="dropdown-menu">
-            <li class="nav-item"><a class="nav-link" href="server.html">Server</a></li>
-            <li class="nav-item"><a class="nav-link" href="storage.html">Storage</a></li>
-            <li class="nav-item"><a class="nav-link" href="san.html">SAN Switch</a></li>
-            <li class="nav-item"><a class="nav-link" href="lto.html">LTO(PTL)</a></li>
-            <li class="nav-item"><a class="nav-link" href="worm.html">WORM Storage</a></li>
-            <li class="nav-item"><a class="nav-link" href="veeam.html">Solution</a></li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSupport" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            TECHNICAL SUPPORT
-          </a>
-          <ul class="dropdown-menu">
-            <li class="nav-item"><a class="nav-link" href="maintenance.html">통합유지보수</a></li>
-            <li class="nav-item"><a class="nav-link" href="consulting.html">기술지원서비스(TA)</a></li>
-            <li class="nav-item"><a class="nav-link" href="support.html">기술지원서비스(H/W)</a></li>
-            <li class="nav-item"><a class="nav-link" href="system.html">Storage 복제서비스</a></li>
-            <li class="nav-item"><a class="nav-link" href="gpfs.html">공유파일시스템(GPFS)</a></li>
-            <li class="nav-item"><a class="nav-link" href="gklm.html">암호화솔루션(GKLM)</a></li>
-            <li class="nav-item"><a class="nav-link" href="rental.html">장비임대 및 이관</a></li>
-            <li class="nav-item"><a class="nav-link" href="sapse.html">SAP SE</a></li>
-          </ul>
-        </li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownContact" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            CONTACT US
-          </a>
-          <ul class="dropdown-menu">
-            <li class="nav-item"><a class="nav-link" href="notice.html">공지사항</a></li>
-            <li class="nav-item"><a class="nav-link" href="qna.html">문의하기</a></li>
-            <li class="nav-item"><a class="nav-link" href="gallery.html">갤러리</a></li>
-            <li class="nav-item"><a class="nav-link" href="map.html">찾아오시는길</a></li>
-            <li class="nav-item"><a class="nav-link" href="recruit.html">채용공고</a></li>
-          </ul>
-        </li>
-      </ul>
+           <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact Us <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="notice.html">공지사항</a></li>
+              <li><a href="qna.html">문의하기</a></li>
+			  <li><a href="gallery.html">갤러리</a></li>	
+              <li><a href="map.html">찾아오시는길</a></li>
+              <li><a href="recruit.html">채용공고</a></li>                                   
+            </ul>
+          </li>
+              
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
     </div>
-  </div>
-</nav>
-
+    <!-- /.container -->
+  </nav>
 
   <!-- Section: intro -->
   <section class="intro" id="intro">
@@ -386,6 +401,5 @@
       </div>
     </div>
   </footer>
-
 </body>
 </html>
