@@ -17,6 +17,32 @@ html {
   height: 100%;
 }
 
+/* 추가된 스타일 */
+
+.navbar-nav .dropdown-menu {
+  margin-top: 0;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.navbar-custom .nav ul.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 15px;
+  display: none;
+}
+
+.navbar-custom .nav li:hover > ul.dropdown-menu {
+  display: block;
+}
+
+/* 기존 스타일 유지 */
+
+/* ... (이전에 제공된 스타일) ... */
+
 h1,
 h2,
 h3,
