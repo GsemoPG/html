@@ -21,7 +21,7 @@
     <script src="./Responsive-Popup/rpopup.min.js"></script>
     <link rel="stylesheet" href="./Responsive-Popup/rpopup.css">
 
-    
+
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -39,8 +39,36 @@
     <link href="color/default.css" rel="stylesheet">
     <style type="text/css">
         #page-top .navbar.navbar-custom.navbar-fixed-top .container .navbar-header.page-scroll .navbar-brand h2 {
-            font-family: '맑은고딕';
+            font-family: 맑은고딕;
         }
+        .navbar-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .nav-item {
+      width: 100%; /* 메뉴 아이템이 가득 차도록 조절 */
+    }
+
+    .navbar-nav .dropdown:hover .dropdown-menu {
+      display: block;
+      position: static;
+      float: none;
+    }
+
+    .dropdown-menu.d-flex {
+      display: flex;
+      flex-direction: column;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .dropdown:hover .dropdown-menu.d-flex {
+      opacity: 1;
+      visibility: visible;
+    }
     </style>
     
     
@@ -53,18 +81,16 @@
     <div id="load"></div>
 </div>
   
-
-
-<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header page-scroll">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-        <i class="fa fa-bars"></i>
-      </button>
-      <a class="navbar-brand" href="index.html">
+  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+        </button>
+        <a class="navbar-brand" href="index.html">
         <h1><img src="img/top_appez_logo.png" width="150" height="43" alt="logo"></h1>
-      </a>
-    </div>
+        </a>
+      </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
@@ -86,6 +112,13 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">PRODUCTS<b class="caret"></b></a>
           <ul class="dropdown-menu d-flex">
             <li class="nav-item"><a href="server.html">Server</a></li>
+            <ul class="main2">
+              <li><a href="#">IBM Power S1014</a></li>
+              <li><a href="#">IBM Power S1022</a></li>
+              <li><a href="#">IBM Power S1014</a></li>
+              <li><a href="#">IBM Power S1050</a></li>
+              <li><a href="#">IBM Power S1080</a></li>
+            </ul>
             <li class="nav-item"><a href="storage.html">Storage</a></li>
             <li class="nav-item"><a href="san.html">SAN Switch</a></li>
             <li class="nav-item"><a href="lto.html">LTO(PTL)</a></li>
@@ -383,9 +416,8 @@
             </div></p>
           </div>
           <div class="credits">
-            <p>주   소 : 서울특별시 강서구 양천로 583, B동 907호(염창동, 우림블루나인)</p>
-            <p>Tel : 02-2135-5030</p>
-            <p>Fax : 02-2135-5040</p>
+            <p>주   소 : 서울특별시 강서구 양천로 583, B동 907호(염창동, 우림블루나인) Tel:02-2135-5030, Fax:02-2135-5040<br>
+            </p>
           </div>
         </div>
       </div>
