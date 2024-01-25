@@ -21,7 +21,7 @@
     <script src="./Responsive-Popup/rpopup.min.js"></script>
     <link rel="stylesheet" href="./Responsive-Popup/rpopup.css">
 
-    
+
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -39,36 +39,8 @@
     <link href="color/default.css" rel="stylesheet">
     <style type="text/css">
         #page-top .navbar.navbar-custom.navbar-fixed-top .container .navbar-header.page-scroll .navbar-brand h2 {
-            font-family: 맑은고딕;
+            font-family: 나눔고딕;
         }
-        .navbar-nav {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .nav-item {
-      width: 100%; /* 메뉴 아이템이 가득 차도록 조절 */
-    }
-
-    .navbar-nav .dropdown:hover .dropdown-menu {
-      display: block;
-      position: static;
-      float: none;
-    }
-
-    .dropdown-menu.d-flex {
-      display: flex;
-      flex-direction: column;
-      opacity: 0;
-      visibility: hidden;
-      transition: opacity 0.3s ease, visibility 0.3s ease;
-    }
-
-    .dropdown:hover .dropdown-menu.d-flex {
-      opacity: 1;
-      visibility: visible;
-    }
     </style>
     
     
@@ -81,83 +53,87 @@
     <div id="load"></div>
 </div>
   
-
-
-<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header page-scroll">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-        <i class="fa fa-bars"></i>
-      </button>
-      <a class="navbar-brand" href="index.html">
+  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+        </button>
+        <a class="navbar-brand" href="index.html">
         <h1><img src="img/top_appez_logo.png" width="150" height="43" alt="logo"></h1>
-      </a>
-    </div>
+        </a>
+      </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="index.html">Home</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">ABOUT US<b class="caret"></b></a>
-          <ul class="dropdown-menu d-flex">
-            <li class="nav-item"><a href="company_info.html">회사개요</a></li>
-            <li class="nav-item"><a href="history.html">연혁</a></li>
-            <li class="nav-item"><a href="financial.html">재무현황</a></li>
-            <li class="nav-item"><a href="organization.html">조직도</a></li>
-            <li class="nav-item"><a href="certification.html">인증현황</a></li>
-            <li class="nav-item"><a href="welfare.html">복리후생</a></li>
-            <li class="nav-item"><a href="partners.html">협력사 및 고객사</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">PRODUCTS<b class="caret"></b></a>
-          <ul class="dropdown-menu d-flex">
-            <li class="nav-item"><a href="server.html">Server</a></li>
-            <ul class="main2">
-              <li><a href="#">IBM Power S1014</a></li>
-              <li><a href="#">IBM Power S1022</a></li>
-              <li><a href="#">IBM Power S1014</a></li>
-              <li><a href="#">IBM Power S1050</a></li>
-              <li><a href="#">IBM Power S1080</a></li>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="company_info.html">회사개요</a></li>
+			  <li><a href="history.html">연혁</a></li>
+              <li><a href="financial.html">재무현황</a></li>
+			  <li><a href="organization.html">조직도</a></li>
+              <li><a href="certification.html">인증현황</a></li>
+			  <li><a href="welfare.html">복리후생</a></li>
+			
             </ul>
-            <li class="nav-item"><a href="storage.html">Storage</a></li>
-            <li class="nav-item"><a href="san.html">SAN Switch</a></li>
-            <li class="nav-item"><a href="lto.html">LTO(PTL)</a></li>
-            <li class="nav-item"><a href="worm.html">WORM Storage</a></li>
-            <li class="nav-item"><a href="veeam.html">Solution</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">TECHNICAL SUPPORT<b class="caret"></b></a>
-          <ul class="dropdown-menu d-flex">
-            <li class="nav-item"><a href="maintenance.html">통합유지보수</a></li>
-            <li class="nav-item"><a href="consulting.html">기술지원서비스(TA)</a></li>
-            <li class="nav-item"><a href="support.html">기술지원서비스(H/W)</a></li>
-            <li class="nav-item"><a href="system.html">Storage 복제서비스</a></li>
-            <li class="nav-item"><a href="gpfs.html">공유파일시스템(GPFS)</a></li>
-            <li class="nav-item"><a href="gklm.html">암호화솔루션(GKLM)</a></li>
-            <li class="nav-item"><a href="rental.html">장비임대 및 이관</a></li>
-            <li class="nav-item"><a href="sapse.html">SAP SE</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">CONTACT US<b class="caret"></b></a>
-          <ul class="dropdown-menu d-flex">
-            <li class="nav-item"><a href="notice.html">공지사항</a></li>
-            <li class="nav-item"><a href="qna.html">문의하기</a></li>
-            <li class="nav-item"><a href="gallery.html">갤러리</a></li>
-            <li class="nav-item"><a href="map.html">찾아오시는길</a></li>
-            <li class="nav-item"><a href="recruit.html">채용공고</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-    <!-- /.navbar-collapse -->
-  </div>
-  <!-- /.container -->
-</nav>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="server.html">Server</a></li>
+              <li><a href="storage.html">Storage</a></li>
+			  <li><a href="san.html">SAN Switch</a></li>
+			  <li><a href="lto.html">LTO(PTL)</a></li>
+			  <li><a href="worm.html">WORM Storage</a></li>	
+              <!--<li><a href="software.html">Software</a></li>-->
+			  <li><a href="veeam.html">Veeam백업</a></li>
+			 <!-- <li><a href="saphana.html">SAP</a></li>-->
+			  
+            </ul>
+          </li>
 
+           <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Technical Support<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="maintenance.html">통합유지보수</a></li>
+  			  <li><a href="consulting.html">기술지원서비스(TA)</a></li>                                                       
+			  <li><a href="support.html">기술지원서비스(H/W)</a></li>  
+			  <li><a href="system.html">Storage 복제서비스</a></li>
+			  <li><a href="gpfs.html">공유파일시스템(GPFS)</a></li>	
+			  <li><a href="gklm.html">암호화솔루션(GKLM)</a></li>	
+			  <li><a href="rental.html">장비임대 및 이관</a></li>                                                       
+              <li><a href="sapse.html">SAP SE</a></li>                                                       				
+			  
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Partners<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="partners.html">협력사</a></li>                                                       
+              <li><a href="customer.html">고객사</a></li>                                                       				
+            </ul>
+          </li>   
+
+           <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact Us <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="notice.html">공지사항</a></li>
+              <li><a href="qna.html">문의하기</a></li>
+			  <li><a href="gallery.html">갤러리</a></li>	
+              <li><a href="map.html">찾아오시는길</a></li>
+              <li><a href="recruit.html">채용공고</a></li>                                   
+            </ul>
+          </li>
+              
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
 
   <!-- Section: intro -->
   <section class="intro" id="intro">
@@ -418,9 +394,8 @@
             </div></p>
           </div>
           <div class="credits">
-            <p>주   소 : 서울특별시 강서구 양천로 583, B동 907호(염창동, 우림블루나인)</p>
-            <p>Tel : 02-2135-5030</p>
-            <p>Fax : 02-2135-5040</p>
+            <p>주   소 : 서울특별시 강서구 양천로 583, B동 907호(염창동, 우림블루나인) Tel:02-2135-5030, Fax:02-2135-5040<br>
+            </p>
           </div>
         </div>
       </div>
