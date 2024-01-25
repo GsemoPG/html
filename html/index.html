@@ -2,18 +2,31 @@
 <html lang="ko">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <title>주식회사 앱이지- IBM 스토리지, 서버, SAP, VEEAM, 기업시스템 토탈서비스</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <title>주식회사 앱이지- IBM 스토리지, 서버, SAP, VEEAM, 기업시스템 토탈서비스 </title>
 
-  <!-- -- fontawesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- Core JavaScript Files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.scrollTo.js"></script>
+    <script src="js/wow.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/custom.js"></script>
+    <script src="contactform/contactform.js"></script>
+    <script src="./Responsive-Popup/rpopup.min.js"></script>
+    <link rel="stylesheet" href="./Responsive-Popup/rpopup.css">
+
+
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!-- -- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
     <!-- Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -51,55 +64,58 @@
         </a>
       </div>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-main-collapse">
-      <i class="fa fa-bars"></i>
-    </button>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="company_info.html">회사개요</a></li>
+			  <li><a href="history.html">연혁</a></li>
+              <li><a href="financial.html">재무현황</a></li>
+			  <li><a href="organization.html">조직도</a></li>
+              <li><a href="certification.html">인증현황</a></li>
+			  <li><a href="welfare.html">복리후생</a></li>
+			
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="server.html">Server</a></li>
+              <li><a href="storage.html">Storage</a></li>
+			  <li><a href="san.html">SAN Switch</a></li>
+			  <li><a href="lto.html">LTO(PTL)</a></li>
+			  <li><a href="worm.html">WORM Storage</a></li>	
+              <!--<li><a href="software.html">Software</a></li>-->
+			  <li><a href="veeam.html">Veeam백업</a></li>
+			 <!-- <li><a href="saphana.html">SAP</a></li>-->
+			  
+            </ul>
+          </li>
 
-    <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAbout" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            ABOUT US
-          </a>
-          <ul class="dropdown-menu">
-            <li class="nav-item"><a class="nav-link" href="company_info.html">회사개요</a></li>
-            <li class="nav-item"><a class="nav-link" href="history.html">연혁</a></li>
-            <li class="nav-item"><a class="nav-link" href="financial.html">재무현황</a></li>
-            <li class="nav-item"><a class="nav-link" href="organization.html">조직도</a></li>
-            <li class="nav-item"><a class="nav-link" href="certification.html">인증현황</a></li>
-            <li class="nav-item"><a class="nav-link" href="welfare.html">복리후생</a></li>
-            <li class="nav-item"><a class="nav-link" href="partners.html">협력사 및 고객사</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProducts" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            PRODUCTS
-          </a>
-          <ul class="dropdown-menu">
-            <li class="nav-item"><a class="nav-link" href="server.html">Server</a></li>
-            <li class="nav-item"><a class="nav-link" href="storage.html">Storage</a></li>
-            <li class="nav-item"><a class="nav-link" href="san.html">SAN Switch</a></li>
-            <li class="nav-item"><a class="nav-link" href="lto.html">LTO(PTL)</a></li>
-            <li class="nav-item"><a class="nav-link" href="worm.html">WORM Storage</a></li>
-            <li class="nav-item"><a class="nav-link" href="veeam.html">Solution</a></li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSupport" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            TECHNICAL SUPPORT
-          </a>
-          <ul class="dropdown-menu">
-            <li class="nav-item"><a class="nav-link" href="maintenance.html">통합유지보수</a></li>
-            <li class="nav-item"><a class="nav-link" href="consulting.html">기술지원서비스(TA)</a></li>
-            <li class="nav-item"><a class="nav-link" href="support.html">기술지원서비스(H/W)</a></li>
-            <li class="nav-item"><a class="nav-link" href="system.html">Storage 복제서비스</a></li>
-            <li class="nav-item"><a class="nav-link" href="gpfs.html">공유파일시스템(GPFS)</a></li>
-            <li class="nav-item"><a class="nav-link" href="gklm.html">암호화솔루션(GKLM)</a></li>
-            <li class="nav-item"><a class="nav-link" href="rental.html">장비임대 및 이관</a></li>
-            <li class="nav-item"><a class="nav-link" href="sapse.html">SAP SE</a></li>
-          </ul>
-        </li>
+           <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Technical Support<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="maintenance.html">통합유지보수</a></li>
+  			  <li><a href="consulting.html">기술지원서비스(TA)</a></li>                                                       
+			  <li><a href="support.html">기술지원서비스(H/W)</a></li>  
+			  <li><a href="system.html">Storage 복제서비스</a></li>
+			  <li><a href="gpfs.html">공유파일시스템(GPFS)</a></li>	
+			  <li><a href="gklm.html">암호화솔루션(GKLM)</a></li>	
+			  <li><a href="rental.html">장비임대 및 이관</a></li>                                                       
+              <li><a href="sapse.html">SAP SE</a></li>                                                       				
+			  
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Partners<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="partners.html">협력사</a></li>                                                       
+              <li><a href="customer.html">고객사</a></li>                                                       				
+            </ul>
+          </li>   
 
            <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact Us <b class="caret"></b></a>
@@ -359,7 +375,13 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 col-lg-12">
-
+          <div class="wow shake" data-wow-delay="0.4s" style="position: relative; z-index: 3;">
+            <div class="page-scroll marginbot-30">
+              <a href="#intro" id="totop" class="btn btn-circle">
+							<i class="fa fa-angle-double-up fa-sm animated"></i>
+			  </a>
+            </div>
+          </div>
           <div align="center">
             <p><img src="img/bt_logo_appez.png" width="150" height="50" alt="logo"></p>
             <p><span class="credits">2023 &copy; AppEZ. All rights reserved.</span>  
