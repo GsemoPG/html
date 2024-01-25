@@ -930,23 +930,29 @@ Parallax
 
 .page-scroll .btn-circle i.animated {
   -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
   -webkit-transition-duration: 1s;
+  transition-duration: 1s;
   -moz-transition-property: -moz-transform;
   -moz-transition-duration: 1s;
 }
 
 .page-scroll .btn-circle:hover i.animated {
   -webkit-animation-name: pulse;
+  animation-name: pulse;
   -moz-animation-name: pulse;
   -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
   -moz-animation-duration: 1.5s;
   -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -moz-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
   -moz-animation-timing-function: linear;
 }
 
-@-webkit-keyframes pulse {
+@keyframes pulse {
   0% {
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -1469,6 +1475,7 @@ table.type02 .even {
   opacity: 0;
   z-index: 0;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-animation: imageAnimation 36s linear infinite 0s;
   -moz-animation: imageAnimation 36s linear infinite 0s;
   -o-animation: imageAnimation 36s linear infinite 0s;
