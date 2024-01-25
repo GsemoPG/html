@@ -126,11 +126,12 @@ select {
 button,
 html input[type="button"],
 input[type="reset"],
-input[type="submit"] 
-{
+input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer;
+  appearance: none;
 }
+
 button[disabled],
 html input[disabled] {
   cursor: default;
@@ -153,10 +154,11 @@ input[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 input[type="search"] {
-  -webkit-appearance: none;
+  -webkit-appearance: textfield; /* eslint-disable*/
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
+  appearance: none;
 }
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
@@ -5361,6 +5363,7 @@ button.close {
   background: 0 0;
   border: 0;
   -webkit-appearance: none;
+  appearance: none;
 }
 .modal-open {
   overflow: hidden;
