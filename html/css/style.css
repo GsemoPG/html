@@ -1492,7 +1492,7 @@ table.type02 .even {
 }
 .intro .slideshow li span {
   width: 100%;
-  height: 70%;
+  height: 100%;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1533,7 +1533,7 @@ table.type02 .even {
   color: rgba(255, 255, 255, 0.8);
 }
 .intro .slideshow li:nth-child(1) span {
-  background-image: url(../img/bg7.jpg);
+  background-image: url(../img/appez_intro1.jpg);
   -webkit-animation-delay: 0.2s;
   -moz-animation-delay: 0.2s;
   -o-animation-delay: 0.2s;
