@@ -160,10 +160,12 @@ a:focus {
 
 .navbar-custom ul.nav ul.dropdown-menu li a {
   padding: 10px 20px;
+  text-align: center;
 }
 
 .navbar-custom ul.nav ul.dropdown-menu li a:hover {
   background: #fefefe;
+  color: #333;
 }
 
 .navbar-custom.top-nav-collapse ul.nav ul.dropdown-menu li a {
