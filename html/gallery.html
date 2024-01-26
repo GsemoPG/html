@@ -26,7 +26,11 @@
   <link href="color/default.css" rel="stylesheet">
   <style type="text/css">
   #page-top #main .inner-page .container table tr td table tr td table tr td table tr td table #order tr .FormName {
-	font-family: 맑은 고딕; }
+	font-family: 맑은 고딕;
+  max-height: none;
+  width: auto;
+  height: auto;
+}
   </style>
 <!-- 그누보드5 자동 사이즈 조절 start -->
 <SCRIPT type=text/javascript>
@@ -34,71 +38,65 @@
   
   //여러개의 IFrame는 다음과 같이 사용합니다.
   // 예 : ["myframe1", "myframe2"] or ["myframe"] or [] for none:
-  var iframeids = ["ifrm"];
-var iframehide = "yes";
-var getFFVersion = navigator.userAgent.substring(navigator.userAgent.indexOf("Firefox")).split("/")[1];
-var FFextraHeight = parseFloat(getFFVersion) >= 0.1 ? 16 : 0;
-
-function resizeCaller() {
-  var dyniframe = new Array();
-
-  for (var i = 0; i < iframeids.length; i++) {
-    if (document.getElementById) {
-      resizeIframe(iframeids[i]);
-    }
-
-    if ((document.all || document.getElementById) && iframehide === "no") {
-      var tempobj = document.all ? document.all[iframeids[i]] : document.getElementById(iframeids[i]);
-      tempobj.style.display = "block";
-    }
+  var iframeids=["ifrm"]
+  var iframehide="yes"
+  
+  var getFFVersion=navigator.userAgent.substring(navigator.userAgent.indexOf("Firefox")).split("/")[1]
+  var FFextraHeight=parseFloat(getFFVersion)>=0.1? 16 : 0
+  
+  function resizeCaller() {
+  var dyniframe=new Array()
+  
+  for (i=0; i<iframeids.length; i++) {
+  if (document.getElementById)
+  resizeIframe(iframeids[i])
+  
+  if ((document.all || document.getElementById) && iframehide=="no") {
+  var tempobj=document.all? document.all[iframeids[i]] : document.getElementById(iframeids[i])
+  tempobj.style.display="block"
   }
-}
-
-function resizeIframe(frameid) {
-  var currentfr = document.getElementById(frameid);
-
-  if (currentfr && !window.opera) {
-    currentfr.style.display = "block";
-
-    if (currentfr.contentDocument && currentfr.contentDocument.body.offsetHeight) {
-      currentfr.height = currentfr.contentDocument.body.offsetHeight + FFextraHeight;
-    } else if (currentfr.contentDocument && currentfr.contentDocument.body.scrollHeight) {
-      currentfr.height = currentfr.contentDocument.body.scrollHeight + FFextraHeight;
-    }
-    
-    if (currentfr.addEventListener) {
-      currentfr.addEventListener("load", readjustIframe, false);
-    } else if (currentfr.attachEvent) {
-      currentfr.detachEvent("onload", readjustIframe);
-      currentfr.attachEvent("onload", readjustIframe);
-    }
   }
-}
-
-function readjustIframe(loadevt) {
-  var crossevt = window.event ? event : loadevt;
-  var iframeroot = crossevt.target ? crossevt.target : crossevt.srcElement;
-
-  if (iframeroot) {
-    resizeIframe(iframeroot.id);
   }
-}
-
-function loadintoIframe(iframeid, url) {
-  var iframe = document.getElementById(iframeid);
-  if (iframe) {
-    iframe.src = url;
+  
+  function resizeIframe(frameid) {
+  var currentfr=document.getElementById(frameid)
+  
+  if (currentfr && !window.opera){
+  currentfr.style.display="block"
+  
+  if (currentfr.contentDocument && currentfr.contentDocument.body.offsetHeight)
+  currentfr.height = currentfr.contentDocument.body.offsetHeight+FFextraHeight;
+  else if (currentfr.Document && currentfr.Document.body.scrollHeight)
+  currentfr.height = currentfr.Document.body.scrollHeight;
+  
+  if (currentfr.addEventListener)
+  currentfr.addEventListener("load", readjustIframe, false)
+  else if (currentfr.attachEvent){
+  currentfr.detachEvent("onload", readjustIframe)
+  currentfr.attachEvent("onload", readjustIframe)
   }
-}
-
-if (window.addEventListener) {
-  window.addEventListener("load", resizeCaller, false);
-} else if (window.attachEvent) {
-  window.attachEvent("onload", resizeCaller);
-} else {
-  window.onload = resizeCaller;
-}
-
+  }
+  }
+  
+  function readjustIframe(loadevt) {
+  var crossevt=(window.event)? event : loadevt
+  var iframeroot=(crossevt.currentTarget)? crossevt.currentTarget : crossevt.srcElement
+  
+  if (iframeroot)
+  resizeIframe(iframeroot.id);
+  }
+  
+  function loadintoIframe(iframeid, url) {
+  if (document.getElementById)
+  document.getElementById(iframeid).src=url
+  }
+  
+  if (window.addEventListener)
+  window.addEventListener("load", resizeCaller, false)
+  else if (window.attachEvent)
+  window.attachEvent("onload", resizeCaller)
+  else
+  window.onload=resizeCaller
   </SCRIPT>
 <!-- 그누보드5 자동 사이즈 조절 end -->
 
@@ -132,8 +130,8 @@ if (window.addEventListener) {
 			  <li><a href="history.html">연혁</a></li>
               <li><a href="financial.html">재무현황</a></li>
 			  <li><a href="organization.html">조직도</a></li>
+              <li><a href="certification.html">인증현황</a></li>
 			  <li><a href="welfare.html">복리후생</a></li>
-        <li><a href="partners.html">협력사 및 고객사</a></li>
 			
             </ul>
           </li>
@@ -143,7 +141,7 @@ if (window.addEventListener) {
               <li><a href="server.html">Server</a></li>
               <li><a href="storage.html">Storage</a></li>
               <!--<li><a href="software.html">Software</a></li>-->
-			  <li><a href="veeam.html">Solution</a></li>
+			  <li><a href="veeam.html">Veeam백업</a></li>
 			 <!-- <li><a href="saphana.html">SAP</a></li>-->
 			  
             </ul>
@@ -162,7 +160,14 @@ if (window.addEventListener) {
               <li><a href="sapse.html">SAP SE</a></li>                                                       				
 			  
             </ul>
-          </li>  
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Partners<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="partners.html">협력사</a></li>                                                       
+              <li><a href="customer.html">고객사</a></li>                                                       				
+            </ul>
+          </li>   
 
            <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact Us <b class="caret"></b></a>
@@ -185,47 +190,39 @@ if (window.addEventListener) {
   <!-- Section: intro -->
 
 <!-- PAGE상단 배경으로 이미지 개별 적용 -->
-<main id="main">
-  <div id="page-banner" style="background-image: url(img/top-5.jpg);">
-    <div class="content wow fdeInUp" style="visibility: visible; animation-name: fdeInUp;">
-    </div>
-  </div>
- 
- 
-     <section class="inner-page">
-     <div class="container">
- 
-         <img src="img/g5_notice3.jpg" alt="" width="100%" height="89" style="width: 100%; height: auto;"/><br>
-     </div>
-     </section>
-      <p align ="middle">  
- 
-       <!-- <iframe id="myframe" name="myframe" src="http://10.77.77.247/g5/bbs/board.php?bo_table=gallery"     style="width:60%;height:1200px" frameborder=0 scrolling="no"></iframe>  -->
-       <iframe id="ifrm" name="board" src="http://10.77.77.247/g5/bbs/board.php?bo_table=gallery" width="800" scrolling="no" frameborder="0"></iframe>
-   </p>          
-    <!--        <iframe id='content' frameborder=0 width=80% scrolling=no onLoad="changeHeight();" src='http://10.77.77.247/g5/bbs/board.php?bo_table=notice'></iframe>  -->
-   </main><!-- End #main -->
+ <main id="main">
+ <div id="page-banner" style="background-image: url(img/top-5.jpg);">
+   <div class="content wow fdeInUp" style="visibility: visible; animation-name: fdeInUp;">
+   </div>
+ </div>
 
 
-   <footer>
+    <section class="inner-page">
+    <div class="container">
+
+        <img src="img/g5_notice3.jpg" alt="" width="100%" height="89" style="width: 100%; height: auto;"/><br>
+		</div>
+    </section>
+     <p align ="middle">  
+
+      <!-- <iframe id="myframe" name="myframe" src="http://10.77.77.247/g5/bbs/board.php?bo_table=gallery"     style="width:60%;height:1200px" frameborder=0 scrolling="no"></iframe>  -->
+      <iframe id="ifrm" name="board" src="http://10.77.77.247/g5/bbs/board.php?bo_table=gallery" width="900" scrolling="no" frameborder="0" height="397" style="display: block;"></iframe>
+	</p>          
+   <!--        <iframe id='content' frameborder=0 width=80% scrolling=no onLoad="changeHeight();" src='http://10.77.77.247/g5/bbs/board.php?bo_table=notice'></iframe>  -->
+  </main><!-- End #main -->
+
+
+  <footer>
     <div class="container">
       <div class="row">
         <div class="col-md-12 col-lg-12">
-          <div class="wow shake" data-wow-delay="0.4s">
-            <div class="page-scroll marginbot-30">
-              <a href="#intro" id="totop" class="btn btn-circle">
-							<i class="fa fa-angle-double-up fa-sm animated"></i>
-						</a>
-            </div>
-          </div>
+ 
           <p><img src="img/bt_logo_appez.png" width="150" height="50" alt="logo"></p>
             <p><span class="credits">2023 &copy; AppEZ. All rights reserved.</span>          </p>
           </div>
           <div class="credits">
-            <p>주   소 : 서울특별시 강서구 양천로 583, B동 907호(염창동, 우림블루나인)<br>
+            <p>주   소 : 서울특별시 강서구 양천로 583, B동 907호(염창동, 우림블루나인) Tel:02-2135-5030, Fax:02-2135-5040<br>
             </p>
-            <p>Tel:02-2135-5030</p>
-            <p>Fax:02-2135-5040</p>
           </div>
         </div>
       </div>
@@ -243,5 +240,4 @@ if (window.addEventListener) {
 </body>
 
 </html>
-
 
