@@ -387,6 +387,66 @@ hr {
   color: #fff;
 }
 
+#banner {
+  /* height: 600px; */
+  /* banner_menu의 기준점 */
+  position: relative;
+}
+
+.container {
+  width: 1280px;
+  /* height: inherit; */
+  /* container가 감싸고 있기 때문에 하위 태그의 기준점이 됨 */
+  position: relative;
+  margin: 0 auto;
+}
+
+#banner_slider {
+  width: 100%;
+  height: 600px;
+}
+
+#banner_slider .ss1 {
+  background: url(../img/appez_intro1.jpg) no-repeat center center;
+  background-size: cover;
+  height: 600px;
+}
+
+#banner_slider .ss2 {
+  background: url(../img/appez_intro2.jpg) no-repeat center center;
+  background-size: cover;
+  height: 600px;
+}
+
+#banner_slider .ss3 {
+  background: url(../img/appez_intro3.jpg) no-repeat center center;
+  background-size: cover;
+  height: 600px;
+}
+#banner_slider .ss4 {
+  background: url(../img/appez_intro4.jpg) no-repeat center center;
+  background-size: cover;
+  height: 600px;
+}
+
+#banner_slider h3 {
+  font-size: 6vw;
+  color: #fff;
+  margin-top: 160px;
+  font-weight: bold;
+}
+
+#banner_slider p {
+  font-size: 4vw;
+  color: #dbdbdb;
+  font-weight: 200;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.row {
+  padding: 0 28px;
+}
+
 /*
 Pga banner add 2021.01.31 cslee
 */
