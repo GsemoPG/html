@@ -1,0 +1,89 @@
+@media (max-width: 960px) {
+  .movie .movie_title ul {
+    width: auto;
+  }
+  .movie .movie_title ul li {
+    width: 25%;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 768px) {
+  .row {
+    padding: 0 16px;
+  }
+  body {
+    background-color: #d9d7e0;
+  }
+  #header {
+    background-color: #fff;
+  }
+
+  #movie .row {
+    background-color: #fff;
+    margin: 24px;
+    padding: 24px;
+  }
+  #movie .row .ir_su {
+    position: static;
+    width: auto;
+    height: auto;
+    line-height: normal;
+    text-indent: 0px;
+  }
+  .movie {
+    padding: 0;
+  }
+  .movie .movie_title {
+    margin-bottom: 30px;
+  }
+  .movie .movie_title ul {
+    position: relative;
+  }
+  .movie .movie_title ul::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+  }
+  .movie .mocie_title ul li {
+    width: auto;
+    border: 0;
+  }
+  .movie .movie_title ul li a {
+    padding: 0;
+    margin-right: 35px;
+  }
+  .movie .movie_title ul li.active {
+  }
+  .movie .movie_title ul li.active a {
+    background-color: #fff;
+    color: #222;
+  }
+}
+
+@media (max-width: 600px) {
+  #movie .row {
+    background-color: #fff;
+    margin: 8px;
+    padding: 8px;
+  }
+  .movie .movie_title {
+    margin-bottom: 20px;
+  }
+  .movie .movie_title ul {
+    padding-bottom: 3px;
+  }
+  .movie .movie_title ul li a {
+    font-size: 14px;
+    margin-right: 15px;
+  }
+  .movie .movie_title ul li.active::after {
+    bottom: -3px;
+    width: 90%;
+    height: 2px;
+  }
+}

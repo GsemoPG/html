@@ -2697,27 +2697,15 @@ input:checked + label {
 /* ---------------- 탭메뉴 css ---------------- */
 
 #movie {
-  padding: 100px 0;
+  padding: 0;
 }
 
 .movie .movie_title {
-  margin-bottom: 30px;
 }
 .movie .movie_title ul {
   margin: 0 auto;
   width: 848px;
 }
-
-.movie .movie_title ul::before {
-  content: "";
-  width: 100%;
-  height: 1px;
-  background-color: #aaa;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
-
 .movie .movie_title ul li {
   float: left;
   width: 210px;
@@ -2732,68 +2720,12 @@ input:checked + label {
   color: #666;
   font-weight: 700;
 }
-
 .movie .movie_title ul li.active {
 }
-
 .movie .movie_title ul li.active a {
   background-color: #666;
   color: #fff;
 }
 
 .movie .movie_chart {
-}
-
-@media (max-width: 960px) {
-  .movie .movie_title ul {
-    width: auto;
-  }
-  .movie .movie_title ul li {
-    width: 25%;
-    box-sizing: border-box;
-  }
-}
-
-@media (max-width: 768px) {
-  .row {
-    padding: 0 16px;
-  }
-  body {
-    background-color: #d9d7e0;
-  }
-  #header {
-    background-color: #fff;
-  }
-}
-
-@media (max-width: 600px) {
-  #movie .row {
-    background-color: #fff;
-    margin: 8px;
-    padding: 8px;
-  }
-  #movie .ir_su {
-    font-size: 18px;
-    padding-bottom: 16px;
-  }
-  .movie .movie_title {
-    margin-bottom: 20px;
-  }
-  .movie .movie_title ul {
-    padding-bottom: 3px;
-  }
-  .movie .movie_title ul li a {
-    font-size: 14px;
-    margin-right: 15px;
-  }
-  .movie .movie_title ul li.active::after {
-    bottom: -3px;
-    width: 90%;
-    height: 2px;
-  }
-}
-
-@media (max-width: 480px) {
-}
-@media (max-width: 360px) {
 }
