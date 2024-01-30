@@ -137,6 +137,10 @@ a:focus {
   }
 }
 
+.dropdown-menu a:hover {
+  color: #000 !important;
+}
+
 .navbar-custom.top-nav-collapse ul.nav li a {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -944,7 +948,7 @@ form#contact-form textarea:focus {
 .company-social .social-deviantart a:hover {
   background: #adc376;
 }
-.company-social .social-google a:hover {
+.swiper-button-prev .company-social .social-google a:hover {
   background: #333;
 }
 .company-social .social-vimeo a:hover {
