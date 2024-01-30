@@ -2696,36 +2696,32 @@ input:checked + label {
 
 /* ---------------- 탭메뉴 css ---------------- */
 
-#movie {
+#tab {
   padding: 0;
 }
-
-.movie .movie_title {
+#tab.movie .tab_title {
+  margin-bottom: 60px;
 }
-.movie .movie_title ul {
+#tab .tab .tab_title ul {
   margin: 0 auto;
   width: 848px;
 }
-.movie .movie_title ul li {
+#tab .tab .tab_title ul li {
   float: left;
   width: 210px;
+  border: 1px solid #ccc;
   text-align: center;
-  border: 1px solid #c4c4c4;
   margin-right: -1px;
 }
-.movie .movie_title ul li a {
+#tab .tab .tab_title ul li a {
   display: block;
   padding: 15px 0;
-  font-size: 18px;
-  color: #666;
-  font-weight: 700;
-}
-.movie .movie_title ul li.active {
-}
-.movie .movie_title ul li.active a {
-  background-color: #666;
-  color: #fff;
+  font-size: 15px 0;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
-.movie .movie_chart {
+#tab .tab .tab_title ul li.active a {
+  background-color: #39106a;
+  color: #fff;
 }

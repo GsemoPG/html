@@ -1,46 +1,46 @@
 @media (max-width: 960px) {
-  .movie .movie_title ul {
+  .row {
+    padding: 0 20px;
+  }
+  .tab .movie_title ul {
     width: auto;
   }
-  .movie .movie_title ul li {
+  .tab .movie_title ul li {
     width: 25%;
     box-sizing: border-box;
   }
 }
 
 @media (max-width: 768px) {
-  .row {
-    padding: 0 16px;
-  }
   body {
     background-color: #d9d7e0;
   }
   #header {
     background-color: #fff;
   }
+  .row {
+    padding: 0 16px;
+  }
 
-  #movie .row {
+  #tab .row {
     background-color: #fff;
     margin: 24px;
     padding: 24px;
   }
-  #movie .row .ir_su {
+  #tab .row .ir_su {
     position: static;
     width: auto;
     height: auto;
     line-height: normal;
     text-indent: 0px;
   }
-  .movie {
+  .tab {
     padding: 0;
   }
-  .movie .movie_title {
-    margin-bottom: 30px;
-  }
-  .movie .movie_title ul {
+  .tab .movie_title ul {
     position: relative;
   }
-  .movie .movie_title ul::before {
+  .tab .movie_title ul::before {
     position: absolute;
     content: "";
     left: 0;
@@ -49,39 +49,49 @@
     height: 1px;
     background-color: #ccc;
   }
-  .movie .mocie_title ul li {
-    width: auto;
+  .tab .movie_title ul li {
     border: 0;
+    width: auto;
   }
-  .movie .movie_title ul li a {
+  .tab .movie_title ul li a {
     padding: 0;
     margin-right: 35px;
+    position: relative;
+    font-weight: 500;
   }
-  .movie .movie_title ul li.active {
-  }
-  .movie .movie_title ul li.active a {
+
+  .tab .movie_title ul li.active a {
     background-color: #fff;
     color: #222;
+  }
+  .tab .movie_title ul li.active a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 4px;
+    background-color: #39106a;
   }
 }
 
 @media (max-width: 600px) {
-  #movie .row {
+  #tab .row {
     background-color: #fff;
     margin: 8px;
     padding: 8px;
   }
-  .movie .movie_title {
+  .tab .movie_title {
     margin-bottom: 20px;
   }
-  .movie .movie_title ul {
+  .tab .movie_title ul {
     padding-bottom: 3px;
   }
-  .movie .movie_title ul li a {
+  .tab .movie_title ul li a {
     font-size: 14px;
     margin-right: 15px;
   }
-  .movie .movie_title ul li.active::after {
+  .tab .movie_title ul li.active::after {
     bottom: -3px;
     width: 90%;
     height: 2px;
