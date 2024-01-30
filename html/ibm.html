@@ -178,27 +178,6 @@
         </tbody>
       </table>
 
-      <!-- ------------------ 탭메뉴 ------------------------- -->
-
-      <section id="tab">
-        <div class="container">
-          <div class="row">
-            <div class="tab">
-              <div class="tab_title">
-                <ul>
-                  <li class="active"><a href="#">IBM</a></li>
-                  <li><a href="#">DELL</a></li>
-                  <li><a href="#">LENOVO</a></li>
-                </ul>
-              </div>
-              <div class="tab_chart"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-      </section>
-      <!-- 탭메뉴 end -->
-
       <section class="inner-page">
         <div class="container">
           <br />
@@ -494,23 +473,5 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/custom.js"></script>
     <script src="contactform/contactform.js"></script>
-
-    <script>
-      const mBtn = $(".tab_title > ul > li");
-      const mCont = $(".tab_chart > div");
-
-      mCont.hide().eq(0).show();
-
-      mBtn.click(function(e){
-        e.preventDefault();
-        let target = $(this);
-        let index = target.index();
-        mBtn.removeClass("active");
-        target.addClass("active");
-        mCont.hide().eq(index).show();
-      });
-
-    </script>
-
   </body>
 </html>
