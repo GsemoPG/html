@@ -2700,13 +2700,13 @@ input:checked + label {
   padding-bottom: 40px;
   background-color: #ffffff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  width: 110%;
+  width: 100%;
   margin: 0 auto;
 }
 
 /* 탭 스타일 */
 .tab_item {
-  width: calc(100% / 3);
+  width: calc(100% / 5);
   height: 60px;
   border-bottom: 3px solid #333333;
   background-color: #f8f8f8;
@@ -2740,7 +2740,9 @@ input[name="tab_item"] {
 /* 선택 된 탭 콘텐츠를 표시 */
 #all:checked ~ #all_content,
 #programming:checked ~ #programming_content,
-#design:checked ~ #design_content {
+#design:checked ~ #design_content,
+#tab_num4:checked ~ #tab_num4_content,
+#tab_num5:checked ~ #tab_num5_content {
   display: block;
 }
 
