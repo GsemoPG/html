@@ -2704,8 +2704,24 @@ input:checked + label {
   margin: 0 auto;
 }
 
-/* 탭 스타일 */
+/* 탭 스타일 (SERVER) */
 .tab_item {
+  width: calc(100% / 3);
+  height: 60px;
+  border-bottom: 3px solid #333333;
+  background-color: #f8f8f8;
+  line-height: 50px;
+  font-size: 20px;
+  text-align: center;
+  color: #333333;
+  display: block;
+  float: left;
+  text-align: center;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.tab_item2 {
   width: calc(100% / 5);
   height: 60px;
   border-bottom: 3px solid #333333;
@@ -2720,12 +2736,21 @@ input:checked + label {
   font-weight: bold;
   transition: all 0.2s ease;
 }
+
 .tab_item:hover {
+  opacity: 0.75;
+}
+
+.tab_item2:hover {
   opacity: 0.75;
 }
 
 /* 라디오 버튼 UI삭제*/
 input[name="tab_item"] {
+  display: none;
+}
+
+input[name="tab_item2"] {
   display: none;
 }
 
