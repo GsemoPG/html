@@ -2776,3 +2776,8 @@ input[name="tab_item2"] {
   background-color: #333333;
   color: #fff;
 }
+
+.tabs input:checked + .tab_item2 {
+  background-color: #333333;
+  color: #fff;
+}
