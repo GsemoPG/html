@@ -2940,3 +2940,29 @@ g02.s03 .item_area li strong {
 .aside.g02.s03.d08 .swiper-wrapper {
   transform: translate3d(-420px, 0px, 0px);
 }
+.aside a:hover::before,
+.aside a.on:before {
+  left: 0;
+  width: 100%;
+}
+.aside a:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: #0075ba;
+  transition: 0.2s linear;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.aside a:hover,
+aside a.on {
+  color: #0373bb;
+}
