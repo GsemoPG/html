@@ -413,24 +413,24 @@ hr {
 #banner_slider .ss1 {
   background: url(../img/server1_main.jpg) no-repeat center center;
   background-size: cover;
-  height: 600px;
+  height: 800px;
 }
 
 #banner_slider .ss2 {
   background: url(../img/server2_main.jpg) no-repeat center center;
   background-size: cover;
-  height: 600px;
+  height: 800px;
 }
 
 #banner_slider .ss3 {
   background: url(../img/appez_intro3.jpg) no-repeat center center;
   background-size: cover;
-  height: 600px;
+  height: 800px;
 }
 #banner_slider .ss4 {
   background: url(../img/appez_intro4.jpg) no-repeat center center;
   background-size: cover;
-  height: 600px;
+  height: 800px;
 }
 
 #banner_slider h3 {
@@ -2692,92 +2692,4 @@ input:checked + label {
   margin-top: 10px;
   margin-right: 10px;
   font-size: 14px;
-}
-
-/* 탭 전체 스타일 */
-.tabs {
-  margin-top: 50px;
-  padding-bottom: 40px;
-  background-color: #ffffff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  width: 100%;
-  margin: 0 auto;
-}
-
-/* 탭 스타일 (SERVER) */
-.tab_item {
-  width: calc(100% / 3);
-  height: 60px;
-  border-bottom: 3px solid #333333;
-  background-color: #f8f8f8;
-  line-height: 50px;
-  font-size: 20px;
-  text-align: center;
-  color: #333333;
-  display: block;
-  float: left;
-  text-align: center;
-  font-weight: bold;
-  transition: all 0.2s ease;
-}
-
-.tab_item2 {
-  width: calc(100% / 5);
-  height: 60px;
-  border-bottom: 3px solid #333333;
-  background-color: #f8f8f8;
-  line-height: 50px;
-  font-size: 20px;
-  text-align: center;
-  color: #333333;
-  display: block;
-  float: left;
-  text-align: center;
-  font-weight: bold;
-  transition: all 0.2s ease;
-}
-
-.tab_item:hover {
-  opacity: 0.75;
-}
-
-.tab_item2:hover {
-  opacity: 0.75;
-}
-
-/* 라디오 버튼 UI삭제*/
-input[name="tab_item"] {
-  display: none;
-}
-
-input[name="tab_item2"] {
-  display: none;
-}
-
-/* 탭 컨텐츠 스타일 */
-.tab_content {
-  display: none;
-  padding: 40px 40px 0;
-  clear: both;
-  overflow: hidden;
-}
-
-/* 선택 된 탭 콘텐츠를 표시 */
-#all:checked ~ #all_content,
-#programming:checked ~ #programming_content,
-#design:checked ~ #design_content,
-#tab_num4:checked ~ #tab_num4_content,
-#tab_num5:checked ~ #tab_num5_content {
-  display: block;
-}
-
-/* 선택된 탭 스타일 */
-.tabs input:checked + .tab_item {
-  background-color: #333333;
-  color: #fff;
-}
-
-.tabs input:checked + .tab_item2 {
-  background-color: #333333;
-  color: #fff;
 }
