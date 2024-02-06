@@ -26,73 +26,78 @@
   <link href="color/default.css" rel="stylesheet">
   <style type="text/css">
   #page-top #main .inner-page .container table tr td table tr td table tr td table tr td table #order tr .FormName {
-	font-family: 맑은 고딕; }
+	font-family: 맑은 고딕;
+  max-height: none;
+  width: auto;
+  height: auto;
+}
   </style>
 <!-- 그누보드5 자동 사이즈 조절 start -->
 <SCRIPT type=text/javascript>
   // IFrame script Ver 1.0
   
-  //여러개의 IFrame는 다음과 같이 사용합니다.
-  // 예 : ["myframe1", "myframe2"] or ["myframe"] or [] for none:
-  var iframeids=["ifrm"]
-  var iframehide="yes"
-  
-  var getFFVersion=navigator.userAgent.substring(navigator.userAgent.indexOf("Firefox")).split("/")[1]
-  var FFextraHeight=parseFloat(getFFVersion)>=0.1? 16 : 0
-  
-  function resizeCaller() {
-  var dyniframe=new Array()
-  
-  for (i=0; i<iframeids.length; i++) {
-  if (document.getElementById)
-  resizeIframe(iframeids[i])
-  
-  if ((document.all || document.getElementById) && iframehide=="no") {
-  var tempobj=document.all? document.all[iframeids[i]] : document.getElementById(iframeids[i])
-  tempobj.style.display="block"
+  const iframeids = ["ifrm"];
+const iframehide = "yes";
+
+const getFFVersion = navigator.userAgent.substring(navigator.userAgent.indexOf("Firefox")).split("/")[1];
+const FFextraHeight = parseFloat(getFFVersion) >= 0.1 ? 16 : 0;
+
+const resizeCaller = () => {
+  for (const iframeid of iframeids) {
+    if (document.getElementById) {
+      resizeIframe(iframeid);
+    }
+
+    if ((document.all || document.getElementById) && iframehide === "no") {
+      const tempobj = document.all ? document.all[iframeid] : document.getElementById(iframeid);
+      tempobj.style.display = "block";
+    }
   }
+};
+
+const resizeIframe = (frameid) => {
+  const currentfr = document.getElementById(frameid);
+
+  if (currentfr && !window.opera) {
+    currentfr.style.display = "block";
+
+    if (currentfr.contentDocument && currentfr.contentDocument.body.offsetHeight) {
+      currentfr.height = currentfr.contentDocument.body.offsetHeight + FFextraHeight;
+    } else if (currentfr.Document && currentfr.Document.body.scrollHeight) {
+      currentfr.height = currentfr.Document.body.scrollHeight;
+    }
+
+    if (currentfr.addEventListener) {
+      currentfr.addEventListener("load", readjustIframe, false);
+    } else if (currentfr.attachEvent) {
+      currentfr.detachEvent("onload", readjustIframe);
+      currentfr.attachEvent("onload", readjustIframe);
+    }
   }
+};
+
+const readjustIframe = (loadevt) => {
+  const crossevt = window.event ? event : loadevt;
+  const iframeroot = crossevt.currentTarget ? crossevt.currentTarget : crossevt.srcElement;
+
+  if (iframeroot) {
+    resizeIframe(iframeroot.id);
   }
-  
-  function resizeIframe(frameid) {
-  var currentfr=document.getElementById(frameid)
-  
-  if (currentfr && !window.opera){
-  currentfr.style.display="block"
-  
-  if (currentfr.contentDocument && currentfr.contentDocument.body.offsetHeight)
-  currentfr.height = currentfr.contentDocument.body.offsetHeight+FFextraHeight;
-  else if (currentfr.Document && currentfr.Document.body.scrollHeight)
-  currentfr.height = currentfr.Document.body.scrollHeight;
-  
-  if (currentfr.addEventListener)
-  currentfr.addEventListener("load", readjustIframe, false)
-  else if (currentfr.attachEvent){
-  currentfr.detachEvent("onload", readjustIframe)
-  currentfr.attachEvent("onload", readjustIframe)
+};
+
+const loadintoIframe = (iframeid, url) => {
+  if (document.getElementById) {
+    document.getElementById(iframeid).src = url;
   }
-  }
-  }
-  
-  function readjustIframe(loadevt) {
-  var crossevt=(window.event)? event : loadevt
-  var iframeroot=(crossevt.currentTarget)? crossevt.currentTarget : crossevt.srcElement
-  
-  if (iframeroot)
-  resizeIframe(iframeroot.id);
-  }
-  
-  function loadintoIframe(iframeid, url) {
-  if (document.getElementById)
-  document.getElementById(iframeid).src=url
-  }
-  
-  if (window.addEventListener)
-  window.addEventListener("load", resizeCaller, false)
-  else if (window.attachEvent)
-  window.attachEvent("onload", resizeCaller)
-  else
-  window.onload=resizeCaller
+};
+
+if (window.addEventListener) {
+  window.addEventListener("load", resizeCaller, false);
+} else if (window.attachEvent) {
+  window.attachEvent("onload", resizeCaller);
+} else {
+  window.onload = resizeCaller;
+}
   </SCRIPT>
 <!-- 그누보드5 자동 사이즈 조절 end -->
 
@@ -118,64 +123,65 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="index.html">Home</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us <b class="caret"></b></a>
             <ul class="dropdown-menu">
-              <li><a href="company_info.html">회사개요</a></li>
-			  <li><a href="history.html">연혁</a></li>
+              <li><a href="company_info.html" style="font-weight: bold"!important;>회사개요</a></li>
+			        <li><a href="history.html">연혁</a></li>
               <li><a href="financial.html">재무현황</a></li>
-			  <li><a href="organization.html">조직도</a></li>
-              <li><a href="certification.html">인증현황</a></li>
-			  <li><a href="welfare.html">복리후생</a></li>
-			
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="server.html">Server</a></li>
-              <li><a href="storage.html">Storage</a></li>
-			  <li><a href="san.html">SAN Switch</a></li>
-			  <li><a href="lto.html">LTO(PTL)</a></li>
-			  <li><a href="worm.html">WORM Storage</a></li>	
-              <!--<li><a href="software.html">Software</a></li>-->
-			  <li><a href="veeam.html">Veeam백업</a></li>
-			 <!-- <li><a href="saphana.html">SAP</a></li>-->
-			  
+			        <li><a href="organization.html">조직도</a></li>
+              <li><a href="partners.html">고객사 및 협력사</a></li>
+			        <li><a href="welfare.html">복리후생</a></li>
             </ul>
           </li>
 
-           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Technical Support<b class="caret"></b></a>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">SERVER <b class="caret"></b></a>
             <ul class="dropdown-menu">
-              <li><a href="maintenance.html">통합유지보수</a></li>
-  			  <li><a href="consulting.html">기술지원서비스(TA)</a></li>                                                       
-			  <li><a href="support.html">기술지원서비스(H/W)</a></li>  
-			  <li><a href="system.html">Storage 복제서비스</a></li>
-			  <li><a href="gpfs.html">공유파일시스템(GPFS)</a></li>	
-			  <li><a href="gklm.html">암호화솔루션(GKLM)</a></li>	
-			  <li><a href="rental.html">장비임대 및 이관</a></li>                                                       
-              <li><a href="sapse.html">SAP SE</a></li>                                                       				
-			  
+              <li><a href="ibm.html">IBM</a></li>
+			        <li><a href="dell.html">DELL</a></li>
+              <li><a href="lenovo.html">LENOVO</a></li>
             </ul>
           </li>
+
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Partners<b class="caret"></b></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">STORAGE <b class="caret"></b></a>
             <ul class="dropdown-menu">
-              <li><a href="partners.html">협력사</a></li>                                                       
-              <li><a href="customer.html">고객사</a></li>                                                       				
+              <li><a href="ds_series.html">DS Series</a></li>
+              <li><a href="fs_series.html">FS Series</a></li>
+			        <li><a href="ess_series.html">ESS Series</a></li>
+			        <li><a href="lto.html">LTO(PTL)</a></li>
+			        <li><a href="worm.html">WORM</a></li>	
+              <!--<li><a href="software.html">Software</a></li>-->
             </ul>
-          </li>   
+          </li>
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">SWITCH <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="company_info.html">Cisco</a></li>
+			        <li><a href="history.html">Brocade</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Technical Support <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="maintenance.html">통합유지보수</a></li>                                                       
+              <li><a href="consulting_supporrt.html">기술지원서비스</a></li>
+              <li><a href="rental.html">장비임대 및 이관</a></li>
+
+            </ul>
+          </li>    
 
            <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact Us <b class="caret"></b></a>
             <ul class="dropdown-menu">
               <li><a href="notice.html">공지사항</a></li>
               <li><a href="qna.html">문의하기</a></li>
-			  <li><a href="gallery.html">갤러리</a></li>	
+			        <li><a href="gallery.html">갤러리</a></li>	
               <li><a href="map.html">찾아오시는길</a></li>
-              <li><a href="recruit.html">채용공고</a></li>                                   
+              <li><a href="recruit.html">채용정보</a></li>                                   
             </ul>
           </li>
               
@@ -205,9 +211,9 @@
      <p align ="middle">  
 
       <!-- <iframe id="myframe" name="myframe" src="http://10.77.77.247/g5/bbs/board.php?bo_table=gallery"     style="width:60%;height:1200px" frameborder=0 scrolling="no"></iframe>  -->
-      <iframe id="ifrm" name="board" src="http://10.77.77.247/g5/bbs/board.php?bo_table=gallery" width="800" scrolling="no" frameborder="0"></iframe>
+      <iframe id="ifrm" name="board" src="http://10.77.77.247/g5/bbs/board.php?bo_table=gallery" width="900" scrolling="no" frameborder="0" height="397" style="display: block;"></iframe>
 	</p>          
-   <!--        <iframe id='content' frameborder=0 width=80% scrolling=no onLoad="changeHeight();" src='http://10.77.77.247/g5/bbs/board.php?bo_table=notice'></iframe>  -->
+   <!--        <iframe id='content' frameborder=0 width=80% scrolling=no onLoad="changeHeight();" src='http://10.77.77.247/g5/bbs/board.php?bo_table=notice'></iframe>
   </main><!-- End #main -->
 
 
@@ -215,19 +221,15 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 col-lg-12">
-          <div class="wow shake" data-wow-delay="0.4s">
-            <div class="page-scroll marginbot-30">
-              <a href="#intro" id="totop" class="btn btn-circle">
-							<i class="fa fa-angle-double-up fa-sm animated"></i>
-						</a>
-            </div>
-          </div>
+ 
           <p><img src="img/bt_logo_appez.png" width="150" height="50" alt="logo"></p>
             <p><span class="credits">2023 &copy; AppEZ. All rights reserved.</span>          </p>
           </div>
           <div class="credits">
-            <p>주   소 : 서울특별시 강서구 양천로 583, B동 907호(염창동, 우림블루나인) Tel:02-2135-5030, Fax:02-2135-5040<br>
+            <p>주   소 : 서울특별시 강서구 양천로 583, B동 907호(염창동, 우림블루나인)<br>
             </p>
+            <p>Tel:02-2135-5030</p>
+            <p>Fax:02-2135-5040</p>
           </div>
         </div>
       </div>

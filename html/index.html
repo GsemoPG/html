@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>주식회사 앱이지- IBM 스토리지, 서버, SAP, VEEAM, 기업시스템 토탈서비스 </title>
+    <title>
+      주식회사 앱이지- IBM 스토리지, 서버, SAP, VEEAM, 기업시스템 토탈서비스
+    </title>
 
     <!-- Core JavaScript Files -->
     <script src="js/jquery.min.js"></script>
@@ -19,321 +20,483 @@
     <script src="js/custom.js"></script>
     <script src="contactform/contactform.js"></script>
     <script src="./Responsive-Popup/rpopup.min.js"></script>
-    <link rel="stylesheet" href="./Responsive-Popup/rpopup.css">
-
-
+    <link rel="stylesheet" href="./Responsive-Popup/rpopup.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <!-- -- fontawesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
 
     <!-- Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link
+      href="font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <link href="css/animate.css" rel="stylesheet" />
     <!-- Favicon -->
-    <link rel="shortcut icon" href="/img/icons/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/img/icons/favicon.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="/img/icons/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="/img/icons/favicon.ico" type="image/x-icon" />
     <!-- Squad theme CSS -->
-    <link href="css/style.css" rel="stylesheet">
-    <link href="color/default.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="color/default.css" rel="stylesheet" />
     <style type="text/css">
-        #page-top .navbar.navbar-custom.navbar-fixed-top .container .navbar-header.page-scroll .navbar-brand h2 {
-            font-family: 맑은고딕;
-        }
+      #page-top
+        .navbar.navbar-custom.navbar-fixed-top
+        .container
+        .navbar-header.page-scroll
+        .navbar-brand
+        h2 {
+        font-family: 맑은고딕;
+      }
+
+      :root {
+        --swiper-theme-color: rgba(255, 255, 255, 0.3);
+      }
     </style>
-    
-    
-</head>
+  </head>
 
+  <body style="overflow-x: hidden">
+    <!-- Preloader -->
+    <div id="preloader">
+      <div id="load"></div>
+    </div>
 
- <body style="overflow-x: hidden">
-  <!-- Preloader -->
-  <div id="preloader">
-    <div id="load"></div>
-</div>
-  
-  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-    <div class="container">
-      <div class="navbar-header page-scroll">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-        </button>
-        <a class="navbar-brand" href="index.html">
-        <h1><img src="img/top_appez_logo.png" width="150" height="43" alt="logo"></h1>
-        </a>
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header page-scroll">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target=".navbar-main-collapse"
+          >
+            <i class="fa fa-bars"></i>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <h1>
+              <img
+                src="img/top_appez_logo.png"
+                width="150"
+                height="43"
+                alt="logo"
+              />
+            </h1>
+          </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                >About Us <b class="caret"></b
+              ></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    href="company_info.html"
+                    style="font-weight: bold"
+                    !important;
+                    >회사개요</a
+                  >
+                </li>
+                <li><a href="history.html">연혁</a></li>
+                <li><a href="financial.html">재무현황</a></li>
+                <li><a href="organization.html">조직도</a></li>
+                <li><a href="partners.html">고객사 및 협력사</a></li>
+                <li><a href="welfare.html">복리후생</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a
+                href="server.html"
+                class="dropdown-toggle"
+                data-toggle="dropdown"
+                >SERVER <b class="caret"></b
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="ibm.html">IBM</a></li>
+                <li><a href="dell.html">DELL</a></li>
+                <li><a href="lenovo.html">LENOVO</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                >STORAGE <b class="caret"></b
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="ds_series.html">DS Series</a></li>
+                <li><a href="fs_series.html">FS Series</a></li>
+                <li><a href="ess_series.html">ESS Series</a></li>
+                <li><a href="lto.html">LTO(PTL)</a></li>
+                <li><a href="worm.html">WORM</a></li>
+                <!--<li><a href="software.html">Software</a></li>-->
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                >SWITCH <b class="caret"></b
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="company_info.html">Cisco</a></li>
+                <li><a href="history.html">Brocade</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                >Technical Support <b class="caret"></b
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="maintenance.html">통합유지보수</a></li>
+                <li><a href="consulting_supporrt.html">기술지원서비스</a></li>
+                <li><a href="rental.html">장비임대 및 이관</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                >Contact Us <b class="caret"></b
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="notice.html">공지사항</a></li>
+                <li><a href="qna.html">문의하기</a></li>
+                <li><a href="gallery.html">갤러리</a></li>
+                <li><a href="map.html">찾아오시는길</a></li>
+                <li><a href="recruit.html">채용정보</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
       </div>
+      <!-- /.container -->
+    </nav>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="index.html">Home</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="company_info.html">회사개요</a></li>
-			        <li><a href="history.html">연혁</a></li>
-              <li><a href="financial.html">재무현황</a></li>
-			        <li><a href="organization.html">조직도</a></li>
-              <li><a href="certification.html">인증현황</a></li>
-			        <li><a href="welfare.html">복리후생</a></li>
-              <li><a href="partners.html">협력사 및 고객사</a></li>
-			
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="server.html">Server</a></li>
-              <li><a href="storage.html">Storage</a></li>
-			        <li><a href="san.html">SAN Switch</a></li>
-			        <li><a href="lto.html">LTO(PTL)</a></li>
-			        <li><a href="worm.html">WORM Storage</a></li>	
-              <!--<li><a href="software.html">Software</a></li>-->
-			        <li><a href="veeam.html">Solution</a></li>
-			        <!-- <li><a href="saphana.html">SAP</a></li>-->
-			  
-            </ul>
-          </li>
-
-           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Technical Support<b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="maintenance.html">통합유지보수</a></li>
-  			  <li><a href="consulting.html">기술지원서비스(TA)</a></li>                                                       
-			  <li><a href="support.html">기술지원서비스(H/W)</a></li>  
-			  <li><a href="system.html">Storage 복제서비스</a></li>
-			  <li><a href="gpfs.html">공유파일시스템(GPFS)</a></li>	
-			  <li><a href="gklm.html">암호화솔루션(GKLM)</a></li>	
-			  <li><a href="rental.html">장비임대 및 이관</a></li>                                                       
-              <li><a href="sapse.html">SAP SE</a></li>                                                       				
-			  
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Partners<b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="partners.html">협력사</a></li>                                                       
-              <li><a href="customer.html">고객사</a></li>                                                       				
-            </ul>
-          </li>   
-
-           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact Us <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="notice.html">공지사항</a></li>
-              <li><a href="qna.html">문의하기</a></li>
-			  <li><a href="gallery.html">갤러리</a></li>	
-              <li><a href="map.html">찾아오시는길</a></li>
-              <li><a href="recruit.html">채용공고</a></li>                                   
-            </ul>
-          </li>
-              
-        </ul>
+    <!-- Section: intro -->
+    <section id="banner">
+      <div class="container">
+        <!--//container-->
       </div>
-      <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container -->
-  </nav>
+      <div id="banner_slider">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide ss1">
+              <div class="container">
+                <div class="row">
+                  <h3></h3>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide ss2">
+              <div class="container">
+                <div class="row">
+                  <h3></h3>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide ss3">
+              <div class="container">
+                <div class="row">
+                  <h3></h3>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide ss4">
+              <div class="container">
+                <div class="row">
+                  <h3></h3>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
 
-  <!-- Section: intro -->
-  <section class="intro" id="intro">
-    <ul class="slideshow">
-      <li><span>Image 01</span></li> 
-      <li><span>Image 02</span></li>
-      <li><span>Image 03</span></li>
-	  <li><span>Image 04</span></li>
-	  <li><span>Image 05</span></li>
-	  <li><span>Image 06</span></li>
-    </ul>
-   
-    <div class="wow fadeInUp" data-wow-delay="0.4s">
-    <div class="slogan">
-      <center>
-      <h2>BEYOND THE IMPOSSIBLE</h2>
-      <h4>"창의적 사고와 끝없는 도전" 열정과 가치를 중시하는 진정한 사람 중심기업 </h4></center>
-    </div>
-    </div>
-  </section>
-  <p>&nbsp;</p>
-	 <!--intro image 다음 회사 설명    -->
-   <section class="inner-page">
-    <div class="container"><br>
-      <table width="200" border="0">
-          <tbody>
-          </tbody>
+          <div class="swiper-pagination"></div>
+          <!-- 닷메뉴 -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+    <!--intro image 다음 회사 설명    -->
+
+    <section class="inner-page">
+      <div class="container">
+        <table width="200" border="0">
+          <tbody></tbody>
         </table>
-        
-        <p>&nbsp;</p>
-        <h2 style="color:black"><big class="navy2">회사소개</big></h2>
+
+        <div class="wow fadeInUp" data-wow-delay="0.4s">
+          <img
+            src="img/intro_1.jpg"
+            alt=""
+            width="90%"
+            height="89"
+            style="width: 100%; height: auto"
+          />
+        </div>
+
+        <h2 style="color: black; margin-top: 80px">
+          <big class="navy2">회사소개</big>
+        </h2>
         <p>&nbsp;</p>
         <!--<h3 style="color:#002266;">임직원<big class="black">&nbsp;인사말<hr></big></h3> -->
-        <div class="wow fadeInUp" data-wow-delay="0.4s">
-      <h3 style="color:black">저희 기업은 IBM Storage에 가장 앞서가는 기술력과 노하우로 현재 업계선두를 달리고 있는<br> 대표기업 입니다. </h3>
-      <b>앱이지는 지난 수년간의 노력과 시행착오도 있었지만 고객과 더불어 꾸준히 성장하였습니다.</b>
-      <p>&nbsp;</p>
-      <b>관련업계의 경쟁이 점점 더 격화되고 있는 상황에서도 고객을 먼저 생각하는 기술을 바탕으로 </b>
+        <div class="wow fadeInUp">
+          <h3 style="color: black">
+            저희 기업은 IBM Storage에 가장 앞서가는 기술력과 노하우로 현재
+            업계선두를 달리고 있는<br />
+            대표기업 입니다.
+          </h3>
+          <b
+            >앱이지는 지난 수년간의 노력과 시행착오도 있었지만 고객과 더불어
+            꾸준히 성장하였습니다.</b
+          >
+          <p>&nbsp;</p>
+          <b
+            >관련업계의 경쟁이 점점 더 격화되고 있는 상황에서도 고객을 먼저
+            생각하는 기술을 바탕으로
+          </b>
+          <p>&nbsp;</p>
+          <b
+            >보다 안정적인 기업시스템 관련 토탈서비스를 고객분들에게
+            제공하겠습니다.</b
+          >
+          <p>&nbsp;</p>
+          <!-- <right><h4 style="color:black" align="right">AppEz 임직원 일동</h4></right>  -->
+        </div>
         <p>&nbsp;</p>
-		<b>보다 안정적인 기업시스템 관련 토탈서비스를 고객분들에게 제공하겠습니다.</b>
-    <p>&nbsp;</p>
-   <!-- <right><h4 style="color:black" align="right">AppEz 임직원 일동</h4></right>  -->
 
-       
-      </div>
-        <p>&nbsp;</p>
- 
-      <h3 style="color:#002266;">사업<big class="black">&nbsp;영역<hr></big></h3>
-      <div class="row">
+        <h3 style="color: #002266">
+          사업<big class="black"
+            >&nbsp;영역
+            <hr
+          /></big>
+        </h3>
         <div class="wow fadeInUp" data-wow-delay="0.4s">
-        <div class="col-sm-6">
-            <img src="img/appez_intro1.jpg" alt="A" class="image1" style="width:100%">
-            <div class="info2">
-              <a class="text" href="server.html">자세히</a>
+          <div class="main">
+            <center>
+              <div class="wow fadeInUp" data-wow-delay="0.4s">
+                <div class="hometext">
+                  IBM Power, IBM Storage, SAP운영, Veeam백업
+                </div>
+              </div>
+            </center>
+            <p>&nbsp;</p>
+            <center>
+              <div class="wow fadeInUp" data-wow-delay="0.4s">
+                <div class="hometextsub">
+                  IT 관련 다양한 제품을 제공하며 최고의 기술 인력들을 보유하여
+                  지원해 드립니다.
+                </div>
+              </div>
+            </center>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="wow fadeInUp">
+            <div class="col-sm-6">
+              <img
+                src="img/appez_intro1.jpg"
+                alt="A"
+                class="image1"
+                style="width: 100%"
+              />
+              <div class="info2">
+                <a class="text" href="server.html">자세히</a>
+              </div>
             </div>
-        </div>
-      </div>
-      <div class="wow fadeInUp" data-wow-delay="1.4s">
-        <div class="col-sm-6">
-          <img src="img/appez_intro2.jpg" alt="A" class="image1" style="width:100%">
-          <div class="info2">
-			  <a class="text" href="storage.html">자세히</a>
           </div>
-      </div>
-      </div>
-        <div class="wow fadeInUp" data-wow-delay="2.4s">
-        <div class="col-sm-6">
-          <img src="img/appez_intro3.jpg" alt="A" class="image1" style="width:100%">
-          <div class="info2">
-            <a class="text" href="saphana.html">자세히</a>
+          <div class="wow fadeInUp" data-wow-delay="0.4s">
+            <div class="col-sm-6">
+              <img
+                src="img/appez_intro2.jpg"
+                alt="A"
+                class="image1"
+                style="width: 100%"
+              />
+              <div class="info2">
+                <a class="text" href="storage.html">자세히</a>
+              </div>
+            </div>
           </div>
-      </div>
-      </div>
-      <div class="wow fadeInUp" data-wow-delay="3.4s">
-      <div class="col-sm-6">
-        <img src="img/appez_intro4.jpg" alt="A" class="image1" style="width:100%">
-        <div class="info2">
-          <a class="text" href="software.html">자세히</a>
+          <div class="wow fadeInUp" data-wow-delay="0.8s">
+            <div class="col-sm-6">
+              <img
+                src="img/appez_intro3.jpg"
+                alt="A"
+                class="image1"
+                style="width: 100%"
+              />
+              <div class="info2">
+                <a class="text" href="saphana.html">자세히</a>
+              </div>
+            </div>
+          </div>
+          <div class="wow fadeInUp" data-wow-delay="1.2s">
+            <div class="col-sm-6">
+              <img
+                src="img/appez_intro4.jpg"
+                alt="A"
+                class="image1"
+                style="width: 100%"
+              />
+              <div class="info2">
+                <a class="text" href="software.html">자세히</a>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      </div>
-      </div>
-         <p>&nbsp;</p>
-         <div class="wow fadeInUp" data-wow-delay="0.4s">
-         <img src="img/intro_1.jpg" alt="" width="90%" height="89" style="width: 100%; height: auto;"/>
-         </div>
-        
-          <map name="Map">
-            <area shape="rect" coords="641,82,722,113" href="qna.html">
-      </map>
-        <br>
-    </div>
 
-</section>
-  	
-<section id="first" class="first">
-  <!-- /Section: intro -->
-  <div class="row">
-      <div class="col-sm-4">
+        <map name="Map">
+          <area shape="rect" coords="641,82,722,113" href="qna.html" />
+        </map>
+        <br />
+      </div>
+    </section>
+
+    <section id="first" class="first">
+      <!-- /Section: intro -->
+      <div class="row">
+        <div class="col-sm-4">
           <div class="panel panel-default">
             <table width="100%" border="0">
               <tbody>
                 <tr>
                   <th width="100%" height="60" scope="col">
-              <div class="panel-heading3">
-                <div class="panelmain">IBM Power 10</div>
-              <div class="panelsub">Making secure, resilient, agile, hybird<br>
-                multi-cloud and AI workloads possble
-              </div></div>
+                    <div class="panel-heading3">
+                      <div class="panelmain">IBM Power 10</div>
+                      <div class="panelsub">
+                        Making secure, resilient, agile, hybird<br />
+                        multi-cloud and AI workloads possble
+                      </div>
+                    </div>
                   </th>
                 </tr>
-                  <tr bgcolor="#FFFFFF">
-                    <td height="40">
-                      <a href="power10.html" class="button_mk3"><b>바로가기&gt;</b></a>
-                    </td>
+                <tr bgcolor="#FFFFFF">
+                  <td height="40">
+                    <a href="power10.html" class="button_mk3"
+                      ><b>바로가기&gt;</b></a
+                    >
+                  </td>
                 </tr>
-            </tbody>
-          </table>                     
-      </div>
-      </div>
-      <div class="col-sm-4">                       
-           <div class="panel panel-default">
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="panel panel-default">
             <table width="100%" border="0">
               <tbody>
                 <tr>
                   <th width="100%" height="60" scope="col">
-              <div class="panel-heading3">
-                <div class="panelmain">IBM DS8900F</div><div class="panelsub"></div>
-                <b>Reduce cost and complexity<br>
-                Assure world-class performance<br>
-                Experience exceptional flexbility and scalability<br>
-                Make business continuity a reality<br>
-                Increse security and data protection<br>
-                </b></div>
+                    <div class="panel-heading3">
+                      <div class="panelmain">IBM DS8900F</div>
+                      <div class="panelsub"></div>
+                      <b
+                        >Reduce cost and complexity<br />
+                        Assure world-class performance<br />
+                        Experience exceptional flexbility and scalability<br />
+                        Make business continuity a reality<br />
+                        Increse security and data protection<br />
+                      </b>
+                    </div>
                   </th>
                 </tr>
-                  <tr bgcolor="#FFFFFF">
-                    <td height="40">
-                      <a href="ds8000.html" class="button_mk2"><b>바로가기&gt;</b></a>
-                    </td>
+                <tr bgcolor="#FFFFFF">
+                  <td height="40">
+                    <a href="ds8000.html" class="button_mk2"
+                      ><b>바로가기&gt;</b></a
+                    >
+                  </td>
                 </tr>
-            </tbody>
-          </table>
-      </div>
-      </div>
-      <div class="col-sm-4">                       
-           <div class="panel panel-default">
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="panel panel-default">
             <table width="100%" border="0">
               <tbody>
                 <tr>
                   <th width="100%" height="60" scope="col">
-              <div class="panel-heading3">
-                <div class="panelmain">SAP ECC6.0 EOS</div><div class="panelsub"></div>
-                <b>-SAP ECC6.0 EOS 대응전략<br>-SAP S/4HANA<br>-HANA DB<br>
-                </b></div>
+                    <div class="panel-heading3">
+                      <div class="panelmain">SAP ECC6.0 EOS</div>
+                      <div class="panelsub"></div>
+                      <b
+                        >-SAP ECC6.0 EOS 대응전략<br />-SAP S/4HANA<br />-HANA
+                        DB<br />
+                      </b>
+                    </div>
                   </th>
                 </tr>
-                  <tr bgcolor="#FFFFFF">
-                    <td height="40">
-                      <a href="sapeos.html" class="button_mk2"><b>바로가기&gt;</b></a>
-                    </td>
+                <tr bgcolor="#FFFFFF">
+                  <td height="40">
+                    <a href="sapeos.html" class="button_mk2"
+                      ><b>바로가기&gt;</b></a
+                    >
+                  </td>
                 </tr>
-            </tbody>
-          </table>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
-      </div>
-  </div>
 
-
-  <p>&nbsp;</p>
-  <p>&nbsp;</p>
-  <p>&nbsp;</p>
-</section>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+    </section>
     <!-- Section: middle -->
     <section class="middle" id="middle">
-
       <div class="wow fadeInUp" data-wow-delay="0.4s">
-      <div class="main">
-        <center>
-        <h2>전체인력 중 76%가 전문 엔지니어로 구성<br><br>핵심 기술력을 보유한 고급기술자 이상 인력이 69%</h2>
-        <h4>고성능 시스템 기술 서비스 인력을 지속적으로 강화하여 기술 서비스 중심의 사업 확대를 적극 추진 중입니다.</h4></center>
+        <div class="main">
+          <center>
+            <h2>
+              전체인력 중 76%가 전문 엔지니어로 구성<br /><br />핵심 기술력을
+              보유한 고급기술자 이상 인력이 69%
+            </h2>
+            <h4>
+              고성능 시스템 기술 서비스 인력을 지속적으로 강화하여 기술 서비스
+              중심의 사업 확대를 적극 추진 중입니다.
+            </h4>
+          </center>
+        </div>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
       </div>
-      <p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-      </div>
-    <!-- Section: about -->
-</section>
-<p>&nbsp;</p>
-<center><div class="wow fadeInUp" data-wow-delay="0.4s"><div class="hometext">IBM Power, IBM Storage, SAP운영, Veeam백업</div></div></center>
-<p>&nbsp;</p>
-<center><div class="wow fadeInUp" data-wow-delay="0.4s"><div class="hometextsub">IT 관련 다양한 제품을 제공하며 최고의 기술 인력들을 보유하여 지원해 드립니다..</div></div></center>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<!--
+      <!-- Section: about -->
+    </section>
+    <p>&nbsp;</p>
+
+    <!--
 <center><div class="wow fadeInUp" data-wow-delay="0.4s"><div class="hometextsns">Social Networking Service</div></div></center>
 <center>
 <div class="row">
@@ -356,51 +519,84 @@
 </center>
 <p>&nbsp;</p>
 -->
-  <!-- /Section: contact -->
-  <div class="contact-area-home">
-    <p>&nbsp;</p>
-    <center><div class="wow fadeInUp" data-wow-delay="0.4s"><div class="hometextcontact">문의하기</div>
+    <!-- /Section: contact -->
+    <div class="contact-area-home">
       <p>&nbsp;</p>
-    <p>궁금하신 사항이 있다면 언제든지 문의해 주세요.</p>
-    <p>담당자가 연락처 또는 이메일로 회신해 드립니다.</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-  </div>
-    <a href="qna.html" class="button_qna1"><b>바로가기</b></a></center>
-</div>
+      <center>
+        <div class="wow fadeInUp" data-wow-delay="0.4s">
+          <div class="hometextcontact">문의하기</div>
+          <p>&nbsp;</p>
+          <p>궁금하신 사항이 있다면 언제든지 문의해 주세요.</p>
+          <p>담당자가 연락처 또는 이메일로 회신해 드립니다.</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+        </div>
+        <a href="qna.html" class="button_qna1"><b>바로가기</b></a>
+      </center>
+    </div>
 
-  <!-- /Section: footer -->
+    <!-- /Section: footer -->
 
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 col-lg-12">
-          <div class="wow shake" data-wow-delay="0.4s" style="position: relative; z-index: 3;">
-            <div class="page-scroll marginbot-30">
-              <a href="#intro" id="totop" class="btn btn-circle">
-							<i class="fa fa-angle-double-up fa-sm animated"></i>
-			  </a>
-            </div>
-          </div>
-          <div align="center">
-            <p><img src="img/bt_logo_appez.png" width="150" height="50" alt="logo"></p>
-            <p><span class="credits">2023 &copy; AppEZ. All rights reserved.</span>  
-              <div class="familysite">
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-12">
+            <div align="center">
+              <p>
+                <img
+                  src="img/bt_logo_appez.png"
+                  width="150"
+                  height="50"
+                  alt="logo"
+                />
+              </p>
+              <p>
+                <span class="credits"
+                  >2023 &copy; AppEZ. All rights reserved.</span
+                >
+                <!-- <div class="familysite">
                 <select name="sitelist">
                     <option value="http://webez.co.kr">그룹웨어</option>
                     <option value="http://10.77.77.247/admin.html">관리자페이지</option>
                     <option value="http://10.77.77.246:3000">앱이지솔루션</option>
                 </select>
-            </div></p>
-          </div>
-          <div class="credits">
-            <p>주   소 : 서울특별시 강서구 양천로 583, B동 907호(염창동, 우림블루나인) Tel:02-2135-5030, Fax:02-2135-5040<br>
-            </p>
+            </div></p> -->
+              </p>
+            </div>
+
+            <div class="credits">
+              <p>
+                주 소 : 서울특별시 강서구 양천로 583, B동 907호(염창동,
+                우림블루나인)<br />
+              </p>
+              <p>Tel:02-2135-5030</p>
+              <p>Fax:02-2135-5040</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
-</body>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        loop: true, //무한반복
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true, //닷버튼 클릭시 페이지 이동
+        }, //닷메뉴
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        }, //이전단추, 다음단추
+
+        autoplay: {
+          delay: 4000,
+        }, //자동재생
+      });
+    </script>
+  </body>
 </html>
