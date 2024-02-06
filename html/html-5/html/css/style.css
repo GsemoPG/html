@@ -2902,7 +2902,7 @@ g02.s03 .item_area li strong {
   overflow: hidden;
   width: 100%;
   max-width: 1300px;
-  margin: 0 auto;
+  margin: 0;
 }
 .aside .swiper-wrapper {
   max-width: none;
