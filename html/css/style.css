@@ -2777,7 +2777,166 @@ input[name="tab_item2"] {
   color: #fff;
 }
 
-.tabs input:checked + .tab_item2 {
-  background-color: #333333;
-  color: #fff;
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+
+g02.s03 .item_area li strong {
+  font-size: 50px;
+  line-height: 24px;
+}
+.g02.s03 .item_area li p {
+  font-size: 16px;
+}
+.g02.s03 .item_area li b {
+  font-size: 20px;
+}
+.aside.g02.s01.d03 .swiper-wrapper,
+.aside.g02.s01.d04 .swiper-wrapper {
+  transform: translate3d(-255px, 0px, 0px);
+}
+.aside.g02.s01.d05 .swiper-wrapper {
+  transform: translate3d(-293px, 0px, 0px);
+}
+.aside a {
+  font-size: 50px;
+  margin-left: 20px;
+}
+.aside .swiper-wrapper {
+  max-width: none;
+}
+.aside a {
+  font-size: 50px;
+  line-height: 60px;
+}
+.aside.g01 .swiper-wrapper {
+  width: 180%;
+}
+.aside.g01.s05 .swiper-wrapper,
+.aside.g01.s06 .swiper-wrapper,
+.aside.g01.s07 .swiper-wrapper,
+.aside.g01.s08 .swiper-wrapper {
+  transform: translate3d(-241px, 0px, 0px);
+}
+.aside.g02.s01.d03 .swiper-wrapper,
+.aside.g02.s01.d04 .swiper-wrapper {
+  transform: translate3d(-255px, 0px, 0px);
+}
+.aside.g02.s01.d05 .swiper-wrapper {
+  transform: translate3d(-293px, 0px, 0px);
+}
+.aside.g02.s03.d04 .swiper-wrapper {
+  transform: translate3d(-285px, 0px, 0px);
+}
+.aside.g02.s03.d05 .swiper-wrapper {
+  transform: translate3d(-386px, 0px, 0px);
+}
+.aside.g02.s03.d06 .swiper-wrapper,
+.aside.g02.s03.d07 .swiper-wrapper,
+.aside.g02.s03.d08 .swiper-wrapper {
+  transform: translate3d(-420px, 0px, 0px);
+}
+.aside:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #ddd;
+}
+.aside .inner {
+  overflow: hidden;
+}
+.aside a {
+  position: relative;
+  float: left;
+  display: block;
+  font-size: 50px;
+  color: #666;
+  line-height: 79px;
+  margin-left: 50px;
+  width: auto;
+}
+.aside a:first-child {
+  margin-left: 0;
+}
+.aside a:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: #0075ba;
+  transition: 0.2s linear;
+}
+.aside a:hover,
+.a .aside a.on {
+  color: #0373bb;
+}
+.aside a:hover:before,
+.aside a.on:before {
+  left: 0;
+  width: 100%;
+}
+.container.g03.s05.inner {
+  padding: 60px 15px 100px;
+}
+@media screen and (max-width: 1300px) {
+  .inner {
+    padding: 0 20px;
+  }
+}
+.inner {
+  position: relative;
+  height: 390px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.aside .swiper-wrapper {
+  max-width: none;
+}
+.aside a {
+  font-size: 25px;
+  line-height: 60px;
+  font-weight: bold;
+  font-family: "맑은고딕";
+}
+.aside.g01 .swiper-wrapper {
+  width: 180%;
+}
+.aside.g01.s05 .swiper-wrapper,
+.aside.g01.s06 .swiper-wrapper,
+.aside.g01.s07 .swiper-wrapper,
+.aside.g01.s08 .swiper-wrapper {
+  transform: translate3d(-241px, 0px, 0px);
+}
+.aside.g02.s01.d03 .swiper-wrapper,
+.aside.g02.s01.d04 .swiper-wrapper {
+  transform: translate3d(-255px, 0px, 0px);
+}
+.aside.g02.s01.d05 .swiper-wrapper {
+  transform: translate3d(-293px, 0px, 0px);
+}
+.aside.g02.s03.d04 .swiper-wrapper {
+  transform: translate3d(-285px, 0px, 0px);
+}
+.aside.g02.s03.d05 .swiper-wrapper {
+  transform: translate3d(-386px, 0px, 0px);
+}
+.aside.g02.s03.d06 .swiper-wrapper,
+.aside.g02.s03.d07 .swiper-wrapper,
+.aside.g02.s03.d08 .swiper-wrapper {
+  transform: translate3d(-420px, 0px, 0px);
 }
