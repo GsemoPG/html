@@ -1,0 +1,149 @@
+<?php
+
+  if(isset($_POST['toEmail']) && $_POST['toEmail'] && isset($_POST['fromEmail']) && $_POST['fromEmail']){
+
+    $header .= "From: 보낸사람 <".$_POST['fromEmail'].">\n";      //메일 보내는 사람
+    $header .= "Reply-Path: <". $_POST['fromEmail'].">\n";        // 리턴 메일
+
+    $header .= "Content-Type: text/html;charset=utf-8\n";
+    $content = nl2br(htmlspecialchars(stripslashes($_POST['content'])));
+
+    $res = mail($_POST['toEmail'], $_POST['subject'], $content, $header);
+    $msg = '이메일 발송을 실패하였습니다.';
+    if($res) $msg = '이메일 발송에 성공하였습니다.';
+
+    echo '<script>
+          alert("'.$msg.'");
+          </script>';
+
+  }
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>♣임시 메일 발송 테스트</title>
+  <style>
+    *{
+      font: normal 12px/12px gulim;
+    }
+    table.border{
+      border-collapse: collapse;
+      margin: 0;
+      padding: 0;
+      border: 1px solid #a6c9e2;
+    }
+    table.border th.border{
+      margin: 0;
+      padding: 3px;
+      border: 1px solid #a6c9e2;
+      background-color: #eaf4fd;
+      font-weight: normal;
+    }
+    table.border td.border{
+      margin: 0;
+      padding: 3px;
+      border: 1px solid #a6c9e2;
+    }
+    .r{color: #f00;}
+    .p{color: #f0f;}
+    .g{color: #390;}
+    .b{color: #00f;}
+  </style>
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+</head>
+<body>
+
+
+<form id="frm" method="post" onsubmit="return true" enctype="multipart/form-data" action="<?=$_SERVER['PHP_SELF']?>">
+<div>
+  
+  <table class="border" style="width: 100%;table-layout: fixed">
+  <colgroup>
+  <col style="width: 10%" />
+  <col style="width: 90%" />
+  </colgroup>
+  
+  <tbody>
+
+  <tr>
+  <th class="border">발송자 이메일</th>
+  <td class="border"><input type="text" class="" id="fromEmail" name="fromEmail" value="devkorea@hansolsoft.com" title="" style="width: 50%" /></td>
+  </tr>
+
+  <tr>
+  <th class="border">수신자 이메일</th>
+  <td class="border"><input type="text" class="" id="toEmail" name="toEmail" value="" title="" style="width: 50%" /></td>
+  </tr>
+  
+  <tr>
+  <th class="border">제목</th>
+  <td class="border"><input type="text" class="" id="subject" name="subject" value="테스트를 위한 메일 제목입니다." title="" style="width: 50%" /></td>
+  </tr>
+  
+  <tr>
+  <th class="border">내용</th>
+  <td class="border">
+    <textarea class="" id="contents" name="contents" rows="4" style="width: 50%">
+테스트를 위한 메일 내용중 첫번째 라인입니다.
+
+테스트를 위한 메일 내용중 두번째 라인입니다.
+    </textarea>
+  </td>
+  </tr>
+  </tbody>
+kmvat / 5850611
+
+
+
+  
+  <tr>
+  <td class="border" colspan="2"><input type="submit" value="메일발송 테스트" /></td>
+  </tr>
+  
+
+  <tr>
+  <td class="border" colspan="2">
+    수신자에 메일을 입력후 테스트 해 보시면 아시겠지만 무한루프에 빠집니다. 물론 발송자 변경을 하셔서 테스트 하셔도 됩니다.
+  </td>
+  </tr>
+
+  <tr>
+  <th class="border">테스트를 위한<br /><br />PHP 코드</th>
+  <td class="border">
+
+  <pre>
+  <span class="b">if</span>(<span class="b">isset</span>(<span class="g">$_POST</span>[<span class="p">'toEmail'</span>]) && <span class="g">$_POST</span>[<span class="p">'toEmail'</span>] && <span class="b">isset</span>(<span class="g">$_POST</span>[<span class="p">'fromEmail'</span>]) && <span class="g">$_POST</span>[<span class="p">'fromEmail'</span>]){
+
+    <span class="g">$header</span> .= <span class="p">"From: 보낸사람 &lt;"</span>.<span class="g">$_POST</span>[<span class="p">'fromEmail'</span>].<span class="p">"&gt\n"</span>;
+    <span class="g">$header</span> .= <span class="p">"Reply-Path: &lt;"</span>.<span class="g">$_POST</span>[<span class="p">'fromEmail'</span>].<span class="p">"&gt\n"</span>;
+
+    <span class="g">$header</span> .= <span class="p">"Content-Type: text/html;charset=utf-8\n"</span>;
+    <span class="g">$content</span> = <span class="r">nl2br</span>(<span class="r">htmlspecialchars</span>(<span class="r">stripslashes</span>(<span class="g">$_POST</span>[<span class="p">'content'</span>])));
+
+    <span class="g">$res</span> = <span class="r">mail</span>(<span class="g">$_POST</span>[<span class="p">'toEmail'</span>], <span class="g">$_POST</span>[<span class="p">'subject'</span>], <span class="g">$content</span>, <span class="g">$header</span>);   <span class="g">// 이곳에서 무한루프 발생</span>
+    <span class="g">$msg</span> = <span class="p">'이메일 발송을 실패하였습니다.'</span>;
+    <span class="b">if</span>(<span class="g">$res</span>) <span class="g">$msg</span> = <span class="p">'이메일 발송에 성공하였습니다.'</span>;
+
+    <span class="b">echo</span> <span class="p">'&lt;script&gt;
+          alert("'.<span class="g">$msg</span>.'");
+          &lt;/script&gt;'</span>;
+
+  }
+  </pre>
+
+  </td>
+  </tr>
+  </table>
+  
+
+</div>
+</form>
+
+
+
+
+</body>
+</html>
+
+
