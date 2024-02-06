@@ -1,0 +1,70 @@
+<?
+  $connect=mysql_connect("121.78.236.97", "sms", "sms7979");
+  $db_con=mysql_select_db("sms",$connect);
+?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>한솔소프트(주) &gt; 고객의 든든한 비지니스 파트너가 되겠습니다.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<link href="styles.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+  function use(com_name,com_name2,sn,sn2){
+    opener.document.form.com_name.value=com_name;
+    opener.document.form.com_name2.value=com_name2;
+    opener.document.form.sn2.value=sn;
+    opener.document.form.sn.value=sn2;
+    self.close();
+  }
+</script>
+</head>
+
+<body>
+<table width="100%" border="0" cellpadding="0" cellspacing="5">
+<form name="form" action="<?=$PHP_SELF?>" method="post">
+  <tr>
+    <td>
+      <table width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="#E3E3E3">
+        <tr height="25" bgcolor="#EEEEEE" align="center">
+          <td width="100">회사명</td>
+          <td bgcolor="#FFFFFF" align="left" style="padding-left:10">
+            <input type="text" name="com_name" value="" style="width:150" class="input2" chk msg="회사명을">
+          </td>
+        </tr>
+        <tr height="25" align="center" bgcolor="#FFFFFF">
+          <td colspan="2"><input type="image" src="images/search.gif" border="0" align="absmiddle" onclick="com_check();"></td>
+        </tr>
+<?
+  if($com_name)
+    {
+?>
+        <tr bgcolor="#FFFFFF" align="center">
+          <td colspan="2" style="padding:10">
+            <table border="0" cellpadding="0" cellspacing="0">
+<?
+      $select="select * from sms_user where name like '%$com_name%'";
+      $query=mysql_query($select);
+      while($data=mysql_fetch_array($query)){
+        $sn=explode("-",$data[sn]);
+?>
+              <tr height="25">
+                <td><a href="#" onclick="use('<?=$data[name]?>', '<?=$data[num]?>', '<?=$data[sn]?>', '<?=$sn[0]?>-<?=$sn[1]?>-*****')"><?=$data[name]?> <?=$sn[0]?>-<?=$sn[1]?>-*****</td>
+              </tr>
+<?
+      }
+?>
+            </table>
+          </td>
+        </tr>
+<?      
+    }
+?>
+      </table>
+    </td>
+  </tr>
+</form>
+</table>
+
+</body>
+<script language="javascript" src="/script/wrest.js"></script>
+</html>

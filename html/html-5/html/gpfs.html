@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>주식회사 앱이지- GPFS</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- -- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+
+    <!-- Fonts -->
+    <link
+      href="font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="css/animate.css" rel="stylesheet" />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="/img/icons/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="/img/icons/favicon.ico" type="image/x-icon" />
+    <!-- Squad theme CSS -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="color/default.css" rel="stylesheet" />
+  </head>
+
+  <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+    <!-- Preloader -->
+    <div id="preloader">
+      <div id="load"></div>
+    </div>
+
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header page-scroll">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target=".navbar-main-collapse"
+          >
+            <i class="fa fa-bars"></i>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <h1>
+              <img
+                src="img/top_appez_logo.png"
+                width="150"
+                height="43"
+                alt="logo"
+              />
+            </h1>
+          </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                >About Us <b class="caret"></b
+              ></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    href="company_info.html"
+                    style="font-weight: bold"
+                    !important;
+                    >회사개요</a
+                  >
+                </li>
+                <li><a href="history.html">연혁</a></li>
+                <li><a href="financial.html">재무현황</a></li>
+                <li><a href="organization.html">조직도</a></li>
+                <li><a href="partners.html">고객사 및 협력사</a></li>
+                <li><a href="welfare.html">복리후생</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                >SERVER <b class="caret"></b
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="ibm.html">IBM</a></li>
+                <li><a href="dell.html">DELL</a></li>
+                <li><a href="lenovo.html">LENOVO</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                >STORAGE <b class="caret"></b
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="ds_series.html">DS Series</a></li>
+                <li><a href="fs_series.html">FS Series</a></li>
+                <li><a href="ess_series.html">ESS Series</a></li>
+                <li><a href="lto.html">LTO(PTL)</a></li>
+                <li><a href="worm.html">WORM</a></li>
+                <!--<li><a href="software.html">Software</a></li>-->
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                >SWITCH <b class="caret"></b
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="company_info.html">Cisco</a></li>
+                <li><a href="history.html">Brocade</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                >Technical Support <b class="caret"></b
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="maintenance.html">통합유지보수</a></li>
+                <li><a href="consulting_supporrt.html">기술지원서비스</a></li>
+                <li><a href="rental.html">장비임대 및 이관</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                >Contact Us <b class="caret"></b
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="notice.html">공지사항</a></li>
+                <li><a href="qna.html">문의하기</a></li>
+                <li><a href="gallery.html">갤러리</a></li>
+                <li><a href="map.html">찾아오시는길</a></li>
+                <li><a href="recruit.html">채용정보</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+    </nav>
+
+    <!-- PAGE상단 배경으로 이미지 개별 적용 -->
+    <main id="main">
+      <div id="page-banner" style="background-image: url(img/top-3.jpg)">
+        <div
+          class="content wow fdeInUp"
+          style="visibility: visible; animation-name: fdeInUp"
+        ></div>
+      </div>
+
+      <section class="inner-page">
+        <div class="container">
+          <table width="200" border="0">
+            <tbody></tbody>
+          </table>
+          <p>&nbsp;</p>
+          <a href="#intro"></a>
+          <h2 id="intro" style="color: black">
+            <big class="navy2">공유파일시스템(Spectrum Scale, 구GPFS)</big>
+          </h2>
+          <p>
+            Spectrum Scale(구GPFS)은 클러스터 환경의 모든 노드에서 데이터에
+            액세스할 수 있도록 지원하는 고성능 공유 디스크파일 시스템으로서 병렬
+            및 직렬 처리 애플리케이션은 표준 UNIX파일 시스템 인터페이스를 사용해
+            공유 파일에 즉시 액세스 할 수 있으며 다수의 노드에 동일한 파일에
+            동시에 액세스 할 수 있습니다. IBM® General Parallel File
+            System(GPFS™) 소프트웨어는 시스템 전체적으로 파일 시스템을 공유하는
+            데 사용됩니다. 고가용성(HA) 구성은 이중 GPFS 네트워크 공유
+            디스크(NSD) 서버를 포함하고 HA 자원 및 GPFS 파일 시스템 간의
+            종속성을 강제 실행합니다.
+          </p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <div class="usecase">
+            <input id="tab1" type="radio" name="tabs" checked />
+            <!--디폴트 메뉴-->
+            <label for="tab1">공유파일시스템(GPFS)</label>
+
+            <section4 id="content1">
+              <p>&#8226;&nbsp;시점백업(Snapshot)</p>
+              <p>&#8226;&nbsp;고속 Meta-Data Access</p>
+              <p>&#8226;&nbsp;데이터 압축 효율성</p>
+              <p>&#8226;&nbsp;ILM 기능</p>
+              <p>&#8226;&nbsp;AFM(Active File Management)</p>
+              <p>&#8226;&nbsp;무중단 마이그레이션</p>
+              <p>&#8226;&nbsp;뛰어난 어플리케이션 호환성</p>
+              <p>&#8226;&nbsp;AI workloads with Spectrum Scale</p>
+              <p>&#8226;&nbsp;Container native storage</p>
+              <p>&#8226;&nbsp;GPUDirect Storage Support w/ NVIDIA</p>
+              <p>&#8226;&nbsp;Spectrum Archive Enterprise Edition</p>
+              <p>&#8226;&nbsp;IBM Data Accelerator for AI and Analytics</p>
+              <p>&#8226;&nbsp;웹 기반 GUI 제공</p>
+            </section4>
+
+            <h3 style="color: black">&nbsp;</h3>
+            <h3 style="color: black">시점백업(Snapshot)</h3>
+            <div>
+              <div>
+                <div>
+                  <div>
+                    <p>
+                      <img
+                        src="img/gpfs1.jpg"
+                        alt=""
+                        style="width: 90%; height: auto"
+                      />
+                    </p>
+                    <!-- <img src="img/organization.jpg" alt="" width="90%" height="89" style="width: 100%; height: auto;"/>  -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3 style="color: black">&nbsp;</h3>
+            <h3 style="color: black">고속 Meta-Data Access</h3>
+            <div>
+              <div>
+                <div>
+                  <div>
+                    <p>
+                      <img
+                        src="img/gpfs2.jpg"
+                        alt=""
+                        style="width: 90%; height: auto"
+                      />
+                    </p>
+                    <!-- <img src="img/organization.jpg" alt="" width="90%" height="89" style="width: 100%; height: auto;"/>  -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3 style="color: black">&nbsp;</h3>
+            <h3 style="color: black">데이터 압축 효율성</h3>
+            <div>
+              <div>
+                <div>
+                  <div>
+                    <p>
+                      <img
+                        src="img/gpfs3.jpg"
+                        alt=""
+                        style="width: 90%; height: auto"
+                      />
+                    </p>
+                    <!-- <img src="img/organization.jpg" alt="" width="90%" height="89" style="width: 100%; height: auto;"/>  -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3 style="color: black">&nbsp;</h3>
+            <h3 style="color: black">ILM 기능</h3>
+            <div>
+              <div>
+                <div>
+                  <div>
+                    <p>
+                      <img
+                        src="img/gpfs4.jpg"
+                        alt=""
+                        style="width: 90%; height: auto"
+                      />
+                    </p>
+                    <!-- <img src="img/organization.jpg" alt="" width="90%" height="89" style="width: 100%; height: auto;"/>  -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3 style="color: black">&nbsp;</h3>
+            <h3 style="color: black">AFM(Active File Management)</h3>
+            <div>
+              <div>
+                <div>
+                  <div>
+                    <p>
+                      <img
+                        src="img/gpfs5.jpg"
+                        alt=""
+                        style="width: 90%; height: auto"
+                      />
+                    </p>
+                    <p>
+                      <img
+                        src="img/gpfs6.jpg"
+                        alt=""
+                        style="width: 90%; height: auto"
+                      />
+                    </p>
+                    <!-- <img src="img/organization.jpg" alt="" width="90%" height="89" style="width: 100%; height: auto;"/>  -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3 style="color: black">&nbsp;</h3>
+            <h3 style="color: black">무중단 마이그레이션</h3>
+            <div>
+              <div>
+                <div>
+                  <div>
+                    <p>
+                      <img
+                        src="img/gpfs7.jpg"
+                        alt=""
+                        style="width: 90%; height: auto"
+                      />
+                    </p>
+                    <!-- <img src="img/organization.jpg" alt="" width="90%" height="89" style="width: 100%; height: auto;"/>  -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3 style="color: black">&nbsp;</h3>
+            <h3 style="color: black">뛰어난 어플리케이션 호환성</h3>
+            <div>
+              <div>
+                <div>
+                  <div>
+                    <p>
+                      <img
+                        src="img/gpfs8.jpg"
+                        alt=""
+                        style="width: 90%; height: auto"
+                      />
+                    </p>
+                    <!-- <img src="img/organization.jpg" alt="" width="90%" height="89" style="width: 100%; height: auto;"/>  -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3 style="color: black">&nbsp;</h3>
+            <h3 style="color: black">AI workloads with Spectrum Scale</h3>
+            <div>
+              <div>
+                <div>
+                  <div>
+                    <p>
+                      <img
+                        src="img/gpfs9.jpg"
+                        alt=""
+                        style="width: 90%; height: auto"
+                      />
+                    </p>
+                    <p>
+                      <img
+                        src="img/gpfs10.jpg"
+                        alt=""
+                        style="width: 90%; height: auto"
+                      />
+                    </p>
+                    <!-- <img src="img/organization.jpg" alt="" width="90%" height="89" style="width: 100%; height: auto;"/>  -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3 style="color: black">&nbsp;</h3>
+            <h3 style="color: black">Container native storage</h3>
+            <div>
+              <div>
+                <div>
+                  <div>
+                    <p>
+                      <img
+                        src="img/gpfs11.jpg"
+                        alt=""
+                        style="width: 90%; height: auto"
+                      />
+                    </p>
+                    <!-- <img src="img/organization.jpg" alt="" width="90%" height="89" style="width: 100%; height: auto;"/>  -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3 style="color: black">&nbsp;</h3>
+            <h3 style="color: black">GPUDirect Storage Support w/ NVIDIA</h3>
+            <div>
+              <div>
+                <div>
+                  <div>
+                    <p>
+                      <img
+                        src="img/gpfs12.jpg"
+                        alt=""
+                        style="width: 90%; height: auto"
+                      />
+                    </p>
+                    <p>
+                      <img
+                        src="img/gpfs13.jpg"
+                        alt=""
+                        style="width: 90%; height: auto"
+                      />
+                    </p>
+                    <!-- <img src="img/organization.jpg" alt="" width="90%" height="89" style="width: 100%; height: auto;"/>  -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3 style="color: black">&nbsp;</h3>
+            <h3 style="color: black">Spectrum Archive Enterprise Edition</h3>
+            <div>
+              <div>
+                <div>
+                  <div>
+                    <p>
+                      <img
+                        src="img/gpfs14.jpg"
+                        alt=""
+                        style="width: 90%; height: auto"
+                      />
+                    </p>
+                    <!-- <img src="img/organization.jpg" alt="" width="90%" height="89" style="width: 100%; height: auto;"/>  -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3 style="color: black">&nbsp;</h3>
+            <h3 style="color: black">
+              IBM Data Accelerator for AI and Analytics
+            </h3>
+            <div>
+              <div>
+                <div>
+                  <div>
+                    <p>
+                      <img
+                        src="img/gpfs15.jpg"
+                        alt=""
+                        style="width: 90%; height: auto"
+                      />
+                    </p>
+                    <!-- <img src="img/organization.jpg" alt="" width="90%" height="89" style="width: 100%; height: auto;"/>  -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3 style="color: black">&nbsp;</h3>
+            <h3 style="color: black">웹 기반 GUI 제공</h3>
+            <div>
+              <div>
+                <div>
+                  <div>
+                    <p>
+                      <img
+                        src="img/gpfs16.jpg"
+                        alt=""
+                        style="width: 90%; height: auto"
+                      />
+                    </p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <!-- <img src="img/organization.jpg" alt="" width="90%" height="89" style="width: 100%; height: auto;"/>  -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- End #main -->
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-12">
+            <p>
+              <img
+                src="img/bt_logo_appez.png"
+                width="150"
+                height="50"
+                alt="logo"
+              />
+            </p>
+            <p>
+              <span class="credits"
+                >2023 &copy; AppEZ. All rights reserved.</span
+              >
+            </p>
+          </div>
+          <div class="credits">
+            <p>
+              주 소 : 서울특별시 강서구 양천로 583, B동 907호(염창동,
+              우림블루나인) Tel:02-2135-5030, Fax:02-2135-5040<br />
+            </p>
+          </div>
+          <div class="credits">
+            <p>
+              주 소 : 서울특별시 강서구 양천로 583, B동 907호(염창동,
+              우림블루나인)
+            </p>
+            <p>Tel : 02-2135-5030</p>
+            <p>Fax : 02-2135-5040</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Core JavaScript Files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.scrollTo.js"></script>
+    <script src="js/wow.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/custom.js"></script>
+    <script src="contactform/contactform.js"></script>
+  </body>
+</html>

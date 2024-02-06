@@ -1,0 +1,153 @@
+<?
+  $connect=mysql_connect("121.78.236.97", "sms", "sms7979");
+  $db_con=mysql_select_db("sms",$connect);
+?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>한솔소프트(주) &gt; 고객의 든든한 비지니스 파트너가 되겠습니다.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<link href="styles.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+function com_check(){
+  window.open("com_check.html","id_check","width=300, height=200, top=30, left=30, toolbar=no, status=no,scrollbars=yes, resizable=no, menubar=no location=no");
+}
+
+function number_format(inputNum, decimals ) {
+  var new_number_str = '';
+  var i, number_info, number_info_int, len;
+  var number_str = String(inputNum);
+  if(isNaN(number_str)) number_str = de_number_format(number_str );
+
+  number_info = number_str.split('.');
+  number_info_int = number_info[0];
+  if(number_info.length == 1){
+      number_info[1] = "0";
+  }
+  if (decimals != null ) {
+    if (decimals > 0){
+      new_number_str = String(Math.round(Number('1.' +number_info[1]) * Math.pow(10, decimals)) );
+      new_number_str = '.' + new_number_str.substring(1,new_number_str.length);
+    }else if (decimals < 0) {
+      number_info_int = String(Math.round(Number(number_info[0]) / Math.pow(10, decimals *(-1))) *Math.pow(10, decimals*(-1)));
+    }
+  }
+  len = number_info_int.length;
+  for (i = len; i >= 0; i--) {
+    if ( (len - i) > 1 && (len - i) % 3 == 1 ) {
+      if(number_info_int.substring(i, i+1) != '-'){
+        new_number_str = ',' + new_number_str;
+      }
+    }
+    new_number_str = number_info_int.substring(i, i+1) +  new_number_str;
+  }
+  document.form.amount.value=new_number_str;
+}
+
+function de_number_format(inputStr){
+  var arr = inputStr.toString().split(",");
+  var returnStr = '';
+  for (var i = 0 ; i < arr.length ; i++){
+    returnStr += arr[i]+'';
+  }
+  return returnStr;
+}
+</script>
+</head>
+
+<body>
+<table width="100%" border="0" cellpadding="0" cellspacing="5">
+<form name="form" action="" method="post">
+  <tr>
+    <td>
+<?
+  if(!$com_name){
+?>
+      <table width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="#E3E3E3">
+        <tr height="25" bgcolor="#EEEEEE" align="center">
+          <td width="100">회사명</td>
+          <td bgcolor="#FFFFFF" align="left" style="padding-left:10">
+            <input type="text" name="com_name" value="" readonly style="width:150" class="input2" onclick="com_check();" chk msg="회사명">
+            <input type="hidden" name="com_name2" value="">
+            <img src="images/search.gif" border="0" align="absmiddle" onclick="com_check();">
+          </td>
+        </tr>
+        <tr height="25" bgcolor="#EEEEEE" align="center">
+          <td width="100">사업자 등록번호</td>
+          <td bgcolor="#FFFFFF" align="left" style="padding-left:10">
+            <input type="text" name="sn" value="" readonly style="width:150" class="input2" chk msg="사업자번호">
+            <input type="hidden" name="sn2" value="">
+          </td>
+        </tr>
+        <tr height="25" bgcolor="#EEEEEE" align="center">
+          <td width="100">충전 금액</td>
+          <td bgcolor="#FFFFFF" align="left" style="padding-left:10">
+            <input type="text" name="amount" value="" style="width:70" class="input_amount" onkeyup="tax_amount();" onkeydown="tax_amount();" chk msg="충전 금액">
+            원 (부가세 별도)<br>
+            <input type="checkbox" name="tax" value="1">세금계산서 신청
+          </td>
+        </tr>
+        <tr height="25" bgcolor="#EEEEEE" align="center">
+          <td width="100">담당자 성함</td>
+          <td bgcolor="#FFFFFF" align="left" style="padding-left:10">
+            <input type="text" name="name" value="" style="width:70" class="input2" chk msg="담당자 성함">
+          </td>
+        </tr>
+        <tr height="25" bgcolor="#EEEEEE" align="center">
+          <td width="100">연락처(휴대폰)</td>
+          <td bgcolor="#FFFFFF" align="left" style="padding-left:10">
+            <input type="text" name="tel1" value="" style="width:30" class="input2" chk msg="담당자 성함">
+            -
+            <input type="text" name="tel2" value="" style="width:30" class="input2" chk msg="담당자 성함">
+            -
+            <input type="text" name="tel3" value="" style="width:30" class="input2" chk msg="담당자 성함">
+          </td>
+        </tr>
+        <tr height="30" align="center" bgcolor="#FFFFFF">
+          <td colspan="2"><input type="image" src="images/confirm.gif" border="0"></td>
+        </tr>
+      </table>
+<?
+  }
+
+  if($com_name){
+    $date=date("U");
+    $tel="$tel1-$tel2-$tel3";if($tel=="--"){$tel="";}
+    $insert="insert into sms_charge_log set com_num='$com_name2',com_name='$com_name',com_sn='$sn2',name='$name',tel='$tel',amount='$amount',date='$date'";
+    $query=mysql_query($insert);
+
+    if($tel){
+      $insert="INSERT INTO uds_msg (MSG_TYPE, CMID, REQUEST_TIME, SEND_TIME, DEST_PHONE, SEND_PHONE, MSG_BODY, COMPANY) VALUES (0, now()+0, now(), DATE_ADD(now(), INTERVAL 1 MINUTE), '$tel', '051-206-2603', '1005-501-388562 우리은행 (주)한솔소프트 $amount 원 입금해 주세요', '10');";
+      $query=mysql_query($insert);
+    }
+?>
+      <table width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="#E3E3E3">
+        <tr height="25" bgcolor="#FFFFFF" align="center">
+          <td bgcolor="#EEEEEE">입금 계좌</td>
+          <td>우리은행 1005-501-388562</td>
+        </tr>
+        <tr height="25" bgcolor="#FFFFFF" align="center">
+          <td bgcolor="#EEEEEE">예금주</td>
+          <td>한솔소프트(주) 부산지사</td>
+        </tr>
+        <tr height="30" bgcolor="#FFFFFF" align="center">
+          <td colspan="2" style="padding:10">
+          <?=$tel?> 으로 해당 계좌번호를 문자로 발송하여 드렸습니다.<br>
+          입금후 051)206-2603 (담당:이지연 대리) 으로 연락주시면<br>
+          확인후 처리해드리겠습니다.</td>
+        </tr>
+        <tr height="30" bgcolor="#FFFFFF" align="center">
+          <td colspan="2"><a href="#" onclick="self.close();"><img src="/images/close.gif" border="0"></a></td>
+        </tr>
+      </table>
+<?
+  }
+?>
+    </td>
+  </tr>
+</form>
+</table>
+
+</body>
+<script language="javascript" src="/script/wrest.js"></script>
+</html>
