@@ -413,24 +413,24 @@ hr {
 #banner_slider .ss1 {
   background: url(../img/server1_main.jpg) no-repeat center center;
   background-size: cover;
-  height: 600px;
+  height: 800px;
 }
 
 #banner_slider .ss2 {
   background: url(../img/server2_main.jpg) no-repeat center center;
   background-size: cover;
-  height: 600px;
+  height: 800px;
 }
 
 #banner_slider .ss3 {
   background: url(../img/appez_intro3.jpg) no-repeat center center;
   background-size: cover;
-  height: 600px;
+  height: 800px;
 }
 #banner_slider .ss4 {
   background: url(../img/appez_intro4.jpg) no-repeat center center;
   background-size: cover;
-  height: 600px;
+  height: 800px;
 }
 
 #banner_slider h3 {
