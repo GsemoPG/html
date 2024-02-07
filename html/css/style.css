@@ -2868,7 +2868,7 @@ body {
   line-height: 1.5;
 }
 .style-line{
-  border: 1px solid rgba(102, 102, 102, 0.5);
+  border: 1px solid rgba(102, 102, 102, 0.1);
   margin:0;
   margin-top: 60px;
 }
@@ -2895,7 +2895,7 @@ body {
   left: 50%;
   width: 0;
   height: 2px;
-  background: #0075ba;
+  background: #000;
   transition: 0.2s linear;
 }
 .aside a:hover,
