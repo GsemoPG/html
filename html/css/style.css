@@ -2850,8 +2850,20 @@ g02.s03 .item_area li strong {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 1px;
-  background: #ddd;
+  height: 2px;
+  background: #f00;
+}
+*, :before{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: /* 'Play', */'Noto Sans Korean', 'Noto Sans KR', 'nanum gothic', 'Dotum', '맑은고딕', 'Arial', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #666666;
+  line-height: 1.5;
 }
 .aside .inner {
   overflow: hidden;
@@ -2940,29 +2952,15 @@ g02.s03 .item_area li strong {
 .aside.g02.s03.d08 .swiper-wrapper {
   transform: translate3d(-420px, 0px, 0px);
 }
-.swiper-wp8-horizontal {
-  -ms-touch-action: pan-y;
-  touch-action: pan-y
-}
-.swiper-container-horizontal>.swiper-pagination-bullets,.swiper-pagination-custom,.swiper-pagination-fraction {
-  bottom: 10px;
-  left: 0;
-  width: 100%
-}
-.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 0 5px
-}
-.swiper-container-horizontal>.swiper-pagination-progress {
-  width: 100%;
-  height: 4px;
-  left: 0;
-  top: 0
-}
-.swiper-container-horizontal>.swiper-scrollbar {
-  position: absolute;
-  left: 1%;
-  bottom: 3px;
-  z-index: 50;
-  height: 5px;
-  width: 98%
-}
+
+
+/* .aside {position:relative;}
+.aside:before {content:""; position:absolute; bottom:0; left:0; width:100%; height:1px; background:#ddd;}
+.aside .inner {overflow:hidden;}
+.aside a {position:relative; float:left; display:block; font-size:28px; color:#666; line-height:79px; margin-left:50px; width:auto;}
+.aside a:first-child {margin-left:0;}
+.aside a:before {content:""; position:absolute; bottom:0; left:50%; width:0; height:2px; background:#0075ba; transition:.2s linear;}
+.aside a:hover,
+.aside a.on {color:#0373bb;}
+.aside a:hover:before,
+.aside a.on:before {left:0; width:100%;} */
