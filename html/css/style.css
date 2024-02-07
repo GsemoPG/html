@@ -2871,6 +2871,7 @@ body {
   border: 1px solid rgba(102, 102, 102, 0.1);
   margin:0;
   margin-top: 60px;
+  margin-right: 380px;
 }
 .aside .inner {
   overflow: hidden;
