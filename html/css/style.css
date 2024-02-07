@@ -2851,7 +2851,7 @@ g02.s03 .item_area li strong {
   left: 0;
   width: 100%;
   height: 2px;
-  background: #f00;
+  background: #f0f0f0;
 }
 *, :before{
   box-sizing: border-box;
