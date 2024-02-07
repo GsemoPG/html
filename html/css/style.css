@@ -2867,9 +2867,9 @@ body {
   color: #666666;
   line-height: 1.5;
 }
-.style-line{
+.style-line {
   border: 1px solid rgba(102, 102, 102, 0.1);
-  margin:0;
+  margin: 0;
   margin-top: 60px;
   margin-right: 380px;
 }
@@ -2959,6 +2959,51 @@ body {
 .aside.g02.s03.d07 .swiper-wrapper,
 .aside.g02.s03.d08 .swiper-wrapper {
   transform: translate3d(-420px, 0px, 0px);
+}
+
+.doc-cnt {
+  margin-bottom: 50px;
+}
+
+.company-info {
+  padding-top: 25px;
+  border-top: 2px solid #1f5777;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.company-info li {
+  padding: 0 15px 30px;
+  width: 33.3333%;
+}
+.company-info li .col {
+  height: 245px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f7f7f7;
+}
+.company-info li .col .icon {
+  margin-bottom: 12px;
+}
+.company-info li .col span {
+  font-weight: 500;
+  line-height: 1.2em;
+  color: #686868;
+  display: block;
+}
+.company-info li .col .tit {
+  font-size: 23px;
+  margin-top: 10px;
+  font-weight: 600;
+  color: #242424;
+}
+.company-info li .col .tit span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #454545;
 }
 
 /* .aside {position:relative;}
