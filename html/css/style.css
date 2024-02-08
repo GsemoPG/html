@@ -2866,11 +2866,26 @@ body {
   color: #666666;
   line-height: 1.5;
 }
-.style-line {
+/* 가로선_about us */
+.style-line { 
   border: 1px solid rgba(102, 102, 102, 0.1);
   margin: 0;
   margin-top: 60px;
   margin-right: 380px;
+}
+/* 가로선_server */
+.style-line2 {
+  border: 1px solid rgba(102, 102, 102, 0.1);
+  margin: 0;
+  margin-top: 60px;
+  margin-right: 930px;
+}
+/* 가로선_storage */
+.style-line3 {
+  border: 1px solid rgba(102, 102, 102, 0.1);
+  margin: 0;
+  margin-top: 60px;
+  margin-right: 930px;
 }
 .aside .inner {
   overflow: hidden;
