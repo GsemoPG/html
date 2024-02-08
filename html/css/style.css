@@ -20,7 +20,7 @@ html {
 .navbar-nav .dropdown-menu {
   margin-top: 0;
   border: none;
-  border-radius: 0;col
+  border-radius: 0;
   box-shadow: none;
 }
 
@@ -2930,7 +2930,7 @@ body {
   font-size: 25px;
   line-height: 60px;
   font-weight: bold;
-  font-family:'Noto Sans KR', sans-serif;;
+  font-family: "Noto Sans KR", sans-serif;
 }
 .aside.g01 .swiper-wrapper {
   width: 180%;
