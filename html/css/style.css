@@ -3005,6 +3005,53 @@ body {
   color: #454545;
 }
 
+.talent_btm {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 120px;
+}
+.talent_btm dt,
+.talent_btm dd {
+  flex: 1 1 20%;
+  margin: 70px 0 0 84px;
+  padding: 30px 0;
+}
+.talent_btm dd {
+  background: #f7f7f7;
+  text-align: center;
+  border-radius: 10px;
+}
+.talent_btm dt strong {
+  display: block;
+  font-size: 40px;
+  line-height: 54px;
+  text-align: left;
+  margin-bottom: 50px;
+}
+.talent_btm dd i {
+  display: block;
+  font-size: 0;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  background: #fff;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+}
+.talent_btm dd strong {
+  display: block;
+  font-size: 24px;
+  color: #666;
+  line-height: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.talent_btm dd p {
+  font-size: 14px;
+  color: #666;
+  line-height: 26px;
+}
+
 /* .aside {position:relative;}
 .aside:before {content:""; position:absolute; bottom:0; left:0; width:100%; height:1px; background:#ddd;}
 .aside .inner {overflow:hidden;}
