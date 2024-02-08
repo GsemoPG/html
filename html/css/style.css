@@ -20,7 +20,7 @@ html {
 .navbar-nav .dropdown-menu {
   margin-top: 0;
   border: none;
-  border-radius: 0;
+  border-radius: 0;col
   box-shadow: none;
 }
 
@@ -50,7 +50,7 @@ h6 {
   margin-top: 0;
   margin-right: 0;
   margin-bottom: 30px;
-  font-family: "맑은 고딕";
+  font-family: "Noto Sans KR", sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
   margin-left: 0px;
@@ -2860,8 +2860,7 @@ g02.s03 .item_area li strong {
   padding: 0;
 }
 body {
-  font-family: /* 'Play', */ "Noto Sans Korean", "Noto Sans KR", "nanum gothic",
-    "Dotum", "맑은고딕", "Arial", sans-serif;
+  font-family: /* 'Play', */ "Noto Sans Korean", "Noto Sans KR", sans-serif;
   font-size: 13px;
   font-weight: 400;
   color: #666666;
@@ -2931,7 +2930,7 @@ body {
   font-size: 25px;
   line-height: 60px;
   font-weight: bold;
-  font-family: "맑은고딕";
+  font-family:'Noto Sans KR', sans-serif;;
 }
 .aside.g01 .swiper-wrapper {
   width: 180%;
