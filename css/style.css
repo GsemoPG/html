@@ -3197,3 +3197,8 @@ body {
 .aside a.on {color:#0373bb;}
 .aside a:hover:before,
 .aside a.on:before {left:0; width:100%;} */
+
+/* 고객사 및 협력사 탭메뉴 */
+.g01.s07 .jq_tabonoff .jq_tab {font-size:0; width:650px; max-width:100%; margin:0 auto; border-radius:10px; background:#f4faff; overflow:hidden; margin-bottom:120px;}
+.g01.s07 .jq_tabonoff .jq_tab li {float:left; font-size:18px; color:#666; font-weight:700; line-height:70px; text-align:center; border-radius:10px; width:50%; cursor:pointer;}
+.g01.s07 .jq_tabonoff .jq_tab li.on {color:#fff; background:#0175b9;}
