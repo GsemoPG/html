@@ -314,7 +314,7 @@ a:focus {
   width: 13px;
   height: 10px;
   display: inline-block;
-  background: #fff;
+  background: #818080;
   opacity: 0.2;
   margin: 0 5px;
   border-radius: 20px;
@@ -324,7 +324,7 @@ a:focus {
 
 .swiper-pagination-bullet-active {
   opacity: 1;
-  background: #bdbbbb;
+  background: #9c9b9b;
   width: 50px;
   transition-delay: 0s;
 }
