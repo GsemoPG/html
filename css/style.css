@@ -325,7 +325,7 @@ a:focus {
 .swiper-pagination-bullet-active {
   opacity: 1;
   background: #bdbbbb;
-  width: 30px;
+  width: 50px;
   transition-delay: 0s;
 }
 
