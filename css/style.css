@@ -489,8 +489,9 @@ hr {
 }
 
 #banner_slider .ss1 {
-  background: url(../img/server1_main.jpg) no-repeat center center;
+  background: url(/img/main1.png) no-repeat center center;
   background-size: cover;
+  width: px;
   height: 700px;
 }
 
