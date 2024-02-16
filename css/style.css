@@ -3209,3 +3209,13 @@ body {
 .g01.s07 .jq_tabonoff .jq_tab {font-size:0; width:650px; max-width:100%; margin:0 auto; border-radius:10px; background:#f4faff; overflow:hidden; margin-bottom:120px;}
 .g01.s07 .jq_tabonoff .jq_tab li {float:left; font-size:18px; color:#666; font-weight:700; line-height:70px; text-align:center; border-radius:10px; width:50%; cursor:pointer;}
 .g01.s07 .jq_tabonoff .jq_tab li.on {color:#fff; background:#0175b9;}
+
+/* 고객사 및 협력사 탭메뉴 내용 스타일 */
+.business dl {display:table; width:100%; table-layout:fixed; border:#ddd 1px solid; height:320px; margin-top:70px; border-radius:10px; overflow:hidden;}
+.business dl:first-child {margin-top:0;}
+.business dt,
+.business dd {display:table-cell;}
+.business dt {width:499px; text-align:center; font-size:0; border-right:#ddd 1px solid; vertical-align:middle;}
+.business dd {padding:70px 40px; vertical-align:top;}
+.business dd .tt {font-size:30px; color:#333; font-weight:700; line-height:32px; margin-bottom:30px;}
+.business dd p {color:#333;}
