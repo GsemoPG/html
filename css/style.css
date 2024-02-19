@@ -3241,11 +3241,15 @@ body {
 .bt_box .bar_tit {margin:0;}
 .half_li.float .list {overflow:hidden;}
 .half_li.float .list li {flex:none; width:calc((100% - 30px)/2); min-height:272px;}
+.half_li .list li:nth-child(2n-1) {
+  margin-left: 0;
+  clear: both;
+}
 .half_li .list li dl {display:table; width:100%;}
 .half_li .list li dd {width:50%;}
 .half_li.hauto .list li {min-height:auto;}
 .half_li .list li .tt {font-size:22px; color:#333; font-weight:700; line-height:25px; padding:20px 25px; background:#f4faff; letter-spacing:-1.5px;}
-.half_li .list li .tt b {font-size:26px; color:#0175b9; font-weight:500; margin-right:15px; font-family:'Roboto';}
+.half_li .list li .tt b {font-size:26px; color:#0175b9; font-weight:500; margin-right:15px; font-family:'Noto Sans KR';}
 .half_li .list li .tt em {font-size:20px;}
 .half_li .list li .cn {padding:18px 25px;}
 *, *:before, *:after {
@@ -3257,4 +3261,40 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin-top: -30px;
+}
+.half_li .list li {
+  flex: 1 1 40%;
+  border: #ddd 1px solid;
+  border-radius: 10px;
+  margin: 30px 0 0 30px;
+  overflow: hidden;
+}
+ul{
+  list-style: none;
+}
+.half_li .list li p em {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  font-size: 11px;
+  color: #666;
+  font-weight: 700;
+  line-height: 16px;
+  height: 16px;
+  width: 16px;
+  background: #ddd;
+  border-radius: 50%;
+  text-align: center;
+}
+em{
+  font-style: normal;
+}
+.half_li .list li p {
+  position: relative;
+  font-size: 18px;
+  color: #666;
+  font-weight: 300;
+  line-height: 32px;
+  padding-left: 26px;
+  letter-spacing: -.8px;
 }
