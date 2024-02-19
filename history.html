@@ -1,290 +1,521 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
 
-    <title>주식회사 앱이지- 회사연혁</title>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <!-- -- fontawesome -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-      crossorigin="anonymous"
-    />
+  <title>주식회사 앱이지- 회사정보 </title>
 
-    <!-- Fonts -->
-    <link
-      href="font-awesome/css/font-awesome.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link href="css/animate.css" rel="stylesheet" />
-    <!-- Favicon -->
-    <link
-      rel="shortcut icon"
-      href="/img/icons/favicon.ico"
-      type="image/x-icon"
-    />
-    <link rel="icon" href="/img/icons/favicon.ico" type="image/x-icon" />
-    <!-- Squad theme CSS -->
-    <link href="css/style.css" rel="stylesheet" />
-    <link href="color/default.css" rel="stylesheet" />
-  </head>
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <!-- -- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-  <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
-    <!-- Preloader -->
-    <div id="preloader">
-      <div id="load"></div>
+  <!-- Fonts -->
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="css/animate.css" rel="stylesheet" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/img/icons/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/img/icons/favicon.ico" type="image/x-icon">
+  <!-- Squad theme CSS -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="color/default.css" rel="stylesheet">
+
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="load"></div>
+  </div>
+  
+  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header page-scroll">
+        <button
+          type="button"
+          class="navbar-toggle"
+          data-toggle="collapse"
+          data-target=".navbar-main-collapse"
+        >
+          <i class="fa fa-bars"></i>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          <h1>
+            <img
+              src="img/top_appez_logo.png"
+              width="150"
+              height="43"
+              alt="logo"
+            />
+          </h1>
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+              >About Us <b class="caret"></b
+            ></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="company_info.html">회사소개</a>
+              </li>
+              <li><a href="history.html">연혁</a></li>
+              <li><a href="financial.html">재무현황</a></li>
+              <li><a href="organization.html">조직도</a></li>
+              <li><a href="partners.html">고객사 및 협력사</a></li>
+              <li><a href="map.html">찾아오시는길</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a
+              href="server.html"
+              class="dropdown-toggle"
+              data-toggle="dropdown"
+              >SERVER <b class="caret"></b
+            ></a>
+            <ul class="dropdown-menu">
+              <li><a href="ibm.html">IBM</a></li>
+              <li><a href="dell.html">DELL</a></li>
+              <li><a href="lenovo.html">LENOVO</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+              >STORAGE <b class="caret"></b
+            ></a>
+            <ul class="dropdown-menu">
+              <li><a href="ds_series.html">DS Series</a></li>
+              <li><a href="fs_series.html">FS Series</a></li>
+              <li><a href="ess_series.html">ESS Series</a></li>
+              <li><a href="lto.html">LTO(PTL)</a></li>
+              <li><a href="worm.html">WORM</a></li>
+              <li><a href="switch.html">SWITCH</a></li>
+              <!--<li><a href="software.html">Software</a></li>-->
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+              >Solution <b class="caret"></b
+            ></a>
+            <ul class="dropdown-menu">
+              <li><a href="veeam.html">Veeam</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+              >Technical Support <b class="caret"></b
+            ></a>
+            <ul class="dropdown-menu">
+              <li><a href="maintenance.html">통합유지보수</a></li>
+              <li><a href="consulting_support.html">기술지원서비스</a></li>
+              <li><a href="rental.html">장비임대 및 이전</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
     </div>
+    <!-- /.container -->
+  </nav>
+  <!-- Section: intro -->
 
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header page-scroll">
-          <button
-            type="button"
-            class="navbar-toggle"
-            data-toggle="collapse"
-            data-target=".navbar-main-collapse"
-          >
-            <i class="fa fa-bars"></i>
-          </button>
-          <a class="navbar-brand" href="index.html">
-            <h1>
-              <img
-                src="img/top_appez_logo.png"
-                width="150"
-                height="43"
-                alt="logo"
-              />
-            </h1>
-          </a>
-        </div>
+<!-- PAGE상단 배경으로 이미지 개별 적용 -->
+ <main id="main">
+ <div id="page-banner" style="background-image: url(img/top-1.jpg);">
+   <div class="content wow fdeInUp" style="visibility: visible; animation-name: fdeInUp;">
+   </div>
+ </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-          <ul class="nav navbar-nav">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                >About Us <b class="caret"></b
-              ></a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="company_info.html">회사소개</a>
-                </li>
-                <li><a href="history.html">연혁</a></li>
-                <li><a href="financial.html">재무현황</a></li>
-                <li><a href="organization.html">조직도</a></li>
-                <li><a href="partners.html">고객사 및 협력사</a></li>
-                <li><a href="map.html">찾아오시는길</a></li>
-              </ul>
-            </li>
 
-            <li class="dropdown">
-              <a
-                href="server.html"
-                class="dropdown-toggle"
-                data-toggle="dropdown"
-                >SERVER <b class="caret"></b
-              ></a>
-              <ul class="dropdown-menu">
-                <li><a href="ibm.html">IBM</a></li>
-                <li><a href="dell.html">DELL</a></li>
-                <li><a href="lenovo.html">LENOVO</a></li>
-              </ul>
-            </li>
+ <table width="100%" border="0">
+  <tbody>
+    <tr>
+      <th scope="col">&nbsp;</th>
+    </tr>
+  </tbody>
+</table>
+   
+    <section class="inner-page">
+    <div class="container"><br>
+      <table width="200" border="0">
+          <tbody>
+          </tbody>
+        </table>
 
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                >STORAGE <b class="caret"></b
-              ></a>
-              <ul class="dropdown-menu">
-                <li><a href="ds_series.html">DS Series</a></li>
-                <li><a href="fs_series.html">FS Series</a></li>
-                <li><a href="ess_series.html">ESS Series</a></li>
-                <li><a href="lto.html">LTO(PTL)</a></li>
-                <li><a href="worm.html">WORM</a></li>
-                <li><a href="switch.html">SWITCH</a></li>
-                <!--<li><a href="software.html">Software</a></li>-->
-              </ul>
-            </li>
-
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                >Solution <b class="caret"></b
-              ></a>
-              <ul class="dropdown-menu">
-                <li><a href="veeam.html">Veeam</a></li>
-              </ul>
-            </li>
-
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                >Technical Support <b class="caret"></b
-              ></a>
-              <ul class="dropdown-menu">
-                <li><a href="maintenance.html">통합유지보수</a></li>
-                <li><a href="consulting_support.html">기술지원서비스</a></li>
-                <li><a href="rental.html">장비임대 및 이전</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-      </div>
-      <!-- /.container -->
-    </nav>
-
-    <!-- Section: intro -->
-
-    <!-- page banner찾아서 css편집 01.26 -->
-    <!-- PAGE상단 배경으로 이미처리 S-1.JPG를각메뉴마다적용가능-->
-    <main id="main">
-      <div id="page-banner" style="background-image: url(img/top-1.jpg)">
-        <div
-          class="content wow fdeInUp"
-          style="visibility: visible; animation-name: fdeInUp"
-        ></div>
-      </div>
-
-      <table width="100%" border="0">
-        <tbody>
-          <tr>
-            <th scope="col">&nbsp;</th>
-          </tr>
-        </tbody>
-      </table>
-
-      <div class="aside g02 s01 d01 p">
-        <div class="inner aside_slide" style="height: 70px";>
-          <div class="swiper-wrapper">
-            <a class="swiper-slide" href="company_info.html">회사소개</a>
-            <a class="swiper-slide on" href="history.html">연혁</a>
-            <a class="swiper-slide" href="financial.html">재무현황</a>
-            <a class="swiper-slide" href="organization.html">조직도</a>
-            <a class="swiper-slide" href="partners.html">고객사 및 협력사</a>
-            <a class="swiper-slide" href="map.html">찾아오시는길</a>
+        <div class="aside g02 s01 d01 p">
+          <div class="inner aside_slide" style="height: 70px;">
+            <div class="swiper-wrapper">
+                <a class="swiper-slide" href="company_info.html">회사소개</a>
+                <a class="swiper-slide on" href="history.html">연혁</a>
+                <a class="swiper-slide " href="financial.html">재무현황</a>
+                <a class="swiper-slide " href="organization.html">조직도</a>
+                <a class="swiper-slide " href="partners.html">고객사 및 협력사</a>
+                <a class="swiper-slide " href="map.html">찾아오시는길</a>
+            </div>
+            <hr class="style-line">
           </div>
-          <hr class="style-line">
+        </div>
+        
+		<a href="#intro"></a>
+	  <h2 id="intro" style="color:#444; margin: 10px; font-size: 40px;">연혁</h2>
+
+    <div class="tabs">
+      <input id="all" type="radio" name="tab_item2" checked>
+      <label class="tab_item2" for="all">DS SERIES</label>
+      <input id="programming" type="radio" name="tab_item2">
+      <label class="tab_item2" for="programming">FS SERIES</label>
+      <input id="design" type="radio" name="tab_item2">
+      <label class="tab_item2" for="design">ESS SERIES</label>
+      <input id="tab_num4" type="radio" name="tab_item2">
+      <label class="tab_item2" for="tab_num4">2016~2020</label>
+      <input id="tab_num5" type="radio" name="tab_item2">
+      <label class="tab_item2" for="tab_num5">2012~2015</label>
+      <div class="tab_content" id="all_content">
+        <h2 id="intro" style="color: black">
+          <big class="navy2">DS_Series</big>
+        </h2>
+        <p>&nbsp;</p>
+        <h3 style="color: #000000">
+          주요취급품목<big class="black"
+            >&nbsp;
+            <hr />
+          </big>
+        </h3>
+        <div class="wow fadeInUp" data-wow-delay="0.4s">
+          <h3 style="color: black">IBM Storage</h3>
+          <p style="color: black">&nbsp;</p>
+          <h3 style="color: black">IBM DS8000 Storage (DS8910F, DS8950F)</h3>
+          <p style="color: black">&nbsp;</p>
+          <div id="SE-7ffc1cb5-603e-423f-b14e-52bf5d374183">
+            <div>
+              <div>
+                <div>
+                  <p>
+                    IBM DS8000 시리즈(초기 IBM System
+                    Storage DS8000 시리즈)는 IBM 메인프레임 및 기타
+                    엔터프라이즈급 컴퓨팅 환경을 위한 하이브리드 플래시 및
+                    하드 디스크 스토리지를 갖춘 IBM 스토리지 미디어
+                    플랫폼입니다.<br />
+                  </p>
+                  <img
+                    src="img/storage_ds80000.png"
+                    alt=""
+                    style="width: 80%; height: auto"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
-      <section class="inner-page2">
+      <div class="tab_content" id="programming_content">
+        <h2 id="intro" style="color: black">
+          <big class="navy2">FS_Series</big>
+        </h2>
         <p>&nbsp;</p>
-        <h2 style="color: black"><big class="navy2">회사연혁</big></h2>
-        <p>
-          다양한 산업군의 고객 IT 환경에 필요한 시스템 컨설팅 및 구축, 기술지원
-          솔루션을 제공하여 최적의 IT 인프라 환경을 구성해드리는 IT 전문
-          기업입니다.
+        
+          <h3>
+            IBM Flashsystem Storage (FS5015, FS5035, FS5200, FS7300, FS9500)
+          </h3>
+          <h3>
+            <img
+              src="img/FlashSystem.jpg"
+              alt=""
+              style="width: 80%; height: auto"
+            /><br />
+          </h3>
+          <h3>&nbsp;</h3>
+  </div>
+      <div class="tab_content" id="design_content"><h2 id="intro" style="color: black">
+        <big class="navy2">ESS Series</big>
+      </h2>
+      <p>&nbsp;</p>
+      <h3 style="color: #000000">
+        주요취급품목<big class="black"
+          >&nbsp;
+          <hr />
+        </big>
+      </h3>
+      <div class="wow fadeInUp" data-wow-delay="0.4s">
+  
+          <p>&nbsp;</p>
+          <h3>분산파일, HPC 스토리지 (ESS3500, ESS5000)</h3>
+          <p>&nbsp;</p>
+          <h3>ESS 3500</h3>
+          <div
+            id="rich-text-62207b"
+            data-dynamic-inner-content="description"
+          >
+            <p>
+              IBM ESS 3500 스토리지는 AI 데이터 파이프라인을 실행하기 위한
+              AI 스토리지 솔루션으로 PCIe Gen4기반의  NVMe All Flash
+              스토리지 노드로 구성된 어플라이언스에, 고성능 병렬
+              파일시스템인 Spectrum Scale을 탑재하여 AI 환경의 성능, 안정성
+              요구조건에 최적화 된 스토리지입니다.
+            </p>
+            <p>
+              <img
+                src="img/ESS.jpg"
+                alt=""
+                style="width: 80%; height: auto"
+              />
+            </p>
+          </div>
+          <div
+            id="rich-text-ef4a047cb2"
+            data-dynamic-inner-content="description"
+          ></div>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <h3>ESS 5000</h3>
+          <p>
+            <img
+              src="img/ESS5000.jpg"
+              alt=""
+              style="width: 80%; height: auto"
+            /><br />
+          </p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <h3>ESS 5000 특장점</h3>
+          <p>
+            <img
+              src="img/ESS5000-2.jpg"
+              alt=""
+              style="width: 80%; height: auto"
+            />
+          </p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <h3>ESS 3500, ESS 5000 ILM(Information Lifecycle Management)</h3>
+          <p>
+            IBM ESS 3500, ESS 5000 스토리지는 정책 기반의 자동화된
+            ILM(Information Lifecycle Management)기능을 통해 빈번한 Access가
+            일어나는 data는 고성능 All flash, SSD 스토리지로, Cold Data는
+            NL-SAS HDD 또는 Tape로 Archive해 비용 효율적인 스토리지 계층화가
+            가능합니다.
+          </p>
+          <p>
+            <img
+              src="img/ESS3500.jpg"
+              alt=""
+              style="width: 80%; height: auto"
+            /><br />
+          </p>
+          <right>
+            <div
+              id="rich-text-d2"
+              data-dynamic-inner-content="description"
+            ></div>
+          </right>
+        </div>
+        <p><br /></p>
+      </div>
+
+  <div class="tab_content" id="tab_num4_content">
+    <h2 id="intro" style="color:black"><big class="navy2">LTO</big></h2>
+  <p>&nbsp;</p>
+  <h3 style="color:#002266;">주요취급품목<big class="black">&nbsp;<hr></big></h3>
+<div class="wow fadeInUp" data-wow-delay="0.4s">
+<h3 style="color:black">IBM LTO TS4300</h3>
+<div id="SE-7ffc1cb5-603e-423f-b14e-52bf5d374183">
+  <div>
+    <div>
+      <div>
+        <p><img src="img/ts4300.png" alt="" style="width: 80%; height: auto;"/><br>
         </p>
         <p>&nbsp;</p>
-        <div class="wow fadeInUp" data-wow-delay="0.7s">
-          <div class="history">
+        <p id="SE-8bd4b69d-9423-45d7-bb9e-728a6823d2db">&nbsp;</p>
+  <!-- <img src="img/organization.jpg" alt="" width="90%" height="89" style="width: 100%; height: auto;"/>  -->
+      </div>
+    </div>
+  </div>
+</div>
+<div id="SE-2535f1ba-7e9d-4f65-b4cd-afc6962a93d5">
+  <div>
+    <div>
+      <div>
+        <div>
+          <h3 style="color:black">&nbsp;</h3>
+          <h3 style="color:black">IBM LTO TS4500</h3>
+          <h3 style="color:black"><img src="img/ts4500-1.png" alt="" style="width: 80%; height: auto;"/></h3>
+          <p style="color: black; font-family: '맑은 고딕'; font-size: 24px; font-weight: 700;">&nbsp;</p>
+          <p style="color: black; font-family: '맑은 고딕'; font-size: 24px; font-weight: 700;">IBM LTO Diamondback</p>
+          <h3 style="color:black"><img src="img/diamondback.jpg" alt="" style="width: 80%; height: auto;"/></h3>
+          <h3 style="color:black">&nbsp;</h3>
+          <h3 style="color:black">LTO 주요기능</h3>
+          <div id="SE-7ffc1cb5-603e-423f-b14e-52bf5d2">
             <div>
-              <h2>~2023</h2>
-              <ol>
-                <li>• 앱이지 사내근로복지기금 설립</li>
-                <li>• 정보통신사업 등록 (제203764호)</li>
-                <li>• IBM Storage Systems Expert 달성</li>
-                <li></li>
-                <li></li>
-              </ol>
+              <div>
+                <div>
+                  <p>Control Path Failover기능</p>
+                  <p>Data Path Failover 기능</p>
+                  <p>Load Balancing 기능</p>
+                  <p>Tape Drive 암호화 (Encryption)기능</p>
+                  <p>IBM GKLM 암호화 키 관리 솔루션</p>
+                  <p>IBM LTFS(Linear Tape File System)</p>
+                  <p>&nbsp;</p>
+                </div>
+              </div>
             </div>
-
-            <div>
-              <h2>~2022</h2>
-              <ol>
-                <li>• 특허 출원 (제10-2021-0127474호)</li>
-                <li>• 통신판매업 등록 (제2021-서울강서-2719호)</li>
-                <li>• 사내 연구개발전담부서 설립</li>
-                <li>• &nbsp;기술평가 우수기업 인증(서버, 스토리지 부문)</li>
-                <li>• &nbsp;IBM Business Partner Gold Level 달성</li>
-                <li>• &nbsp;IBM Storage System Specialist 달성</li>
-              </ol>
-            </div>
-
-            <div>
-              <h2>~2020</h2>
-              <ol>
-                <li>• &nbsp;올리브텍(WORM Storage) Partnership (2020)</li>
-                <li>• &nbsp;Veeam Software Partner 계약 (2020)</li>
-                <li>• &nbsp;본사 확장 이전 (염창동, 우림블루나인) (2019)</li>
-                <li>• &nbsp;IBM S/W Reseler 계약 (2019)</li>
-                <li>• &nbsp;Dell Technologies Partnership (2019)</li>
-                <li>• &nbsp;Lenovo Partnership (2019)</li>
-              </ol>
-            </div>
-
-            <div>
-              <h2>~2018</h2>
-              <ol>
-                <li>• &nbsp;소프트웨어 사업자 등록 (2018)</li>
-                <li>• &nbsp;조달청 나라장터 경쟁입찰 참가등록 (2018)</li>
-                <li>
-                  • &nbsp;IBM Business Partner Solution Provider 계약 (2017)
-                </li>
-                <li>• &nbsp;서버구축 서비스 시작 (2017)</li>
-                <li>• 본사 이전 (목동) (2017)</li>
-              </ol>
-            </div>
-
-            <div>
-              <h2>2012~</h2>
-              <ol>
-                <li>• &nbsp;IBM Business Partenrship</li>
-                <li>• &nbsp;스토리지 구축 서비스 시작</li>
-                <li>• &nbsp;(주)앱이지 법인 설립</li>
-              </ol>
-            </div>
-          </div>
         </div>
-      </section>
-    </main>
-    <!-- End #main -->
+          <p>&nbsp;</p>
+        </div>
+      </a></div>
+    </div>
+  </div>
+</div>
+<br>
+<right><h4 style="color:black" align="right">&nbsp;</h4></right>
 
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-lg-12">
+ 
+</div>
+<p><br>
+</p>
+  </div>
+  <div class="tab_content" id="tab_num5_content"><h2 id="intro" style="color: black">
+    <big class="navy2">WORM Storage</big>
+  </h2>
+  <p>&nbsp;</p>
+  <h3 style="color: #002266">
+    주요취급품목<big class="black"
+      >&nbsp;
+      <hr />
+    </big>
+  </h3>
+  <div class="wow fadeInUp" data-wow-delay="0.4s">
+    <h3 style="color: black">WORM Storage 개요</h3>
+    <div id="SE-7ffc1cb5-603e-423f-b14e-52bf5d374183">
+      <div>
+        <div>
+          <div>
             <p>
               <img
-                src="img/bt_logo_appez.png"
-                width="150"
-                height="50"
-                alt="logo"
+                src="img/worm01.png"
+                width="1507"
+                alt=""
+                style="width: 80%; height: auto"
               />
             </p>
-            <p>
-              <span class="credits"
-                >2023 &copy; AppEZ. All rights reserved.</span
-              >
-            </p>
-          </div>
-          <div class="credits">
-            <p>
-              주 소 : 서울특별시 강서구 양천로 583, B동 907호(염창동,
-              우림블루나인)<br />
-            </p>
-            <p>Tel : 02-2135-5030</p>
-            <p>Fax : 02-2135-5040</p>
+            <!-- <img src="img/organization.jpg" alt="" width="90%" height="89" style="width: 100%; height: auto;"/>  -->
           </div>
         </div>
       </div>
-    </footer>
+    </div>
+    <div id="SE-2535f1ba-7e9d-4f65-b4cd-afc6962a93d5">
+      <div>
+        <div>
+          <div>
+            <a
+              onclick="return false;"
+              data-linktype="img"
+              data-linkdata="{'id' : 'SE-2535f1ba-7e9d-4f65-b4cd-afc6962a93d5', 'src' : 'https://postfiles.pstatic.net/MjAxODEyMjhfMTEw/MDAxNTQ1OTgzMDM2Njc3.imHLxus846s7W5DkugeCMk4xGCwxVdkg6HMrma69jhQg.VRs8SDcW8iwiGHqBdXw6socUtBquDzJlm-lNfc7LfDwg.JPEG.zagatoson/211CD2395865EB080A.jpeg', 'originalWidth' : '499', 'originalHeight' : '374', 'linkUse' : 'false', 'link' : ''}"
+              area-hidden="true"
+            >
+              <div>
+                <h3 style="color: black">&nbsp;</h3>
+                <h3 style="color: black">WORM Storage 주요시장</h3>
+                <p style="color: black">
+                  <img
+                    src="img/worm2.jpg"
+                    alt=""
+                    style="width: 80%; height: auto"
+                  />
+                </p>
+                <div id="SE-7ffc1cb5-603e-423f-b14e-52bf5d2">
+                  <div>
+                    <div>
+                      <div>
+                        <h3>&nbsp;</h3>
+                        <h3>국산 WORM Storage 제품</h3>
+                        <h3>
+                          <img
+                            src="img/worm3.jpg"
+                            alt=""
+                            style="width: 80%; height: auto"
+                          />
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <right>
+      <div id="rich-text-d2" data-dynamic-inner-content="description">
+        <div
+          id="rich-text-69fa4aed2a"
+          data-dynamic-inner-content="description"
+        ></div>
+        <div></div>
+      </div>
+    </right>
+  </div>
+  <p><br /></p>
+</div>
+</div> 
+    
+</section>
+  </main>
+  <!-- End #main -->
+  <button id="qna_btn" onclick="location.href='qna.html'">문의하기 💬</button>
 
-    <!-- Core JavaScript Files -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/jquery.scrollTo.js"></script>
-    <script src="js/wow.min.js"></script>
-    <!-- Custom Theme JavaScript -->
-    <script src="js/custom.js"></script>
-    <script src="contactform/contactform.js"></script>
-  </body>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-lg-12">
+
+          <p><img src="img/bt_logo_appez.png" width="150" height="50" alt="logo"></p>
+            <p><span class="credits">2024 &copy; AppEZ. All rights reserved.</span>          </p>
+          </div>
+          <div class="credits">
+            <p>주   소 : 서울특별시 강서구 양천로 583, B동 907호(염창동, 우림블루나인)</p>
+            <p>Tel : 02-2135-5030  Fax : 02-2135-5040</p>
+          </div>
+        </div>
+      </div>
+  </footer>
+
+  <!-- Core JavaScript Files -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/jquery.scrollTo.js"></script>
+  <script src="js/wow.min.js"></script>
+  <!-- Custom Theme JavaScript -->
+  <script src="js/custom.js"></script>
+  <script src="contactform/contactform.js"></script>
+
+  <script type="text/javascript">
+    $('.quick').hide();
+      $(window).scroll(function () {
+    
+        if($(window).scrollTop() == 0) {
+           $('.quick').fadeOut(500);
+          $('.quick').removeClass('on');
+        } else {
+        $('.quick').fadeIn(500);
+        $('.quick').addClass('on');
+        }
+       });
+    </script>
+
+</body>
+
 </html>
