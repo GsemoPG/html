@@ -3209,3 +3209,52 @@ body {
   box-shadow: 0px 5px 15px gray;
   cursor: pointer;
 }
+
+/* consulting_support 디자인 */
+.btit {font-size:20px; line-height:26px; margin:70px 0 20px;}
+.btit.b {font-size:24px; line-height:24px; margin-bottom:20px;}
+.btit.be {font-size:30px; line-height:30px;}
+.btit.b.lh {line-height:30px;}
+.btit.bs {font-size:32px; line-height:36px; margin:70px 0 40px;}
+.btit.tem {margin-left:182px;}
+.btit {position:relative; font-size:24px; color:#333; font-weight:700; line-height:28px; margin:100px 0 30px;}
+.btit:first-child {margin-top:0;}
+.btit b,
+.btit.b {display:block; font-size:30px; line-height:30px; margin-bottom:40px;}
+.btit b {margin-bottom:0;}
+.btit.b.lh {line-height:48px;}
+.btit.bb {font-size:32px;}
+.btit.bs {font-size:36px; line-height:42px; margin:100px 0 70px;}
+.btit.be {font-size:40px; line-height:40px;}
+.btit.mb6 {margin-bottom:60px;}
+.btit.tem {margin-left:-94px;}
+.btit.lh4 {line-height:40px;}
+.point_link {position:absolute; top:-150px;}
+.tac {text-align:center !important;}
+.half_li {margin-top:120px;}
+.half_li.mt6 {margin-top:60px;}
+.bt_box {margin-top:110px; display:table; width:100%; table-layout:fixed;}
+.bt_box dt,
+.bt_box dd {display:table-cell; vertical-align:top;}
+.bt_box dt {width:340px;}
+.bt_box dt:before {height:38px;}
+.bt_box .bar_tit {margin:0;}
+.half_li.float .list {overflow:hidden;}
+.half_li.float .list li {flex:none; width:calc((100% - 30px)/2); min-height:272px;}
+.half_li .list li dl {display:table; width:100%;}
+.half_li .list li dd {width:50%;}
+.half_li.hauto .list li {min-height:auto;}
+.half_li .list li .tt {font-size:22px; color:#333; font-weight:700; line-height:25px; padding:20px 25px; background:#f4faff; letter-spacing:-1.5px;}
+.half_li .list li .tt b {font-size:26px; color:#0175b9; font-weight:500; margin-right:15px; font-family:'Roboto';}
+.half_li .list li .tt em {font-size:20px;}
+.half_li .list li .cn {padding:18px 25px;}
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.half_li .list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+}
