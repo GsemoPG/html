@@ -2998,7 +2998,7 @@ body {
   left: 50%;
   width: 0;
   height: 2px;
-  background: #000;
+  background: #ff9933;
   transition: 0.2s linear;
 }
 .aside a:hover,
