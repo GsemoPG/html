@@ -2588,7 +2588,7 @@ label {
 }
 
 label:hover {
-  color: #002266;
+  color: #ff9933;
   cursor: pointer;
 }
 
@@ -2596,7 +2596,7 @@ label:hover {
 input:checked + label {
   color: #555;
   border: 1px solid #ddd;
-  border-top: 2px solid #002266;
+  border-top: 2px solid #ff9933;
   border-bottom: 1px solid #ffffff;
 }
 
@@ -2787,7 +2787,7 @@ input:checked + label {
 .tab_item {
   width: calc(100% / 3);
   height: 60px;
-  border-bottom: 3px solid #333333;
+  border-bottom: 3px solid #ff9933;
   background-color: #f8f8f8;
   line-height: 50px;
   font-size: 20px;
@@ -2852,7 +2852,7 @@ input[name="tab_item2"] {
 
 /* 선택된 탭 스타일 */
 .tabs input:checked + .tab_item {
-  background-color: #333333;
+  background-color: #ff9933;
   color: #fff;
 }
 
