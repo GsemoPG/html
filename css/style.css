@@ -2958,7 +2958,7 @@ body {
   border: 1px solid rgba(102, 102, 102, 0.1);
   margin: 0;
   margin-top: 60px;
-  margin-right: 940px;
+  margin-right: 850px;
 }
 /* storage 밑줄 */
 .style-line3 {
@@ -3483,7 +3483,7 @@ em {
   content: "";
   position: absolute;
   left: -40px;
-  top: 50%;
+  top: 50%;navy2
   width: 17px;
   height: 17px;
   border-radius: 100%;
