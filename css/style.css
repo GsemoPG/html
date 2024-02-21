@@ -3405,3 +3405,70 @@ em {
   padding-left: 26px;
   letter-spacing: -0.8px;
 }
+
+.cv_wrap {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px 28px;
+}
+
+.cv_main_box {
+  flex-basis: calc(33.33% - 39.33px); /* 한 줄에 표시되는 요소의 개수를 조절 */
+  min-width: 380px;
+  position: relative;
+}
+
+.cv_main_box .cv_header {
+  height: 97px;
+  border-radius: 70px;
+  background: #fff1e8;
+  padding: 34px 39px;
+  position: relative;
+}
+
+.cv_main_box .cv_header::after {
+  content: "";
+  position: absolute;
+  width: 17px;
+  height: 9px;
+  left: 50%;
+  bottom: -30px;
+  transform: translateX(-50%);
+  background: url(/img/icon_org_down.png) no-repeat;
+}
+
+.cv_wrap .cv_main_box .cv_header ul {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.cv_wrap .cv_main_box .cv_header li:first-child {
+  font-weight: 400;
+}
+
+.cv_wrap .cv_main_box .cv_header li {
+  font-size: 24px;
+  line-height: 30px;
+  color: #000;
+  word-break: break-all;
+}
+
+.cv_wrap .cv_main_box .cv_header img {
+  position: absolute;
+  width: 46px;
+  right: 34px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.cv_wrap .cv_main_box .cv_body {
+  width: 100%;
+  height: 299px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 40px 22px 0;
+  margin-top: 48px;
+}
