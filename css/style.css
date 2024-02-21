@@ -2594,7 +2594,7 @@ label:hover {
 
 /*input 클릭시, label 스타일*/
 input:checked + label {
-  color: #555;
+  color: #ff9933;
   border: 1px solid #ddd;
   border-top: 2px solid #ff9933;
   border-bottom: 1px solid #ffffff;
@@ -2803,12 +2803,12 @@ input:checked + label {
 .tab_item2 {
   width: calc(100% / 5);
   height: 60px;
-  border-bottom: 3px solid #333333;
+  border-bottom: 3px solid #ff9933;
   background-color: #f8f8f8;
   line-height: 50px;
   font-size: 20px;
   text-align: center;
-  color: #333333;
+  color: #ff9933;
   display: block;
   float: left;
   text-align: center;
