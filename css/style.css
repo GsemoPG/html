@@ -3097,6 +3097,19 @@ body {
 .company-info li .col .icon {
   margin-bottom: 12px;
 }
+.company-info li .col .icon i {
+  display: block;
+  font-size: 0;
+  width: 100px;
+  height: 100px;
+  line-height: 120px;
+  background: #fff;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+}
+.company-info li .col .icon i img {
+  margin-bottom: 20px;
+}
 .company-info li .col span {
   font-weight: 500;
   line-height: 1.2em;
