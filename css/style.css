@@ -3092,7 +3092,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #f7f7f7;
+  background-color: #f9f9f9;
 }
 .company-info li .col .icon {
   margin-bottom: 12px;
@@ -3127,7 +3127,7 @@ body {
   padding: 30px 0;
 }
 .talent_btm dd {
-  background: #f7f7f7;
+  background: #f9f9f9;
   text-align: center;
   border-radius: 10px;
 }
