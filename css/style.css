@@ -3357,16 +3357,16 @@ body {
 }
 .half_li .list li .tt {
   font-size: 22px;
-  color: #333;
+  color: #fff;
   font-weight: 700;
   line-height: 25px;
   padding: 20px 25px;
-  background: #f4faff;
+  background: #ff9933;
   letter-spacing: -1.5px;
 }
 .half_li .list li .tt b {
   font-size: 26px;
-  color: #0175b9;
+  color: #fff;
   font-weight: 500;
   margin-right: 15px;
   font-family: "Noto Sans KR";
