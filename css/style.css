@@ -2594,7 +2594,7 @@ label:hover {
 
 /*input 클릭시, label 스타일*/
 input:checked + label {
-  color: #ff9933;
+  color: #000;
   border: 1px solid #ddd;
   border-top: 2px solid #ff9933;
   border-bottom: 1px solid #ffffff;
