@@ -6,7 +6,11 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>주식회사 앱이지- CLUSTER</title>
+    <title>주식회사 앱이지</title>
+
+    <!-- Swiper CSS -->
+
+    <link rel="stylesheet" href="./css/swiper.css" />
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -35,6 +39,14 @@
     <!-- Squad theme CSS -->
     <link href="css/style.css" rel="stylesheet" />
     <link href="color/default.css" rel="stylesheet" />
+
+    <style>
+      .bt_box_c .list li {
+         flex: 1 1 calc(33.333% - 20px); /* 너비 설정, 여기서 20px은 가로 간격을 위한 것으로, 필요에 따라 조정해주세요. */
+         margin: 10px; /* 주변 마진을 통해 간격 조정, 필요에 따라 조정해주세요. */
+          box-sizing: border-box; /* 패딩과 테두리가 너비에 포함되도록 설정 */
+      }
+    </style>
   </head>
 
   <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
@@ -143,6 +155,7 @@
       </div>
       <!-- /.container -->
     </nav>
+
     <!-- Section: intro -->
 
     <!-- PAGE상단 배경으로 이미지 개별 적용 -->
@@ -162,19 +175,6 @@
         </tbody>
       </table>
 
-      <div class="aside g02 s01 d01 p">
-        <div class="inner aside_slide" style="height: 70px" ;>
-          <div class="swiper-wrapper">
-            <a class="swiper-slide" href="veeam.html">VEEAM</a>
-            <a class="swiper-slide on" href="cluster.html">CLUSTER</a>
-            <a class="swiper-slide" href="sap.html">SAP</a>
-            <!-- <a class="swiper-slide" href="sap.html">SAP</a> -->
-            <!-- <a class="swiper-slide" href="dr.html">DR구축</a> -->
-          </div>
-          <hr class="style-line4" />
-        </div>
-      </div>
-
       <section class="inner-page">
         <div class="container">
           <br />
@@ -182,138 +182,151 @@
             <tbody></tbody>
           </table>
 
+          <div class="aside g02 s01 d01 p">
+            <div class="inner aside_slide" style="height: 70px" ;>
+              <div class="swiper-wrapper">
+                <a class="swiper-slide on" href="veeam.html">VEEAM</a>
+                <a class="swiper-slide" href="cluster.html">CLUSTER</a>
+                <a class="swiper-slide" href="sap.html">SAP</a>
+                <!-- <a class="swiper-slide" href="sap.html">SAP</a> -->
+                <!-- <a class="swiper-slide" href="dr.html">DR구축</a> -->
+              </div>
+              <hr class="style-line4" />
+            </div>
+          </div>
+
           <p>&nbsp;</p>
           <a href="#intro"></a>
-          <h2 id="intro" style="color: black">
-            <big class="navy2">Cluster</big>
+          <h2 id="intro" style="color: #444; font-size: 40px">
+            Cluster
           </h2>
-          <p>&nbsp;</p>
-          <h3 style="color: #002266">
-            단일 통합 데이터 관리 플랫폼<big class="black"> <hr /></big>
+          
+          <h4 style="color: #002266c5">
+            HA(High Availabilty) Solution<br />
+
           </h3>
           <div class="wow fadeInUp" data-wow-delay="0.1s">
-            <h3 style="color: black">글로벌 시장 점유율 1위</h3>
-            <b>2022년 하반기 Veeam은 백업 시장 점유율 1위 달성 기업</b>
-            <p>&nbsp;</p>
-            <p>전세게 시장 점유율 No.1 쿠버네티스 백업</p>
-            <p>&nbsp;</p>
-            <p><b>1. 하이브리드 클라우드 데이터 보호 및 재해복구</b></p>
-            <p><b>2. 물리서버 OS 이미지 백업 및 마이그레이션</b></p>
-            <p><b>3. 초고속 NAS백업 </b></p>
-            <p><b>4. 변경 불가한 데이터 장기보관</b></p>
-            <p><b>5.쿠버네티스 백업 </b></p>
-            <p><b>6. Microsoft 365 백업</b></p>
+            <p style="color:#888888;">운영중인 시스템의 하드웨어 및 서비스의 장애 발생 시 이를 자동으로 인지하여 대기중인 시스템에서 연속적인 서비스를 수행 할 수 있는 HA 솔루션입니다.</p>
+<br>
             <right></right>
           </div>
-          <p>&nbsp;</p>
-          <h3 style="color: #002266">
-            Why? Veeam<big class="black"
-              >&nbsp;
-              <hr
-            /></big>
+          
+          <h3 style="color: #002266f1; font-size: 28px;" >
+            Cluster 특장점<big class="black"> <hr /></big>
           </h3>
-          <div class="wow fadeInUp" data-wow-delay="0.1s">
-            <div class="container">
-              <div class="row">
-                <div class="col-sm-6">
-                  <p class="info1">
-                    1.&nbsp;하이브리드 클라우드 데이터 보호 및 재해복구
-                  </p>
-                  <br />
-                  <p class="info1">- 다양한 하이퍼바이저 Agengless백업</p>
-                  <p class="info1">- 즉시복구(Instance Recovery)</p>
-                  <p class="info1">- 손쉬운 DB복구</p>
-                  <p class="info1">- 이기종 플랫폼 마이그레이션</p>
-                  <br />
+
+          <div class="bt_box_c half_li mt6">
+            <ul class="list">
+              <li>
+                <div class="tt">서비스의 연속성 보장</div>
+                <div class="cn">
+                  <p><em>1</em>서비스, 프로세스 단위의 리소스 감지</p>
+                  <p style="font-size: 17px;">&nbsp;&nbsp;- 다양한 어플리케이션 감지 및 구동 방식 지원</p>
+                  <p><em>2</em>SQL, WAS 단위의 리소스 감지</p>
+                  <p style="font-size: 17px;">&nbsp;&nbsp;- DBMS DB 상태에 대한 감지</p>
+                  <p style="font-size: 17px;">&nbsp;&nbsp;- IIS내 WAS 상태에 대한 감지</p>
+                  <p><em>3</em>HW 리소스 감지</p>
+                  <p style="font-size: 17px;">&nbsp;&nbsp;- Network, Split 상태 감지</p>
+                  <p style="font-size: 17px;">&nbsp;&nbsp;- HDD, NIC 및 디스크 용량 감지</p>
+                  <p><em>4</em>사용자 정의 리소스 감지</p>
+                  <p style="font-size: 17px;">&nbsp;&nbsp;- 사용자 정의의 Check 감지</p>
                 </div>
-                <div class="col-sm-6">
-                  <p class="info1">
-                    2. 물리 서버 OS이미지 백업 및 마이그레이션
-                  </p>
-                  <br />
-                  <p class="info1">-&nbsp;OS + DB백업</p>
-                  <p class="info1">-&nbsp;Instance Recovery</p>
-                  <p class="info1">- P2P, P2V, P2C, V2P, C2P</p>
-                  <br />
+              </li>
+              <li>
+                <div class="tt">데이터 안정성 지원</div>
+                <div class="cn">
+                  <p><em>1</em>DBMS 동기화 지원</p>
+                  <p style="font-size: 17px;">&nbsp;&nbsp;- MSSQL 트랜잭션 동기화 지원</p>
+                  <p style="font-size: 17px;">&nbsp;&nbsp;- MSSQL 동기화 데이터에 대한 무결성 검증 지원</p>
+                  <p><em>2</em>File 동기화 지원</p>
+                  <p style="font-size: 17px;">&nbsp;&nbsp;- 커널 I/O 이벤트 감지를 통한 폴더 및 파일 단위의 실시간 동기화 지원</p>
+                  <p><em>3</em>Block 복제 지원</p>
+                  <p style="font-size: 17px;">&nbsp;&nbsp;- 볼륨 동기화에 대한 구성 및 연동 지원</p>
                 </div>
-              </div>
-            </div>
+              </li>
+              <li>
+                <div class="tt">데이터 백업 및 DR 구성</div>
+                <div class="cn">
+                  <p><em>1</em>백업 및 복구 지원</p>
+                  <p style="font-size: 17px;">&nbsp;&nbsp;- MSSQL 전체/차등/증분 백업 지원</p>
+                  <p style="font-size: 17px;">&nbsp;&nbsp;- 폴더 및 파일 단위의 백업 지원</p>
+                  <p style="font-size: 17px;">&nbsp;&nbsp;- 백업된 내용의 복구 기능 지원</p>
+                  <p><em>2</em>DR 구성 지원</p>
+                  <p style="font-size: 17px;">&nbsp;&nbsp;- DR 구성에 따른 Active 시스템의 데이터 복제 기능 제공</p>
+                  <p><em>3</em>설정 복구 기능</p>
+                  <p style="font-size: 17px;">&nbsp;&nbsp;- 이중화 구성 설정을 백업/복구 기능 제공</p>
+                </div>
+              </li>
+            </ul>
           </div>
-          <div class="wow fadeInUp" data-wow-delay="0.1s">
-            <div class="container">
-              <div class="row">
-                <div class="col-sm-6">
-                  <p class="info1">3.&nbsp;초고속 NAS백업</p>
-                  <br />
-                  <p class="info1">
-                    - 스캔 타임을 없앤 초고속 백업(2백2십만 파일 17분 전체 백업)
-                  </p>
-                  <p class="info1">- Forever 증분백업</p>
+          <br><br>
+
+          <h3 style="color: #002266f1; font-size: 28px;" >
+            Cluster 기능<big class="black"> <hr /></big>
+          </h3>
+
+          <div class="bt_box half_li mt6">
+            <ul class="list">
+              <li>
+                <div class="tt">다양한 Application 및 구성 지원</div>
+                <div class="cn">
+                  <p><em>1</em>Database, Web, ERP등 다양한 Application 지원</p>
+                  <p><em>2</em>Shared Storage를 이용한 Active-Standby 구성 지원</p>
+                  <p><em>3</em>SAN, DAS, Multi Path I/O 운영환경 지원</p>
+              </li>
+              <li>
+                <div class="tt">서비스의 연속성 지원</div>
+                <div class="cn">
+                  <p><em>1</em>Active서버 장애 시 자동 Standby 서버로 서비스 이관</p>
+                  <p><em>2</em>I/O Path 장애발생 시 자동 Fail-Over 지원</p>
+                  <p><em>3</em>Fail-Over 발생시 관리자에게 SMS 및 Email 발송</p>
                 </div>
-                <div class="col-sm-6">
-                  <p class="info1">4. 변경 불가한(Immutable)데이터 장기 보관</p>
-                  <br />
-                  <p class="info1">-&nbsp;랜섬웨어로부터 완벽 데이터 보호</p>
-                  <p class="info1">-&nbsp;Retention Lock</p>
-                  <p class="info1">&nbsp;</p>
+              </li>
+              <li>
+                <div class="tt">사용자 편의성 지원</div>
+                <div class="cn">
+                  <p><em>1</em>운영메뉴 및 로그 100% 한글지원</p>
+                  <p><em>2</em>응용프로그램 및 윈도우 서비스 별 프로세스 구동관리</p>
+                  <p><em>3</em>Fail-Over 진행 시 System Up/Down에 필요한 시스템 명령을 진행하기 위한 절차 프로세스 지원</p>
                 </div>
-              </div>
-            </div>
+              </li>
+              <li>
+                <div class="tt">시스템 장애 감지 지원</div>
+                <div class="cn">
+                  <p><em>1</em>네트워크, 서버, 프로세스, 디스크 I/O 장애감지</p>
+                  <p><em>2</em>Split-Brain(File System Crash) 예방조치에 대한 안전한 클러스터링 보장</p>
+                </div>
+              </li>
+            </ul>
           </div>
-          <div class="wow fadeInUp" data-wow-delay="0.1s">
-            <div class="container">
-              <div class="row">
-                <div class="col-sm-6">
-                  <p class="info1">
-                    5.&nbsp;쿠버네티스 백업 (전세게 시장점유율 1위)
-                  </p>
-                  <br />
-                  <p class="info1">- 컨테이너 환경의 백업과 재해복구 관리</p>
-                  <p class="info1">
-                    - Veeam Kasten, 최고의 쿠버네티스 전용백업 솔루션
-                  </p>
-                  <p class="info1">
-                    - 최다 레퍼런스 보유(레드햇 오픈시프트, 매텍 아코디언,
-                    VMware탄주, 디아만티, 나무기술 칵테일, 티맥스
-                    하이퍼클라우드,수세랜처, 뉴타닉스 카본, HPE 에즈메탈,,,)
-                  </p>
-                  <p class="info1">- Agentless, Pods탑재 불필요</p>
-                  <br />
-                </div>
-                <div class="col-sm-6">
-                  <p class="info1">6. Microsoft 365백업</p>
-                  <br />
-                  <p class="info1">-&nbsp;M365 최적 백업 솔루션</p>
-                  <p class="info1">
-                    -&nbsp;M365 자체 기능만으로 계획된 악의적 데이터 삭제와
-                    파손에 <br />
-                    충분할수 없음.
-                  </p>
-                  <p class="info1">
-                    - 최적 M365 백업 솔루션은 Veeam Backup for M365
-                  </p>
-                  <br />
-                </div>
-              </div>
-            </div>
-          </div>
+         
+          
+          <br>
           <p>&nbsp;</p>
+          <p>&nbsp;</p>
+
+          </div>
           <div class="row">
             <div class="wow fadeInUp" data-wow-delay="0.1s"></div>
             <div class="wow fadeInUp" data-wow-delay="0.1s"></div>
             <div class="wow fadeInUp" data-wow-delay="0.1s"></div>
             <div class="wow fadeInUp" data-wow-delay="0.1s"></div>
           </div>
+          <p>&nbsp;</p>
+          <div class="wow fadeInUp" data-wow-delay="0.1s"></div>
 
           <map name="Map">
             <area shape="rect" coords="641,82,722,113" href="qna.html" />
           </map>
           <br />
         </div>
+
+        <!-- script swiper -->
       </section>
     </main>
     <!-- End #main -->
     <button id="qna_btn" onclick="location.href='qna.html'">문의하기 💬</button>
+
     <footer>
       <div class="container">
         <div class="row">
