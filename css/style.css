@@ -2588,7 +2588,7 @@ label {
 }
 
 label:hover {
-  color: #ff9933;
+  color: #f08437;
   cursor: pointer;
 }
 
@@ -2596,7 +2596,7 @@ label:hover {
 input:checked + label {
   color: #000;
   border: 1px solid #ddd;
-  border-top: 2px solid #ff9933;
+  border-top: 2px solid #f08437;
   border-bottom: 1px solid #ffffff;
 }
 
@@ -2787,7 +2787,7 @@ input:checked + label {
 .tab_item {
   width: calc(100% / 3);
   height: 60px;
-  border-bottom: 3px solid #ff9933;
+  border-bottom: 3px solid #f08437;
   background-color: #f8f8f8;
   line-height: 50px;
   font-size: 20px;
@@ -2803,12 +2803,12 @@ input:checked + label {
 .tab_item2 {
   width: calc(100% / 5);
   height: 60px;
-  border-bottom: 3px solid #ff9933;
+  border-bottom: 3px solid #f08437;
   background-color: #f8f8f8;
   line-height: 50px;
   font-size: 20px;
   text-align: center;
-  color: #ff9933;
+  color: #f08437;
   display: block;
   float: left;
   text-align: center;
@@ -2852,7 +2852,7 @@ input[name="tab_item2"] {
 
 /* 선택된 탭 스타일 */
 .tabs input:checked + .tab_item {
-  background-color: #ff9933;
+  background-color: #f08437;
   color: #fff;
 }
 
@@ -3012,12 +3012,12 @@ body {
   left: 50%;
   width: 0;
   height: 2px;
-  background: #ff9933;
+  background: #f08437;
   transition: 0.2s linear;
 }
 .aside a:hover,
 .a .aside a.on {
-  color: #ff9933;
+  color: #f08437;
 }
 .aside a:hover:before,
 .aside a.on:before {
@@ -3368,7 +3368,7 @@ body {
   font-weight: 700;
   line-height: 25px;
   padding: 20px 25px;
-  background: #ff9933;
+  background: #f08437;
   letter-spacing: -1.5px;
 }
 .half_li .list li .tt b {
@@ -3560,7 +3560,7 @@ em {
   height: 17px;
   border-radius: 100%;
   background: #fff;
-  border: 5px solid #ff9933;
+  border: 5px solid #f08437;
   box-sizing: border-box;
 }
 
