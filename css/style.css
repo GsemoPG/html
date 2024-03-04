@@ -3023,7 +3023,8 @@ body {
   left: 0;
   width: 100%;
 }
-.aside a:hover, .aside a.on {
+.aside a:hover,
+.aside a.on {
   color: #f08437;
 }
 .container.g03.s05.inner {
@@ -3041,7 +3042,7 @@ body {
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
-  margin-left: 326px;
+  margin-left: 313px;
 }
 .aside .swiper-wrapper {
   max-width: none;
