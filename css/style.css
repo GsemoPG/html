@@ -3367,7 +3367,7 @@ body {
   min-height: auto;
 }
 .half_li .list li .tt {
-  font-size: 22px;
+  font-size: 25px;
   color: #fff;
   font-weight: 700;
   line-height: 25px;
@@ -3414,7 +3414,7 @@ ul {
   position: absolute;
   top: 8px;
   left: 0;
-  font-size: 11px;
+  font-size: 13px;
   color: #666;
   font-weight: 700;
   line-height: 16px;
@@ -3431,7 +3431,7 @@ em {
   position: relative;
   font-size: 20px;
   color: #666;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 32px;
   padding-left: 26px;
   letter-spacing: -0.8px;
