@@ -3209,7 +3209,7 @@ body {
 }
 
 .info_button:hover {
-  background-color: #367dcf; /* 마우스를 가져다 대면 배경색이 변합니다. */
+  background-color: #f3a56e; /* 마우스를 가져다 대면 배경색이 변합니다. */
 }
 
 .info_button:hover,
@@ -3232,7 +3232,7 @@ body {
 
   border: none;
   border-radius: 16px;
-  background: royalblue;
+  background: #f08437;
   color: white;
   padding: 12px;
   font-weight: bold;
