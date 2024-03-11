@@ -3594,3 +3594,49 @@ em {
   color: #000;
   line-height: 29px;
 }
+
+.hci_container {
+  display: flex;
+  width: 100%;
+}
+
+.hci_left {
+  flex: 3;
+  margin-left: 80px;
+}
+
+.hci_left img {
+  width: auto;
+  height: 100%;
+}
+
+.hci_right {
+  flex: 7;
+  display: flex;
+  flex-direction: column;
+}
+
+.hci_row {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.hci_content,
+.hci_title {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.hci_title {
+  color: white;
+  background-color: #f08437;
+  font-weight: bold;
+  font-size: 19px;
+  margin-right: 20px;
+  flex: 2;
+}
+
+.hci_content {
+  flex: 8;
+}
