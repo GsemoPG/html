@@ -2594,7 +2594,7 @@ label:hover {
 
 /*input 클릭시, label 스타일*/
 input:checked + label {
-  color: #000;
+  color: #f08437;
   border: 1px solid #ddd;
   border-top: 2px solid #f08437;
   border-bottom: 1px solid #ffffff;
@@ -2808,7 +2808,7 @@ input:checked + label {
   line-height: 50px;
   font-size: 20px;
   text-align: center;
-  color: #f08437;
+  color: #333;
   display: block;
   float: left;
   text-align: center;
