@@ -2801,7 +2801,7 @@ input:checked + label {
 }
 
 .tab_item2 {
-  width: calc(100% / 4);
+  width: calc(100% / 3);
   height: 60px;
   border-bottom: 3px solid #f08437;
   background-color: #f8f8f8;
