@@ -2785,7 +2785,7 @@ input:checked + label {
 
 /* 탭 스타일 (SERVER) */
 .tab_item {
-  width: calc(100% / 3);
+  width: calc(100% / 2);
   height: 60px;
   border-bottom: 3px solid #f08437;
   background-color: #f8f8f8;
@@ -2801,7 +2801,7 @@ input:checked + label {
 }
 
 .tab_item2 {
-  width: calc(100% / 5);
+  width: calc(100% / 3);
   height: 60px;
   border-bottom: 3px solid #f08437;
   background-color: #f8f8f8;
