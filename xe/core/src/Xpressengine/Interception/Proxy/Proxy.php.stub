@@ -1,8 +1,0 @@
-<?php
-
-use Xpressengine\Interception\Proxy\ProxyTrait;
-
-class Proxy
-{
-    use ProxyTrait;
-}

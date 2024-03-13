@@ -1,9 +1,0 @@
-<?php
-namespace DummyNamespace;
-
-use Xpressengine\Skin\GenericSkin;
-
-class DummyClass extends GenericSkin
-{
-    protected static $path = 'DummyPluginId/DummySkinDirname';
-}
