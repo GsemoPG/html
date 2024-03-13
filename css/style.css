@@ -2816,6 +2816,22 @@ input:checked + label {
   transition: all 0.2s ease;
 }
 
+.tab_item3 {
+  width: calc(100% / 3);
+  height: 60px;
+  border-bottom: 3px solid #f08437;
+  background-color: #f8f8f8;
+  line-height: 50px;
+  font-size: 20px;
+  text-align: center;
+  color: #333333;
+  display: block;
+  float: left;
+  text-align: center;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
 .tab_item:hover {
   opacity: 0.75;
 }
@@ -2852,6 +2868,16 @@ input[name="tab_item2"] {
 
 /* 선택된 탭 스타일 */
 .tabs input:checked + .tab_item {
+  background-color: #f08437;
+  color: #fff;
+}
+
+.tabs input:checked + .tab_item2 {
+  background-color: #f08437;
+  color: #fff;
+}
+
+.tabs input:checked + .tab_item3 {
   background-color: #f08437;
   color: #fff;
 }
